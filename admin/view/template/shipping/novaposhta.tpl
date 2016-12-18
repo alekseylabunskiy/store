@@ -82,7 +82,7 @@
       };
 
       $.ajax({
-          url: "index.php?route=shipping/novaposhta/NewAreas&token=<?php echo $token; ?>",
+          url: "index.php?route=shipping/novaposhta/updateNovaPochtaLocations&token=<?php echo $token; ?>",
 
           type: "post",
           // Request body

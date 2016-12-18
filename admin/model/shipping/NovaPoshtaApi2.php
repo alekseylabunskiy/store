@@ -1,13 +1,13 @@
 <?php
 
-class ModelShippingNovaPoshtaApi2 {
+class ModelShippingNovaPoshtaApi2 extends Model {
 	/**
 	 * Key for API NovaPoshta
 	 * 
-	 * @var string $key
+	 * @var string $fkey
 	 * @see https://my.novaposhta.ua/settings/index#apikeys
 	 */
-	protected $key;
+	protected $fkey;
 	
 	/**
 	 * @var bool $throwErrors Throw exceptions when in response is error
@@ -52,13 +52,13 @@ class ModelShippingNovaPoshtaApi2 {
 	/**
 	 * Default constructor
 	 * 
-	 * @param string $key NovaPoshta API key
+	 * @param string $fkey NovaPoshta API key
 	 * @param string $language Default Language
 	 * @param bool $throwErrors Throw request errors as Exceptions
 	 * @param bool $connectionType Connection type (curl | file_get_contents)
 	 * @return NovaPoshtaApi2 
 	 */
-	function __construct($key, $language = 'ru', $throwErrors = FALSE, $connectionType = 'curl') {
+	function __construct($fkey, $language = 'ru', $throwErrors = FALSE, $connectionType = 'curl') {
 
 		$this->throwErrors = $throwErrors;
 		return $this	
@@ -74,8 +74,8 @@ class ModelShippingNovaPoshtaApi2 {
 	 * @param string $key NovaPoshta API key
 	 * @return NovaPoshtaApi2
 	 */
-	function setKey($key) {
-		$this->key = $key;
+	function setKey($fkey) {
+		$this->fkey = $fkey;
 		return $this;
 	}
 	
@@ -200,7 +200,7 @@ class ModelShippingNovaPoshtaApi2 {
 			: 'https://api.novaposhta.ua/v2.0/json/';
 		
 		$data = array(
-			'apiKey' => $this->key,
+			'apiKey' => $this->fkey,
 			'modelName' => $model,
 			'calledMethod' => $method,
 			'language' => $this->language,

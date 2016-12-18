@@ -10,6 +10,13 @@ class ControllerShippingNovaposhta extends Controller {
 
 		$this->load->model('setting/setting');
 
+        if (($this->request->server['REQUEST_METHOD'] == 'POST') && $this->validate()) {
+            $this->model_setting_setting->editSetting('novaposhta', $this->request->post);
+
+            $this->session->data['success'] = $this->language->get('text_success');
+
+            $this->response->redirect($this->url->link('extension/shipping', 'token=' . $this->session->data['token'], 'SSL'));
+        }
 
 		$data['heading_title'] = $this->language->get('heading_title');
 		$data['text_heading_title'] = $this->language->get('text_heading_title');
@@ -82,14 +89,27 @@ class ControllerShippingNovaposhta extends Controller {
 
         $this->response->setOutput($this->load->view('shipping/novaposhta.tpl', $data));
 	}
+    protected function validate() {
+        if (!$this->user->hasPermission('modify', 'shipping/novaposhta')) {
+            $this->error['warning'] = $this->language->get('error_permission');
+        }
 
-	public function NewAreas()
+        return !$this->error;
+    }
+	public function updateNovaPochtaLocations()
     {
+        //подключаем модель
         $this->load->model('shipping/NovaPoshtaApi2');
+        $this->load->model('shipping/NovaPoshta');
 
-        $r = $this->model_shipping_NovaPoshtaApi2->getAreas();
-        var_dump($r);
-        $this->response->setOutput(json_encode($r));
+        //Достаем список областей
+        $areas = $this->model_shipping_NovaPoshtaApi2->getAreas();
+
+        //записываем области в базу данных
+        $this->model_shipping_NovaPoshta->setsAreas($areas);
+
+
+        $this->response->setOutput(json_encode($areas));
     }
 
 }

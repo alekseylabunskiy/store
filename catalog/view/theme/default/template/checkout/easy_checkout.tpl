@@ -174,9 +174,13 @@
 					</select>
 				</div>
 				<div class="form-group required">
-					<label class="control-label" for="input-payment-zone"><?php echo $entry_zone;; ?></label>
+					<label class="control-label" for="input-payment-zone"><?php echo $entry_zone; ?></label>
 					<select name="zone_id" id="input-payment-zone" class="form-control">
 					</select>
+				</div>
+				<div class="form-group required">
+					<label class="control-label" for="input-payment-city"><?php echo $entry_city; ?></label>
+					<input type="text" name="city" value="<?php if (isset($city)) echo $city;?>" placeholder="<?php echo str_replace(':','',$entry_city); ?>" id="input-payment-city" class="form-control" />
 				</div>
 				<div class="form-group required">
 					<label class="control-label" for="input-payment-telephone"><?php echo $entry_telephone; ?></label>
