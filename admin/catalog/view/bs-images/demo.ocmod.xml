@@ -1,0 +1,576 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<modification>
+	<name>Demo settings</name>
+	<version>2.2.0.0</version>
+	<code>demo</code>
+	<author>eTheme</author>
+    <file path="catalog/view/theme/yourstore/template/common/home.tpl">
+        <operation>
+            <search><![CDATA[
+             $my_list_unique_id = $customisation_general["list_unique_id"][$store_id];
+                    ]]></search>
+            <add position="replace"><![CDATA[
+            $my_list_unique_id = 'e5cd1cb09f';
+            ]]></add>
+        </operation>
+        <operation>
+            <search><![CDATA[
+             $your_apikey = $customisation_general["apikey"][$store_id];
+                    ]]></search>
+            <add position="replace"><![CDATA[
+            $your_apikey = '78a6118343c6bf1cdade80bb4162e0b3-us9';
+            ]]></add>
+        </operation>
+    </file>
+    <file path="catalog/view/theme/yourstore/template/common/footer.tpl">
+        <operation>
+            <search><![CDATA[
+             switch ($layout_type_footer) {
+                    ]]></search>
+            <add position="before"><![CDATA[
+            /* footer type for layouts: 6, 7, 8 */
+            if ($store_id == 5) {
+                $layout_type_footer = 6;
+            }
+
+
+
+            if ($store_id == 6) {
+                $layout_type_footer = 6;
+            }
+
+            if ($store_id == 7) {
+                $layout_type_footer = 7;
+            }
+            if ($store_id == 8) {
+                $layout_type_footer = 8;
+            }
+            /* //footer type for layouts: 6, 7, 8 */
+            ]]></add>
+        </operation>
+
+
+
+        <operation>
+            <search><![CDATA[
+             /* end newsletter variables */
+                    ]]></search>
+            <add position="after"><![CDATA[
+            $my_list_unique_id = 'e5cd1cb09f';
+            $your_apikey = '78a6118343c6bf1cdade80bb4162e0b3-us9';
+            $newsletter_title = 'NEWSLETTER SIGNUP';
+            $newsletter_button = 'subscribe';
+
+            if ($store_id == 6 ||$store_id == 7 ) :
+                $newsletter_placeholder = 'Your E-mail';
+            endif;
+            ]]></add>
+        </operation>
+
+        <operation>
+            <search><![CDATA[
+             <!-- footer-copyright text-->
+                    ]]></search>
+            <add position="after"><![CDATA[
+                <?php if ($store_id == 5 || $store_id == 6 || $store_id == 7 || $store_id == 8) { ?>
+                &copy;Copyright 2016 by <span class="color">TonyTemplates</span>. All Rights Reserved.
+                <?php } else { ?>
+            ]]></add>
+        </operation>
+        <operation>
+            <search><![CDATA[
+             <!-- end footer-copyright text-->
+             ]]>
+            </search>
+            <add position="before"><![CDATA[
+            <?php } ?>
+            ]]></add>
+        </operation>
+
+        <operation>
+            <search><![CDATA[
+             <!-- footer socials text-->
+                    ]]></search>
+            <add position="after"><![CDATA[
+                <?php if ($store_id == 5 || $store_id == 6 || $store_id == 7 || $store_id == 8) { ?>
+                <ul>
+                    <li><a class="icon fa fa-facebook" href="http://www.facebook.com/"></a></li>
+                    <li><a class="icon fa fa-twitter" href="http://www.twitter.com/"></a></li>
+                    <li><a class="icon fa fa-google-plus" href="http://www.google.com/"></a></li>
+                    <li><a class="icon fa fa-instagram" href="https://instagram.com/"></a></li>
+                    <li><a class="icon fa fa-youtube-square" href="https://www.youtube.com/"></a></li>
+                </ul>
+                <?php } else { ?>
+            ]]></add>
+        </operation>
+        <operation>
+            <search><![CDATA[
+             <!-- end footer socials text-->
+                    ]]></search>
+            <add position="before"><![CDATA[
+            <?php } ?>
+            ]]></add>
+        </operation>
+
+        <operation>
+            <search><![CDATA[
+             <!-- map -->
+                    ]]></search>
+            <add position="after"><![CDATA[
+                <?php if ($store_id == 8) { ?>
+                <div>
+                    <div id="map"></div>
+                </div>
+                    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+                    <script type="text/javascript">
+                        // When the window has finished loading create our google map below
+                        google.maps.event.addDomListener(window, 'load', init);
+
+                        function init() {
+                            // Basic options for a simple Google Map
+                            // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
+                            var mapOptions = {
+                                // How zoomed in you want the map to start at (always required)
+                                zoom: 11,
+
+                                // The latitude and longitude to center the map (always required)
+                                center: new google.maps.LatLng(40.6700, -73.9400), // New York
+
+                                // How you would like to style the map.
+                                // This is where you would paste any style found on Snazzy Maps.
+                                styles: [{"featureType":"water","elementType":"geometry.fill","stylers":[{"color":"#d1d1d1"}]},{"featureType":"transit","stylers":[{"color":"#808080"},{"visibility":"off"}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"visibility":"on"},{"color":"#d1d1d1"}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#d1d1d1"}]},{"featureType":"road.local","elementType":"geometry.fill","stylers":[{"visibility":"on"},{"color":"#ffffff"},{"weight":1.8}]},{"featureType":"road.local","elementType":"geometry.stroke","stylers":[{"color":"#d7d7d7"}]},{"featureType":"poi","elementType":"geometry.fill","stylers":[{"visibility":"on"},{"color":"#ebebeb"}]},{"featureType":"administrative","elementType":"geometry","stylers":[{"color":"#d1d1d1"}]},{"featureType":"road.arterial","elementType":"geometry.fill","stylers":[{"color":"#ffffff"}]},{"featureType":"road.arterial","elementType":"geometry.fill","stylers":[{"color":"#ffffff"}]},{"featureType":"landscape","elementType":"geometry.fill","stylers":[{"visibility":"on"},{"color":"#fafafa"}]},{"featureType":"road","elementType":"labels.text.fill","stylers":[{"color":"#d6d6d6"}]},{"featureType":"administrative","elementType":"labels.text.fill","stylers":[{"visibility":"on"},{"color":"#bfbfbf"}]},{"featureType":"poi","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"poi","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"road.arterial","elementType":"geometry.stroke","stylers":[{"color":"#d6d6d6"}]},{"featureType":"road","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{},{"featureType":"poi","elementType":"geometry.fill","stylers":[{"color":"#f1f1f1"}]}]
+                            };
+
+                            // Get the HTML DOM element that will contain your map
+                            // We are using a div with id="map" seen below in the <body>
+                            var mapElement = document.getElementById('map');
+
+                            // Create the Google Map using our element and options defined above
+                            var map = new google.maps.Map(mapElement, mapOptions);
+
+
+                            var image = 'images/custom/beachflag.png';
+
+                            var marker = new google.maps.Marker({
+                                position: new google.maps.LatLng(40.6700, -73.9400),
+                                map: map,
+                                icon : image,
+                                title: 'Snazzy!'
+                            });
+
+
+                        }
+                    </script>
+                <?php } else { ?>
+            ]]></add>
+        </operation>
+        <operation>
+            <search><![CDATA[
+             <!-- /map -->
+                    ]]></search>
+            <add position="before"><![CDATA[
+            <?php } ?>
+            ]]></add>
+        </operation>
+
+        <operation>
+            <search><![CDATA[
+             <!-- footer-payment-->
+                    ]]></search>
+            <add position="after"><![CDATA[
+                <?php if ($store_id == 5) { ?>
+                <ul class="list-icon-small">
+                    <li><img src="image/catalog/custom/icon-payment-01.png" alt=""></li>
+                    <li><img src="image/catalog/custom/icon-payment-02.png" alt=""></li>
+                    <li><img src="image/catalog/custom/icon-payment-03.png" alt=""></li>
+                    <li><img src="image/catalog/custom/icon-payment-04.png" alt=""></li>
+                    <li><img src="image/catalog/custom/icon-payment-05.png" alt=""></li>
+                    <li><img src="image/catalog/custom/icon-payment-06.png" alt=""></li>
+                    <li><img src="image/catalog/custom/icon-payment-07.png" alt=""></li>
+                    <li><img src="image/catalog/custom/icon-payment-08.png" alt=""></li>
+                    <li><img src="image/catalog/custom/icon-payment-09.png" alt=""></li>
+                </ul>
+
+                <?php } else { ?>
+            ]]></add>
+        </operation>
+        <operation>
+            <search><![CDATA[
+             <!-- //footer-payment-->
+                    ]]></search>
+            <add position="before"><![CDATA[
+            <?php } ?>
+            ]]></add>
+        </operation>
+
+        <operation>
+            <search><![CDATA[
+<!-- footer custom block for footer type 6-->
+                    ]]></search>
+            <add position="after"><![CDATA[
+                <?php if ($store_id == 5) { ?>
+<div class="fill-bg footer_block">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 col-md-3">
+                <!--  -->
+                <div class="mobile-collapse">
+                    <h4 class="text-left text-uppercase  title-under  mobile-collapse__title">Shipping AND Delivery</h4>
+                    <div class="v-links-list mobile-collapse__content">
+                        <p>
+                            We're dedicated to delivering your purchase as quickly and affordably as possible. We offer a range of delivery and pickup options, so you can choose the shipping method that best meets your needs.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-3">
+                <div class="mobile-collapse">
+                    <h4 class="text-left text-uppercase  title-under  mobile-collapse__title">Payment Methods</h4>
+                    <div class="v-links-list mobile-collapse__content">
+                        <p>
+                            Every country and shopper has their prefered method to pay online. Offering your buyers safe and convenient payment choices can help your sale go smoothly, earn you positive Feedback, and bring them back for more.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="divider divider--lg visible-sm"></div>
+            <div class="col-sm-6 col-md-3">
+                <!-- -->
+                <div class="mobile-collapse">
+                    <h4 class="text-left text-uppercase  title-under  mobile-collapse__title text-uppercase">Contact</h4>
+                    <div class=" mobile-collapse__content">
+                        <address class="box-address">
+                            <span class="icon icon-home"></span> 7563 St. Vincent Place, Glasgow <br>
+                            <span class="icon icon-call"></span> <b>+777 2345 7885 </b><br>
+                            <span class="icon icon-access_time"></span> 7 Days a week from  10:00 am to 6:00 pm<br>
+                            <span class="icon icon-markunread"></span> <a class="color link-underline" href="mailto:info@mydomain.com">info@mydomain.com</a>
+                        </address>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-3">
+                <div class="mobile-collapse">
+                    <h4 class="text-left text-uppercase  title-under  mobile-collapse__title">Facebook like box</h4>
+                    <div class="v-links-list mobile-collapse__content">
+                        <div class="display-inline-block"><iframe src="http://www.facebook.com/plugins/likebox.php?id=134612429900944&amp;width=270px&amp;connections=9&amp;stream=false&amp;header=false&amp;height=236" style="border:none; overflow:hidden; width:270px; height:236px;"></iframe></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr class="hidden-xs">
+    </div>
+</div>
+                <?php } else { ?>
+            ]]></add>
+        </operation>
+        <operation>
+            <search><![CDATA[
+<!-- //footer custom block for footer type 6-->
+                    ]]></search>
+            <add position="before"><![CDATA[
+            <?php } ?>
+            ]]></add>
+        </operation>
+
+    </file>
+    <file path="catalog/view/theme/yourstore/template/common/header.tpl">
+        <operation>
+            <search><![CDATA[
+             <!-- pages item desktop -->
+                    ]]></search>
+            <add position="after"><![CDATA[
+            <?php if ($store_id == 5 || $store_id == 6 || $store_id == 7 || $store_id == 8) { ?>
+            <li class="dropdown dropdown-mega-menu dropdown-two-col">
+        <span class="dropdown-toggle extra-arrow"></span>
+        <a href="index.php" class="dropdown-toggle" data-toggle="dropdown"><span class="act-underline">
+               pages            </span>
+        </a>
+        <ul class="dropdown-menu multicolumn two-col" role="menu">
+            <li class="dl-back"><a href="#"><span class="icon icon-chevron_left"></span>back</a></li>
+
+
+                        <li class=""><a href="http://ysoc1.tonytemplates.com/index.php?route=information/information&amp;information_id=10">About</a></li>
+                        <li><a href="http://ysoc1.tonytemplates.com/index.php?route=information/information&amp;information_id=19">Services</a></li>
+                        <li class=""><a href="http://ysoc1.tonytemplates.com/index.php?route=information/information&amp;information_id=14">Warranty Page</a></li>
+                        <li><a href="http://ysoc1.tonytemplates.com/index.php?route=information/information&amp;information_id=16">Delivery Page</a></li>
+                        <li class=""><a href="http://ysoc1.tonytemplates.com/index.php?route=information/information&amp;information_id=12">Typography</a></li>
+                        <li><a href="http://ysoc1.tonytemplates.com/index.php?route=information/information&amp;information_id=15">Support 24/7 page</a></li>
+                        <li><a href="http://ysoc1.tonytemplates.com/index.php?route=information/information&amp;information_id=20">FAQs</a></li>
+                        <li><a href="http://ysoc1.tonytemplates.com/index.php?route=information/information&amp;information_id=17">Under counstruction</a></li>
+                        <li><a href="http://ysoc1.tonytemplates.com/index.php?route=information/information&amp;information_id=11">Payment Method</a></li>
+                        <li><a href="http://ysoc1.tonytemplates.com/index.php?route=information/information&amp;information_id=21">Page 404</a></li>
+
+
+                        <li><a href="http://ysoc1.tonytemplates.com/index.php?route=checkout/checkout">Checkout</a></li>
+                                    <li><a href="http://ysoc1.tonytemplates.com/index.php?route=account/account">My Account</a></li>
+
+        </ul>
+    </li>
+    <?php } else { ?>
+            ]]></add>
+        </operation>
+        <operation>
+            <search><![CDATA[
+             <!-- end pages item desktop -->
+                    ]]></search>
+            <add position="before"><![CDATA[
+            <?php } ?>
+            ]]></add>
+        </operation>
+
+        <operation>
+            <search><![CDATA[
+             <!-- pages item mobile -->
+                    ]]></search>
+            <add position="after"><![CDATA[
+                <?php if ($store_id == 5 || $store_id == 6 || $store_id == 7 || $store_id == 8) { ?>
+
+                <li>
+                    <span class="name">
+                        <span class="expander">+</span>
+                        <a href="index.php">
+                            <span class="act-underline">
+                                pages
+                            </span>
+                        </a>
+                    </span>
+                    <ul class="multicolumn">
+                                    <li><a href="http://ysoc1.tonytemplates.com/index.php?route=information/information&amp;information_id=10">About</a></li>
+                                    <li><a href="http://ysoc1.tonytemplates.com/index.php?route=information/information&amp;information_id=19">Services</a></li>
+                                    <li><a href="http://ysoc1.tonytemplates.com/index.php?route=information/information&amp;information_id=14">Warranty Page</a></li>
+                                    <li><a href="http://ysoc1.tonytemplates.com/index.php?route=information/information&amp;information_id=16">Delivery Page</a></li>
+                                    <li><a href="http://ysoc1.tonytemplates.com/index.php?route=information/information&amp;information_id=12">Typography</a></li>
+                                    <li><a href="http://ysoc1.tonytemplates.com/index.php?route=information/information&amp;information_id=15">Support 24/7 page</a></li>
+                                    <li><a href="http://ysoc1.tonytemplates.com/index.php?route=information/information&amp;information_id=20">FAQs</a></li>
+                                    <li><a href="http://ysoc1.tonytemplates.com/index.php?route=information/information&amp;information_id=17">Under counstruction</a></li>
+                                    <li><a href="http://ysoc1.tonytemplates.com/index.php?route=information/information&amp;information_id=11">Payment Method</a></li>
+                                    <li><a href="http://ysoc1.tonytemplates.com/index.php?route=information/information&amp;information_id=21">Page 404</a></li>
+                                    <li><a href="http://ysoc1.tonytemplates.com/index.php?route=checkout/checkout">Checkout</a></li>
+                                    <li><a href="http://ysoc1.tonytemplates.com/index.php?route=account/account">My Account</a></li>
+                    </ul>
+                </li>
+                <?php } else { ?>
+            ]]></add>
+        </operation>
+        <operation>
+            <search><![CDATA[
+             <!-- end pages item mobile -->
+                    ]]></search>
+            <add position="before"><![CDATA[
+            <?php } ?>
+            ]]></add>
+        </operation>
+
+        <operation>
+            <search><![CDATA[
+             /* header layout type*/
+                    ]]></search>
+            <add position="after"><![CDATA[
+            if ($store_id == 5) {
+                $layoutid = 6;
+                $headertype = 6;
+
+            }
+
+            if ($store_id == 6) {
+                $layoutid = 6;
+                $headertype = 7;
+
+            }
+
+            if ($store_id == 7) {
+                $headertype = 8;
+                $layoutid = 8;
+            }
+            if ($store_id == 8) {
+                $headertype = 9;
+                $layoutid = 9;
+            }
+            ]]></add>
+        </operation>
+
+        <operation>
+            <search><![CDATA[<?php if ($direction == 'rtl') : ?>]]></search>
+            <add position="replace"><![CDATA[<?php if ($direction == 'rtl' && $store_id == 0) : ?>]]></add>
+        </operation>
+
+    </file>
+
+    <file path="catalog/view/theme/yourstore/template/common/currency.tpl">
+        <operation>
+            <search><![CDATA[ /* header type */ ]]></search>
+            <add position="after"><![CDATA[
+                /* header type */
+            if ($store_id == 5) {
+                $headertype = 6;
+
+            }
+                if ($store_id == 6) {
+                    $headertype = 7;
+                }
+                if ($store_id == 7) {
+                    $headertype = 8;
+                }
+                if ($store_id == 8) {
+                    $headertype = 9;
+                }
+                /* //header type for layouts: 7, 8, 9 */
+                ]]></add>
+        </operation>
+    </file>
+
+    <file path="catalog/view/theme/yourstore/template/common/language.tpl">
+        <operation>
+            <search><![CDATA[ /* header type */ ]]></search>
+            <add position="after"><![CDATA[
+                /* header type */
+            if ($store_id == 5) {
+                $headertype = 6;
+
+            }
+
+                if ($store_id == 6) {
+                    $headertype = 7;
+                }
+                if ($store_id == 7) {
+                    $headertype = 8;
+                }
+                if ($store_id == 8) {
+                    $headertype = 9;
+                }
+                /* //header type for layouts: 7, 8, 9 */
+                ]]></add>
+        </operation>
+
+        <operation>
+            <search><![CDATA[if (count($languages) > 1)]]></search>
+            <add position="replace"><![CDATA[if (count($languages) > 1 && $store_id == 0)]]></add>
+        </operation>
+
+    </file>
+    <file path="catalog/view/theme/yourstore/template/common/search.tpl">
+        <operation>
+            <search><![CDATA[ /* header type */ ]]></search>
+            <add position="after"><![CDATA[
+                /* header type */
+            if ($store_id == 5) {
+                $headertype = 6;
+
+            }
+
+
+                if ($store_id == 6) {
+                    $headertype = 7;
+                }
+                if ($store_id == 7) {
+                    $headertype = 8;
+                }
+                if ($store_id == 8) {
+                    $headertype = 9;
+                }
+                /* //header type for layouts: 7, 8, 9 */
+                ]]></add>
+        </operation>
+    </file>
+    <file path="catalog/view/theme/yourstore/template/common/home.tpl">
+        <operation>
+            <search><![CDATA[ /* layoutid */ ]]></search>
+            <add position="after"><![CDATA[
+                if ($store_id == 5) {
+                    $layoutid = 6;
+                }
+
+                if ($store_id == 6) {
+                    $layoutid = 7;
+                }
+                if ($store_id == 7) {
+                    $layoutid = 8;
+                }
+                if ($store_id == 8) {
+                    $layoutid = 9;
+                }
+                ]]></add>
+        </operation>
+    </file>
+
+
+
+    <file path="catalog/view/theme/yourstore/template/module/carousel.tpl">
+        <operation>
+            <search><![CDATA[/*layout id*/]]></search>
+            <add position="after"><![CDATA[
+                if ($store_id == 5) {
+                    $layoutid = 6;
+                }
+                ]]></add>
+        </operation>
+    </file>
+
+    <file path="catalog/view/theme/yourstore/template/module/latest.tpl">
+        <operation>
+            <search><![CDATA[include('catalog/view/theme/list.php');]]></search>
+            <add position="replace"><![CDATA[
+                if ($store_id == 4) {
+                    include('catalog/view/theme/carousel.php');;
+                } else {
+                    include('catalog/view/theme/list.php');;
+                }
+                ]]></add>
+        </operation>
+    </file>
+    <file path="catalog/view/theme/yourstore/template/module/special.tpl">
+        <operation>
+            <search><![CDATA[include('catalog/view/theme/list.php');]]></search>
+            <add position="replace"><![CDATA[
+                if ($store_id == 4) {
+                    include('catalog/view/theme/carousel.php');;
+                } else {
+                    include('catalog/view/theme/list.php');;
+                }
+                ]]></add>
+        </operation>
+    </file>
+
+
+    <file path="catalog/view/theme/yourstore/template/module/simple_blog.tpl">
+        <operation>
+            <search><![CDATA[/* layout id */]]></search>
+            <add position="after"><![CDATA[
+                if ($store_id == 5) {
+                    $layoutid = 6;
+                }
+
+                if ($store_id == 6) {
+                    $layoutid = 7;
+                }
+                if ($store_id == 7) {
+                    $layoutid = 8;
+                }
+                if ($store_id == 8) {
+                    $layoutid = 9;
+                }
+                ]]></add>
+        </operation>
+    </file>
+    <file path="catalog/view/theme/yourstore/template/module/testimonials.tpl">
+        <operation>
+            <search><![CDATA[/* layout id */]]></search>
+            <add position="after"><![CDATA[
+                if ($store_id == 5) {
+                    $layoutid = 6;
+                }
+
+                if ($store_id == 6) {
+                    $layoutid = 7;
+                }
+                if ($store_id == 7) {
+                    $layoutid = 8;
+                }
+                if ($store_id == 8) {
+                    $layoutid = 9;
+                }
+                ]]></add>
+        </operation>
+    </file>
+
+</modification>

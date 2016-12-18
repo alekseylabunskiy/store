@@ -1,0 +1,2587 @@
+2016-10-31 9:14:06 - MOD: Modification Default
+
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 41
+
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 49
+LINE: 108
+LINE: 120
+LINE: 165
+
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 23
+
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 38
+LINE: 40
+LINE: 49
+LINE: 51
+LINE: 60
+LINE: 62
+
+FILE: system/library/template/php.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 18
+
+FILE: system/library/template/tiwg.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 24
+----------------------------------------------------------------
+MOD: Yourstore changes
+
+FILE: admin/controller/common/column_left.php
+CODE: if ($report) {
+LINE: 836
+
+FILE: admin/language/en-gb/common/column_left.php
+CODE: <?php
+LINE: 1
+
+FILE: catalog/controller/startup/seo_url.php
+CODE: $this->request->get['route'] = 'error/not_found';
+LINE: 47
+CODE: if ($report) {
+LINE: 917
+CODE: <?php
+LINE: 11
+
+FILE: admin/language/ru-ru/common/column_left.php
+CODE: <?php
+LINE: 11
+CODE: $this->url->link('catalog/category', 'token=' . $this->session->data['token'], true)
+LINE: 48
+CODE: $this->url->link('catalog/product', 'token=' . $this->session->data['token'], true)
+LINE: 56
+
+FILE: catalog/controller/error/not_found.php
+CODE: public function index() {
+LINE: 7
+
+FILE: catalog/controller/common/header.php
+CODE: $this->load->model('catalog/category');
+LINE: 97
+CODE: if ($category['top']) {
+LINE: 121
+CODE: foreach ($children as $child) {
+LINE: 143
+CODE: $children_data[] = array(
+LINE: 156
+CODE: 'name'     => $category['name'],
+LINE: 173
+CODE: return $this->load->view('common/header', $data);
+LINE: 289
+CODE: <!--custom colors-->
+NOT FOUND - OPERATIONS ABORTED!
+
+FILE: catalog/controller/common/footer.php
+CODE: return $this->load->view('common/footer', $data);
+LINE: 178
+
+FILE: catalog/controller/common/home.php
+CODE: $this->response->setOutput($this->load->view('common/home', $data));
+LINE: 58
+
+FILE: catalog/controller/common/cart.php
+CODE: return $this->load->view('common/cart', $data);
+LINE: 149
+
+FILE: catalog/controller/common/search.php
+CODE: return $this->load->view('common/search', $data);
+LINE: 19
+
+FILE: catalog/controller/common/currency.php
+CODE: return $this->load->view('common/currency', $data);
+LINE: 54
+
+FILE: catalog/controller/common/language.php
+CODE: return $this->load->view('common/language', $data);
+LINE: 50
+
+FILE: catalog/controller/common/column_left.php
+CODE: return $this->load->view('common/column_left', $data);
+LINE: 78
+
+FILE: catalog/controller/information/contact.php
+CODE: public function index() {
+LINE: 10
+
+FILE: catalog/controller/extension/module/featured.php
+CODE: $data['products'][] = array(
+LINE: 122
+CODE: 'product_id'  => $product_info['product_id'],
+LINE: 141
+
+FILE: catalog/controller/extension/module/bestseller.php
+CODE: $data['products'][] = array(
+LINE: 115
+CODE: 'product_id'  => $result['product_id'],
+LINE: 134
+
+FILE: catalog/controller/extension/module/special.php
+CODE: $data['products'][] = array(
+LINE: 122
+CODE: 'product_id'  => $result['product_id'],
+LINE: 141
+
+FILE: catalog/controller/extension/module/latest.php
+CODE: $data['products'][] = array(
+LINE: 122
+CODE: 'product_id'  => $result['product_id'],
+LINE: 141
+
+FILE: catalog/controller/extension/module/carousel.php
+CODE: $data['banners'] = array()
+LINE: 21
+CODE: $this->document->addStyle('catalog/view/javascript/jquery/owl-carousel/owl.carousel.css');
+		    $this->document->addScript('catalog/view/javascript/jquery/owl-carousel/owl.carousel.min.js');
+NOT FOUND - OPERATIONS ABORTED!
+
+FILE: catalog/controller/extension/module/category.php
+CODE: $this->load->model('catalog/category');
+LINE: 35
+CODE: foreach($children as $child) {
+LINE: 63
+CODE: $children_data[] = array(
+LINE: 72
+
+FILE: catalog/controller/product/category.php
+CODE: $data['categories'][] = array(
+LINE: 172
+CODE: $data['categories'][] = array(
+LINE: 179
+CODE: $data['products'][] = array(
+LINE: 294
+CODE: 'product_id'  => $result['product_id'],
+LINE: 314
+
+FILE: catalog/controller/product/search.php
+CODE: $data['products'][] = array(
+LINE: 309
+CODE: 'product_id'  => $result['product_id'],
+LINE: 329
+
+FILE: catalog/controller/product/special.php
+CODE: $data['products'][] = array(
+LINE: 194
+CODE: 'product_id'  => $result['product_id'],
+LINE: 214
+
+FILE: catalog/controller/product/manufacturer.php
+CODE: $data['products'][] = array(
+LINE: 272
+CODE: 'product_id'  => $result['product_id'],
+LINE: 292
+
+FILE: catalog/controller/product/product.php
+CODE: if ($product_info) {
+LINE: 190
+----------------------------------------------------------------
+MOD: Tweak for OpenCart 2x Russkaya sborka
+
+FILE: admin/view/template/common/header.tpl
+CODE: <?php foreach ($links as $link) { ?>
+LINE: 32
+CODE: <li><a href="http://www.opencart.com" target="_blank"><?php echo $text_homepage; ?></a></li>
+LINE: 80
+CODE: <li><a href="http://docs.opencart.com" target="_blank"><?php echo $text_documentation; ?></a></li>
+LINE: 83
+CODE: <li><a href="http://forum.opencart.com" target="_blank"><?php echo $text_support; ?></a></li>
+LINE: 86
+
+FILE: admin/view/template/catalog/product_form.tpl
+CODE: <label class="col-sm-2 control-label" for="input-sku"><span data-toggle="tooltip" title="<?php echo $help_sku; ?>"><?php echo $entry_sku; ?></span></label>
+LINE: 109
+CODE: <label class="col-sm-2 control-label" for="input-sku">
+LINE: 115
+CODE: <label class="col-sm-2 control-label" for="input-location"><?php echo $entry_location; ?></label>
+LINE: 155
+CODE: <input type="text" name="model" value="<?php echo $model; ?>" placeholder="<?php echo $entry_model; ?>" id="input-model" class="form-control" />
+LINE: 101
+
+FILE: admin/view/template/tool/backup.tpl
+CODE: <input type="file" name="import" id="input-import" />
+LINE: 36
+
+FILE: admin/controller/common/filemanager.php
+CODE: $this->load->language('common/filemanager');
+LINE: 13
+CODE: // Parent
+LINE: 148
+CODE: $pagination = new Pagination();
+LINE: 209
+CODE: $directory = rtrim(DIR_IMAGE . 'catalog/' . str_replace('*', '', $this->request->get['directory']), '/');
+LINE: 33
+
+FILE: admin/view/template/common/filemanager.tpl
+CODE: <?php foreach (array_chunk($images, 4) as $image) { ?>
+LINE: 34
+CODE: <script type="text/javascript" src="view/javascript/summernote/summernote.js"></script>
+LINE: 939
+
+FILE: admin/view/template/catalog/information_form.tpl
+CODE: <script type="text/javascript" src="view/javascript/summernote/summernote.js"></script>
+LINE: 209
+
+FILE: admin/view/template/catalog/category_form.tpl
+CODE: <script type="text/javascript" src="view/javascript/summernote/summernote.js"></script>
+LINE: 241
+
+FILE: admin/view/template/extension/module/html.tpl
+CODE: <script type="text/javascript" src="view/javascript/summernote/summernote.js"></script>
+LINE: 80
+
+FILE: admin/view/template/marketing/contact.tpl
+CODE: <script type="text/javascript" src="view/javascript/summernote/summernote.js"></script>
+LINE: 95
+
+FILE: admin/view/template/extension/extension.tpl
+CODE: <?php echo $header; ?><?php echo $column_left; ?>
+LINE: 1
+CODE: $data['lastname'] = $user_info['lastname'];
+LINE: 17
+----------------------------------------------------------------
+2016-10-31 9:14:08 - MOD: Modification Default
+
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 41
+
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 49
+LINE: 108
+LINE: 120
+LINE: 165
+
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 23
+
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 38
+LINE: 40
+LINE: 49
+LINE: 51
+LINE: 60
+LINE: 62
+
+FILE: system/library/template/php.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 18
+
+FILE: system/library/template/tiwg.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 24
+----------------------------------------------------------------
+MOD: Yourstore changes
+
+FILE: admin/controller/common/column_left.php
+CODE: if ($report) {
+LINE: 836
+
+FILE: admin/language/en-gb/common/column_left.php
+CODE: <?php
+LINE: 1
+
+FILE: catalog/controller/startup/seo_url.php
+CODE: $this->request->get['route'] = 'error/not_found';
+LINE: 47
+CODE: if ($report) {
+LINE: 917
+CODE: <?php
+LINE: 11
+
+FILE: admin/language/ru-ru/common/column_left.php
+CODE: <?php
+LINE: 11
+CODE: $this->url->link('catalog/category', 'token=' . $this->session->data['token'], true)
+LINE: 48
+CODE: $this->url->link('catalog/product', 'token=' . $this->session->data['token'], true)
+LINE: 56
+
+FILE: catalog/controller/error/not_found.php
+CODE: public function index() {
+LINE: 7
+
+FILE: catalog/controller/common/header.php
+CODE: $this->load->model('catalog/category');
+LINE: 97
+CODE: if ($category['top']) {
+LINE: 121
+CODE: foreach ($children as $child) {
+LINE: 143
+CODE: $children_data[] = array(
+LINE: 156
+CODE: 'name'     => $category['name'],
+LINE: 173
+CODE: return $this->load->view('common/header', $data);
+LINE: 289
+CODE: <!--custom colors-->
+NOT FOUND - OPERATIONS ABORTED!
+
+FILE: catalog/controller/common/footer.php
+CODE: return $this->load->view('common/footer', $data);
+LINE: 178
+
+FILE: catalog/controller/common/home.php
+CODE: $this->response->setOutput($this->load->view('common/home', $data));
+LINE: 58
+
+FILE: catalog/controller/common/cart.php
+CODE: return $this->load->view('common/cart', $data);
+LINE: 149
+
+FILE: catalog/controller/common/search.php
+CODE: return $this->load->view('common/search', $data);
+LINE: 19
+
+FILE: catalog/controller/common/currency.php
+CODE: return $this->load->view('common/currency', $data);
+LINE: 54
+
+FILE: catalog/controller/common/language.php
+CODE: return $this->load->view('common/language', $data);
+LINE: 50
+
+FILE: catalog/controller/common/column_left.php
+CODE: return $this->load->view('common/column_left', $data);
+LINE: 78
+
+FILE: catalog/controller/information/contact.php
+CODE: public function index() {
+LINE: 10
+
+FILE: catalog/controller/extension/module/featured.php
+CODE: $data['products'][] = array(
+LINE: 122
+CODE: 'product_id'  => $product_info['product_id'],
+LINE: 141
+
+FILE: catalog/controller/extension/module/bestseller.php
+CODE: $data['products'][] = array(
+LINE: 115
+CODE: 'product_id'  => $result['product_id'],
+LINE: 134
+
+FILE: catalog/controller/extension/module/special.php
+CODE: $data['products'][] = array(
+LINE: 122
+CODE: 'product_id'  => $result['product_id'],
+LINE: 141
+
+FILE: catalog/controller/extension/module/latest.php
+CODE: $data['products'][] = array(
+LINE: 122
+CODE: 'product_id'  => $result['product_id'],
+LINE: 141
+
+FILE: catalog/controller/extension/module/carousel.php
+CODE: $data['banners'] = array()
+LINE: 21
+CODE: $this->document->addStyle('catalog/view/javascript/jquery/owl-carousel/owl.carousel.css');
+		    $this->document->addScript('catalog/view/javascript/jquery/owl-carousel/owl.carousel.min.js');
+NOT FOUND - OPERATIONS ABORTED!
+
+FILE: catalog/controller/extension/module/category.php
+CODE: $this->load->model('catalog/category');
+LINE: 35
+CODE: foreach($children as $child) {
+LINE: 63
+CODE: $children_data[] = array(
+LINE: 72
+
+FILE: catalog/controller/product/category.php
+CODE: $data['categories'][] = array(
+LINE: 172
+CODE: $data['categories'][] = array(
+LINE: 179
+CODE: $data['products'][] = array(
+LINE: 294
+CODE: 'product_id'  => $result['product_id'],
+LINE: 314
+
+FILE: catalog/controller/product/search.php
+CODE: $data['products'][] = array(
+LINE: 309
+CODE: 'product_id'  => $result['product_id'],
+LINE: 329
+
+FILE: catalog/controller/product/special.php
+CODE: $data['products'][] = array(
+LINE: 194
+CODE: 'product_id'  => $result['product_id'],
+LINE: 214
+
+FILE: catalog/controller/product/manufacturer.php
+CODE: $data['products'][] = array(
+LINE: 272
+CODE: 'product_id'  => $result['product_id'],
+LINE: 292
+
+FILE: catalog/controller/product/product.php
+CODE: if ($product_info) {
+LINE: 190
+----------------------------------------------------------------
+MOD: Tweak for OpenCart 2x Russkaya sborka
+
+FILE: admin/view/template/common/header.tpl
+CODE: <?php foreach ($links as $link) { ?>
+LINE: 32
+CODE: <li><a href="http://www.opencart.com" target="_blank"><?php echo $text_homepage; ?></a></li>
+LINE: 80
+CODE: <li><a href="http://docs.opencart.com" target="_blank"><?php echo $text_documentation; ?></a></li>
+LINE: 83
+CODE: <li><a href="http://forum.opencart.com" target="_blank"><?php echo $text_support; ?></a></li>
+LINE: 86
+
+FILE: admin/view/template/catalog/product_form.tpl
+CODE: <label class="col-sm-2 control-label" for="input-sku"><span data-toggle="tooltip" title="<?php echo $help_sku; ?>"><?php echo $entry_sku; ?></span></label>
+LINE: 109
+CODE: <label class="col-sm-2 control-label" for="input-sku">
+LINE: 115
+CODE: <label class="col-sm-2 control-label" for="input-location"><?php echo $entry_location; ?></label>
+LINE: 155
+CODE: <input type="text" name="model" value="<?php echo $model; ?>" placeholder="<?php echo $entry_model; ?>" id="input-model" class="form-control" />
+LINE: 101
+
+FILE: admin/view/template/tool/backup.tpl
+CODE: <input type="file" name="import" id="input-import" />
+LINE: 36
+
+FILE: admin/controller/common/filemanager.php
+CODE: $this->load->language('common/filemanager');
+LINE: 13
+CODE: // Parent
+LINE: 148
+CODE: $pagination = new Pagination();
+LINE: 209
+CODE: $directory = rtrim(DIR_IMAGE . 'catalog/' . str_replace('*', '', $this->request->get['directory']), '/');
+LINE: 33
+
+FILE: admin/view/template/common/filemanager.tpl
+CODE: <?php foreach (array_chunk($images, 4) as $image) { ?>
+LINE: 34
+CODE: <script type="text/javascript" src="view/javascript/summernote/summernote.js"></script>
+LINE: 939
+
+FILE: admin/view/template/catalog/information_form.tpl
+CODE: <script type="text/javascript" src="view/javascript/summernote/summernote.js"></script>
+LINE: 209
+
+FILE: admin/view/template/catalog/category_form.tpl
+CODE: <script type="text/javascript" src="view/javascript/summernote/summernote.js"></script>
+LINE: 241
+
+FILE: admin/view/template/extension/module/html.tpl
+CODE: <script type="text/javascript" src="view/javascript/summernote/summernote.js"></script>
+LINE: 80
+
+FILE: admin/view/template/marketing/contact.tpl
+CODE: <script type="text/javascript" src="view/javascript/summernote/summernote.js"></script>
+LINE: 95
+
+FILE: admin/view/template/extension/extension.tpl
+CODE: <?php echo $header; ?><?php echo $column_left; ?>
+LINE: 1
+CODE: $data['lastname'] = $user_info['lastname'];
+LINE: 17
+----------------------------------------------------------------
+2016-11-10 10:32:59 - MOD: Modification Default
+
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 41
+
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 49
+LINE: 108
+LINE: 120
+LINE: 165
+
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 23
+
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 38
+LINE: 40
+LINE: 49
+LINE: 51
+LINE: 60
+LINE: 62
+
+FILE: system/library/template/php.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 18
+
+FILE: system/library/template/tiwg.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 24
+----------------------------------------------------------------
+MOD: Yourstore changes
+
+FILE: admin/controller/common/column_left.php
+CODE: if ($report) {
+LINE: 836
+
+FILE: admin/language/en-gb/common/column_left.php
+CODE: <?php
+LINE: 1
+
+FILE: catalog/controller/startup/seo_url.php
+CODE: $this->request->get['route'] = 'error/not_found';
+LINE: 47
+CODE: if ($report) {
+LINE: 917
+CODE: <?php
+LINE: 11
+
+FILE: admin/language/ru-ru/common/column_left.php
+CODE: <?php
+LINE: 11
+CODE: $this->url->link('catalog/category', 'token=' . $this->session->data['token'], true)
+LINE: 48
+CODE: $this->url->link('catalog/product', 'token=' . $this->session->data['token'], true)
+LINE: 56
+
+FILE: catalog/controller/error/not_found.php
+CODE: public function index() {
+LINE: 7
+
+FILE: catalog/controller/common/header.php
+CODE: $this->load->model('catalog/category');
+LINE: 97
+CODE: if ($category['top']) {
+LINE: 121
+CODE: foreach ($children as $child) {
+LINE: 143
+CODE: $children_data[] = array(
+LINE: 156
+CODE: 'name'     => $category['name'],
+LINE: 173
+CODE: return $this->load->view('common/header', $data);
+LINE: 289
+CODE: <!--custom colors-->
+NOT FOUND - OPERATIONS ABORTED!
+
+FILE: catalog/controller/common/footer.php
+CODE: return $this->load->view('common/footer', $data);
+LINE: 178
+
+FILE: catalog/controller/common/home.php
+CODE: $this->response->setOutput($this->load->view('common/home', $data));
+LINE: 58
+
+FILE: catalog/controller/common/cart.php
+CODE: return $this->load->view('common/cart', $data);
+LINE: 149
+
+FILE: catalog/controller/common/search.php
+CODE: return $this->load->view('common/search', $data);
+LINE: 19
+
+FILE: catalog/controller/common/currency.php
+CODE: return $this->load->view('common/currency', $data);
+LINE: 54
+
+FILE: catalog/controller/common/language.php
+CODE: return $this->load->view('common/language', $data);
+LINE: 50
+
+FILE: catalog/controller/common/column_left.php
+CODE: return $this->load->view('common/column_left', $data);
+LINE: 78
+
+FILE: catalog/controller/information/contact.php
+CODE: public function index() {
+LINE: 10
+
+FILE: catalog/controller/extension/module/featured.php
+CODE: $data['products'][] = array(
+LINE: 122
+CODE: 'product_id'  => $product_info['product_id'],
+LINE: 141
+
+FILE: catalog/controller/extension/module/bestseller.php
+CODE: $data['products'][] = array(
+LINE: 115
+CODE: 'product_id'  => $result['product_id'],
+LINE: 134
+
+FILE: catalog/controller/extension/module/special.php
+CODE: $data['products'][] = array(
+LINE: 122
+CODE: 'product_id'  => $result['product_id'],
+LINE: 141
+
+FILE: catalog/controller/extension/module/latest.php
+CODE: $data['products'][] = array(
+LINE: 122
+CODE: 'product_id'  => $result['product_id'],
+LINE: 141
+
+FILE: catalog/controller/extension/module/carousel.php
+CODE: $data['banners'] = array()
+LINE: 21
+CODE: $this->document->addStyle('catalog/view/javascript/jquery/owl-carousel/owl.carousel.css');
+		    $this->document->addScript('catalog/view/javascript/jquery/owl-carousel/owl.carousel.min.js');
+NOT FOUND - OPERATIONS ABORTED!
+
+FILE: catalog/controller/extension/module/category.php
+CODE: $this->load->model('catalog/category');
+LINE: 35
+CODE: foreach($children as $child) {
+LINE: 63
+CODE: $children_data[] = array(
+LINE: 72
+
+FILE: catalog/controller/product/category.php
+CODE: $data['categories'][] = array(
+LINE: 172
+CODE: $data['categories'][] = array(
+LINE: 179
+CODE: $data['products'][] = array(
+LINE: 294
+CODE: 'product_id'  => $result['product_id'],
+LINE: 314
+
+FILE: catalog/controller/product/search.php
+CODE: $data['products'][] = array(
+LINE: 309
+CODE: 'product_id'  => $result['product_id'],
+LINE: 329
+
+FILE: catalog/controller/product/special.php
+CODE: $data['products'][] = array(
+LINE: 194
+CODE: 'product_id'  => $result['product_id'],
+LINE: 214
+
+FILE: catalog/controller/product/manufacturer.php
+CODE: $data['products'][] = array(
+LINE: 272
+CODE: 'product_id'  => $result['product_id'],
+LINE: 292
+
+FILE: catalog/controller/product/product.php
+CODE: if ($product_info) {
+LINE: 190
+----------------------------------------------------------------
+MOD: Tweak for OpenCart 2x Russkaya sborka
+
+FILE: admin/view/template/common/header.tpl
+CODE: <?php foreach ($links as $link) { ?>
+LINE: 32
+CODE: <li><a href="http://www.opencart.com" target="_blank"><?php echo $text_homepage; ?></a></li>
+LINE: 80
+CODE: <li><a href="http://docs.opencart.com" target="_blank"><?php echo $text_documentation; ?></a></li>
+LINE: 83
+CODE: <li><a href="http://forum.opencart.com" target="_blank"><?php echo $text_support; ?></a></li>
+LINE: 86
+
+FILE: admin/view/template/catalog/product_form.tpl
+CODE: <label class="col-sm-2 control-label" for="input-sku"><span data-toggle="tooltip" title="<?php echo $help_sku; ?>"><?php echo $entry_sku; ?></span></label>
+LINE: 109
+CODE: <label class="col-sm-2 control-label" for="input-sku">
+LINE: 115
+CODE: <label class="col-sm-2 control-label" for="input-location"><?php echo $entry_location; ?></label>
+LINE: 155
+CODE: <input type="text" name="model" value="<?php echo $model; ?>" placeholder="<?php echo $entry_model; ?>" id="input-model" class="form-control" />
+LINE: 101
+
+FILE: admin/view/template/tool/backup.tpl
+CODE: <input type="file" name="import" id="input-import" />
+LINE: 36
+
+FILE: admin/controller/common/filemanager.php
+CODE: $this->load->language('common/filemanager');
+LINE: 13
+CODE: // Parent
+LINE: 148
+CODE: $pagination = new Pagination();
+LINE: 209
+CODE: $directory = rtrim(DIR_IMAGE . 'catalog/' . str_replace('*', '', $this->request->get['directory']), '/');
+LINE: 33
+
+FILE: admin/view/template/common/filemanager.tpl
+CODE: <?php foreach (array_chunk($images, 4) as $image) { ?>
+LINE: 34
+CODE: <script type="text/javascript" src="view/javascript/summernote/summernote.js"></script>
+LINE: 939
+
+FILE: admin/view/template/catalog/information_form.tpl
+CODE: <script type="text/javascript" src="view/javascript/summernote/summernote.js"></script>
+LINE: 209
+
+FILE: admin/view/template/catalog/category_form.tpl
+CODE: <script type="text/javascript" src="view/javascript/summernote/summernote.js"></script>
+LINE: 241
+
+FILE: admin/view/template/extension/module/html.tpl
+CODE: <script type="text/javascript" src="view/javascript/summernote/summernote.js"></script>
+LINE: 80
+
+FILE: admin/view/template/marketing/contact.tpl
+CODE: <script type="text/javascript" src="view/javascript/summernote/summernote.js"></script>
+LINE: 95
+
+FILE: admin/view/template/extension/extension.tpl
+CODE: <?php echo $header; ?><?php echo $column_left; ?>
+LINE: 1
+CODE: $data['lastname'] = $user_info['lastname'];
+LINE: 17
+----------------------------------------------------------------
+MOD: Exchange Module for OpenCart 2.x
+
+FILE: system/library/image.php
+CODE: $mime = $this->info['mime'];
+NOT FOUND - OPERATIONS ABORTED!
+CODE: if ($product_info['quantity'] <= 0) {
+LINE: 401
+CODE: if (!$option_value['subtract'] || ($option_value['quantity'] > 0)) {
+LINE: 469
+CODE: $product_option_value_data[] = array(
+LINE: 492
+CODE: 'product_option_value_id' => $option_value['product_option_value_id'],
+LINE: 497
+
+FILE: catalog/model/catalog/product.php
+CODE: public function getTotalProductSpecials() {
+LINE: 545
+
+FILE: admin/model/sale/order.php
+CODE: 'order_id'                => $order_query->row['order_id'],
+LINE: 101
+
+FILE: catalog/controller/checkout/cart.php
+CODE: $this->cart->add($this->request->post['product_id'], $quantity, $option, $recurring_id);
+LINE: 340
+
+FILE: catalog/view/theme/default/template/product/product.tpl
+CODE: <li><?php echo $text_stock; ?> <?php echo $stock; ?></li>
+LINE: 134
+CODE: <h2><?php echo $price; ?></h2>
+LINE: 140
+CODE: <li><?php echo $text_tax; ?> <?php echo $tax; ?></li>
+LINE: 149
+CODE: <li><?php echo $text_points; ?> <?php echo $points; ?></li>
+LINE: 152
+CODE: <option value="<?php echo $option_value['product_option_value_id']; ?>">
+LINE: 175
+CODE: <input type="radio" name="option[<?php echo $option['product_option_id']; ?>]"
+LINE: 191
+CODE: <input type="checkbox" name="option[<?php echo $option['product_option_id']; ?>][]"
+LINE: 212
+CODE: <input type="hidden" name="product_id" value="<?php echo $product_id; ?>" />
+LINE: 296
+CODE: $(document).ready(function() {
+LINE: 1069
+CODE: $(document).ready(function() {
+LINE: 1097
+
+FILE: catalog/view/theme/yourstore/template/product/product.tpl
+CODE: <li><?php echo $text_stock; ?> <?php echo $stock; ?></li>
+NOT FOUND - OPERATIONS ABORTED!
+----------------------------------------------------------------
+2016-11-10 11:36:34 - MOD: Modification Default
+
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 41
+
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 49
+LINE: 108
+LINE: 120
+LINE: 165
+
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 23
+
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 38
+LINE: 40
+LINE: 49
+LINE: 51
+LINE: 60
+LINE: 62
+
+FILE: system/library/template/php.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 18
+
+FILE: system/library/template/tiwg.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 24
+----------------------------------------------------------------
+MOD: Yourstore changes
+
+FILE: admin/controller/common/column_left.php
+CODE: if ($report) {
+LINE: 836
+
+FILE: admin/language/en-gb/common/column_left.php
+CODE: <?php
+LINE: 1
+
+FILE: catalog/controller/startup/seo_url.php
+CODE: $this->request->get['route'] = 'error/not_found';
+LINE: 47
+CODE: if ($report) {
+LINE: 917
+CODE: <?php
+LINE: 11
+
+FILE: admin/language/ru-ru/common/column_left.php
+CODE: <?php
+LINE: 11
+CODE: $this->url->link('catalog/category', 'token=' . $this->session->data['token'], true)
+LINE: 48
+CODE: $this->url->link('catalog/product', 'token=' . $this->session->data['token'], true)
+LINE: 56
+
+FILE: catalog/controller/error/not_found.php
+CODE: public function index() {
+LINE: 7
+
+FILE: catalog/controller/common/header.php
+CODE: $this->load->model('catalog/category');
+LINE: 97
+CODE: if ($category['top']) {
+LINE: 121
+CODE: foreach ($children as $child) {
+LINE: 143
+CODE: $children_data[] = array(
+LINE: 156
+CODE: 'name'     => $category['name'],
+LINE: 173
+CODE: return $this->load->view('common/header', $data);
+LINE: 289
+CODE: <!--custom colors-->
+NOT FOUND - OPERATIONS ABORTED!
+
+FILE: catalog/controller/common/footer.php
+CODE: return $this->load->view('common/footer', $data);
+LINE: 178
+
+FILE: catalog/controller/common/home.php
+CODE: $this->response->setOutput($this->load->view('common/home', $data));
+LINE: 58
+
+FILE: catalog/controller/common/cart.php
+CODE: return $this->load->view('common/cart', $data);
+LINE: 149
+
+FILE: catalog/controller/common/search.php
+CODE: return $this->load->view('common/search', $data);
+LINE: 19
+
+FILE: catalog/controller/common/currency.php
+CODE: return $this->load->view('common/currency', $data);
+LINE: 54
+
+FILE: catalog/controller/common/language.php
+CODE: return $this->load->view('common/language', $data);
+LINE: 50
+
+FILE: catalog/controller/common/column_left.php
+CODE: return $this->load->view('common/column_left', $data);
+LINE: 78
+
+FILE: catalog/controller/information/contact.php
+CODE: public function index() {
+LINE: 10
+
+FILE: catalog/controller/extension/module/featured.php
+CODE: $data['products'][] = array(
+LINE: 122
+CODE: 'product_id'  => $product_info['product_id'],
+LINE: 141
+
+FILE: catalog/controller/extension/module/bestseller.php
+CODE: $data['products'][] = array(
+LINE: 115
+CODE: 'product_id'  => $result['product_id'],
+LINE: 134
+
+FILE: catalog/controller/extension/module/special.php
+CODE: $data['products'][] = array(
+LINE: 122
+CODE: 'product_id'  => $result['product_id'],
+LINE: 141
+
+FILE: catalog/controller/extension/module/latest.php
+CODE: $data['products'][] = array(
+LINE: 122
+CODE: 'product_id'  => $result['product_id'],
+LINE: 141
+
+FILE: catalog/controller/extension/module/carousel.php
+CODE: $data['banners'] = array()
+LINE: 21
+CODE: $this->document->addStyle('catalog/view/javascript/jquery/owl-carousel/owl.carousel.css');
+		    $this->document->addScript('catalog/view/javascript/jquery/owl-carousel/owl.carousel.min.js');
+NOT FOUND - OPERATIONS ABORTED!
+
+FILE: catalog/controller/extension/module/category.php
+CODE: $this->load->model('catalog/category');
+LINE: 35
+CODE: foreach($children as $child) {
+LINE: 63
+CODE: $children_data[] = array(
+LINE: 72
+
+FILE: catalog/controller/product/category.php
+CODE: $data['categories'][] = array(
+LINE: 172
+CODE: $data['categories'][] = array(
+LINE: 179
+CODE: $data['products'][] = array(
+LINE: 294
+CODE: 'product_id'  => $result['product_id'],
+LINE: 314
+
+FILE: catalog/controller/product/search.php
+CODE: $data['products'][] = array(
+LINE: 309
+CODE: 'product_id'  => $result['product_id'],
+LINE: 329
+
+FILE: catalog/controller/product/special.php
+CODE: $data['products'][] = array(
+LINE: 194
+CODE: 'product_id'  => $result['product_id'],
+LINE: 214
+
+FILE: catalog/controller/product/manufacturer.php
+CODE: $data['products'][] = array(
+LINE: 272
+CODE: 'product_id'  => $result['product_id'],
+LINE: 292
+
+FILE: catalog/controller/product/product.php
+CODE: if ($product_info) {
+LINE: 190
+----------------------------------------------------------------
+MOD: Tweak for OpenCart 2x Russkaya sborka
+
+FILE: admin/view/template/common/header.tpl
+CODE: <?php foreach ($links as $link) { ?>
+LINE: 32
+CODE: <li><a href="http://www.opencart.com" target="_blank"><?php echo $text_homepage; ?></a></li>
+LINE: 80
+CODE: <li><a href="http://docs.opencart.com" target="_blank"><?php echo $text_documentation; ?></a></li>
+LINE: 83
+CODE: <li><a href="http://forum.opencart.com" target="_blank"><?php echo $text_support; ?></a></li>
+LINE: 86
+
+FILE: admin/view/template/catalog/product_form.tpl
+CODE: <label class="col-sm-2 control-label" for="input-sku"><span data-toggle="tooltip" title="<?php echo $help_sku; ?>"><?php echo $entry_sku; ?></span></label>
+LINE: 109
+CODE: <label class="col-sm-2 control-label" for="input-sku">
+LINE: 115
+CODE: <label class="col-sm-2 control-label" for="input-location"><?php echo $entry_location; ?></label>
+LINE: 155
+CODE: <input type="text" name="model" value="<?php echo $model; ?>" placeholder="<?php echo $entry_model; ?>" id="input-model" class="form-control" />
+LINE: 101
+
+FILE: admin/view/template/tool/backup.tpl
+CODE: <input type="file" name="import" id="input-import" />
+LINE: 36
+
+FILE: admin/controller/common/filemanager.php
+CODE: $this->load->language('common/filemanager');
+LINE: 13
+CODE: // Parent
+LINE: 148
+CODE: $pagination = new Pagination();
+LINE: 209
+CODE: $directory = rtrim(DIR_IMAGE . 'catalog/' . str_replace('*', '', $this->request->get['directory']), '/');
+LINE: 33
+
+FILE: admin/view/template/common/filemanager.tpl
+CODE: <?php foreach (array_chunk($images, 4) as $image) { ?>
+LINE: 34
+CODE: <script type="text/javascript" src="view/javascript/summernote/summernote.js"></script>
+LINE: 939
+
+FILE: admin/view/template/catalog/information_form.tpl
+CODE: <script type="text/javascript" src="view/javascript/summernote/summernote.js"></script>
+LINE: 209
+
+FILE: admin/view/template/catalog/category_form.tpl
+CODE: <script type="text/javascript" src="view/javascript/summernote/summernote.js"></script>
+LINE: 241
+
+FILE: admin/view/template/extension/module/html.tpl
+CODE: <script type="text/javascript" src="view/javascript/summernote/summernote.js"></script>
+LINE: 80
+
+FILE: admin/view/template/marketing/contact.tpl
+CODE: <script type="text/javascript" src="view/javascript/summernote/summernote.js"></script>
+LINE: 95
+
+FILE: admin/view/template/extension/extension.tpl
+CODE: <?php echo $header; ?><?php echo $column_left; ?>
+LINE: 1
+CODE: $data['lastname'] = $user_info['lastname'];
+LINE: 17
+----------------------------------------------------------------
+MOD: Exchange Module for OpenCart 2.x
+
+FILE: system/library/image.php
+CODE: $mime = $this->info['mime'];
+NOT FOUND - OPERATIONS ABORTED!
+CODE: if ($product_info['quantity'] <= 0) {
+LINE: 401
+CODE: if (!$option_value['subtract'] || ($option_value['quantity'] > 0)) {
+LINE: 469
+CODE: $product_option_value_data[] = array(
+LINE: 492
+CODE: 'product_option_value_id' => $option_value['product_option_value_id'],
+LINE: 497
+
+FILE: catalog/model/catalog/product.php
+CODE: public function getTotalProductSpecials() {
+LINE: 545
+
+FILE: admin/model/sale/order.php
+CODE: 'order_id'                => $order_query->row['order_id'],
+LINE: 101
+
+FILE: catalog/controller/checkout/cart.php
+CODE: $this->cart->add($this->request->post['product_id'], $quantity, $option, $recurring_id);
+LINE: 340
+
+FILE: catalog/view/theme/default/template/product/product.tpl
+CODE: <li><?php echo $text_stock; ?> <?php echo $stock; ?></li>
+LINE: 134
+CODE: <h2><?php echo $price; ?></h2>
+LINE: 140
+CODE: <li><?php echo $text_tax; ?> <?php echo $tax; ?></li>
+LINE: 149
+CODE: <li><?php echo $text_points; ?> <?php echo $points; ?></li>
+LINE: 152
+CODE: <option value="<?php echo $option_value['product_option_value_id']; ?>">
+LINE: 175
+CODE: <input type="radio" name="option[<?php echo $option['product_option_id']; ?>]"
+LINE: 191
+CODE: <input type="checkbox" name="option[<?php echo $option['product_option_id']; ?>][]"
+LINE: 212
+CODE: <input type="hidden" name="product_id" value="<?php echo $product_id; ?>" />
+LINE: 296
+CODE: $(document).ready(function() {
+LINE: 1069
+CODE: $(document).ready(function() {
+LINE: 1097
+
+FILE: catalog/view/theme/yourstore/template/product/product.tpl
+CODE: <li><?php echo $text_stock; ?> <?php echo $stock; ?></li>
+NOT FOUND - OPERATIONS ABORTED!
+----------------------------------------------------------------
+2016-11-10 17:40:21 - MOD: Modification Default
+
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 41
+
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 49
+LINE: 108
+LINE: 120
+LINE: 165
+
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 23
+
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 38
+LINE: 40
+LINE: 49
+LINE: 51
+LINE: 60
+LINE: 62
+
+FILE: system/library/template/php.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 18
+
+FILE: system/library/template/tiwg.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 24
+----------------------------------------------------------------
+MOD: Yourstore changes
+
+FILE: admin/controller/common/column_left.php
+CODE: if ($report) {
+LINE: 836
+
+FILE: admin/language/en-gb/common/column_left.php
+CODE: <?php
+LINE: 1
+
+FILE: catalog/controller/startup/seo_url.php
+CODE: $this->request->get['route'] = 'error/not_found';
+LINE: 47
+CODE: if ($report) {
+LINE: 917
+CODE: <?php
+LINE: 11
+
+FILE: admin/language/ru-ru/common/column_left.php
+CODE: <?php
+LINE: 11
+CODE: $this->url->link('catalog/category', 'token=' . $this->session->data['token'], true)
+LINE: 48
+CODE: $this->url->link('catalog/product', 'token=' . $this->session->data['token'], true)
+LINE: 56
+
+FILE: catalog/controller/error/not_found.php
+CODE: public function index() {
+LINE: 7
+
+FILE: catalog/controller/common/header.php
+CODE: $this->load->model('catalog/category');
+LINE: 97
+CODE: if ($category['top']) {
+LINE: 121
+CODE: foreach ($children as $child) {
+LINE: 143
+CODE: $children_data[] = array(
+LINE: 156
+CODE: 'name'     => $category['name'],
+LINE: 173
+CODE: return $this->load->view('common/header', $data);
+LINE: 289
+CODE: <!--custom colors-->
+NOT FOUND - OPERATIONS ABORTED!
+
+FILE: catalog/controller/common/footer.php
+CODE: return $this->load->view('common/footer', $data);
+LINE: 178
+
+FILE: catalog/controller/common/home.php
+CODE: $this->response->setOutput($this->load->view('common/home', $data));
+LINE: 58
+
+FILE: catalog/controller/common/cart.php
+CODE: return $this->load->view('common/cart', $data);
+LINE: 149
+
+FILE: catalog/controller/common/search.php
+CODE: return $this->load->view('common/search', $data);
+LINE: 19
+
+FILE: catalog/controller/common/currency.php
+CODE: return $this->load->view('common/currency', $data);
+LINE: 54
+
+FILE: catalog/controller/common/language.php
+CODE: return $this->load->view('common/language', $data);
+LINE: 50
+
+FILE: catalog/controller/common/column_left.php
+CODE: return $this->load->view('common/column_left', $data);
+LINE: 78
+
+FILE: catalog/controller/information/contact.php
+CODE: public function index() {
+LINE: 10
+
+FILE: catalog/controller/extension/module/featured.php
+CODE: $data['products'][] = array(
+LINE: 122
+CODE: 'product_id'  => $product_info['product_id'],
+LINE: 141
+
+FILE: catalog/controller/extension/module/bestseller.php
+CODE: $data['products'][] = array(
+LINE: 115
+CODE: 'product_id'  => $result['product_id'],
+LINE: 134
+
+FILE: catalog/controller/extension/module/special.php
+CODE: $data['products'][] = array(
+LINE: 122
+CODE: 'product_id'  => $result['product_id'],
+LINE: 141
+
+FILE: catalog/controller/extension/module/latest.php
+CODE: $data['products'][] = array(
+LINE: 122
+CODE: 'product_id'  => $result['product_id'],
+LINE: 141
+
+FILE: catalog/controller/extension/module/carousel.php
+CODE: $data['banners'] = array()
+LINE: 21
+CODE: $this->document->addStyle('catalog/view/javascript/jquery/owl-carousel/owl.carousel.css');
+		    $this->document->addScript('catalog/view/javascript/jquery/owl-carousel/owl.carousel.min.js');
+NOT FOUND - OPERATIONS ABORTED!
+
+FILE: catalog/controller/extension/module/category.php
+CODE: $this->load->model('catalog/category');
+LINE: 35
+CODE: foreach($children as $child) {
+LINE: 63
+CODE: $children_data[] = array(
+LINE: 72
+
+FILE: catalog/controller/product/category.php
+CODE: $data['categories'][] = array(
+LINE: 172
+CODE: $data['categories'][] = array(
+LINE: 179
+CODE: $data['products'][] = array(
+LINE: 294
+CODE: 'product_id'  => $result['product_id'],
+LINE: 314
+
+FILE: catalog/controller/product/search.php
+CODE: $data['products'][] = array(
+LINE: 309
+CODE: 'product_id'  => $result['product_id'],
+LINE: 329
+
+FILE: catalog/controller/product/special.php
+CODE: $data['products'][] = array(
+LINE: 194
+CODE: 'product_id'  => $result['product_id'],
+LINE: 214
+
+FILE: catalog/controller/product/manufacturer.php
+CODE: $data['products'][] = array(
+LINE: 272
+CODE: 'product_id'  => $result['product_id'],
+LINE: 292
+
+FILE: catalog/controller/product/product.php
+CODE: if ($product_info) {
+LINE: 190
+----------------------------------------------------------------
+MOD: Tweak for OpenCart 2x Russkaya sborka
+
+FILE: admin/view/template/common/header.tpl
+CODE: <?php foreach ($links as $link) { ?>
+LINE: 32
+CODE: <li><a href="http://www.opencart.com" target="_blank"><?php echo $text_homepage; ?></a></li>
+LINE: 80
+CODE: <li><a href="http://docs.opencart.com" target="_blank"><?php echo $text_documentation; ?></a></li>
+LINE: 83
+CODE: <li><a href="http://forum.opencart.com" target="_blank"><?php echo $text_support; ?></a></li>
+LINE: 86
+
+FILE: admin/view/template/catalog/product_form.tpl
+CODE: <label class="col-sm-2 control-label" for="input-sku"><span data-toggle="tooltip" title="<?php echo $help_sku; ?>"><?php echo $entry_sku; ?></span></label>
+LINE: 109
+CODE: <label class="col-sm-2 control-label" for="input-sku">
+LINE: 115
+CODE: <label class="col-sm-2 control-label" for="input-location"><?php echo $entry_location; ?></label>
+LINE: 155
+CODE: <input type="text" name="model" value="<?php echo $model; ?>" placeholder="<?php echo $entry_model; ?>" id="input-model" class="form-control" />
+LINE: 101
+
+FILE: admin/view/template/tool/backup.tpl
+CODE: <input type="file" name="import" id="input-import" />
+LINE: 36
+
+FILE: admin/controller/common/filemanager.php
+CODE: $this->load->language('common/filemanager');
+LINE: 13
+CODE: // Parent
+LINE: 148
+CODE: $pagination = new Pagination();
+LINE: 209
+CODE: $directory = rtrim(DIR_IMAGE . 'catalog/' . str_replace('*', '', $this->request->get['directory']), '/');
+LINE: 33
+
+FILE: admin/view/template/common/filemanager.tpl
+CODE: <?php foreach (array_chunk($images, 4) as $image) { ?>
+LINE: 34
+CODE: <script type="text/javascript" src="view/javascript/summernote/summernote.js"></script>
+LINE: 939
+
+FILE: admin/view/template/catalog/information_form.tpl
+CODE: <script type="text/javascript" src="view/javascript/summernote/summernote.js"></script>
+LINE: 209
+
+FILE: admin/view/template/catalog/category_form.tpl
+CODE: <script type="text/javascript" src="view/javascript/summernote/summernote.js"></script>
+LINE: 241
+
+FILE: admin/view/template/extension/module/html.tpl
+CODE: <script type="text/javascript" src="view/javascript/summernote/summernote.js"></script>
+LINE: 80
+
+FILE: admin/view/template/marketing/contact.tpl
+CODE: <script type="text/javascript" src="view/javascript/summernote/summernote.js"></script>
+LINE: 95
+
+FILE: admin/view/template/extension/extension.tpl
+CODE: <?php echo $header; ?><?php echo $column_left; ?>
+LINE: 1
+CODE: $data['lastname'] = $user_info['lastname'];
+LINE: 17
+----------------------------------------------------------------
+MOD: Exchange Module for OpenCart 2.x
+
+FILE: system/library/image.php
+CODE: $mime = $this->info['mime'];
+NOT FOUND - OPERATIONS ABORTED!
+CODE: if ($product_info['quantity'] <= 0) {
+LINE: 401
+CODE: if (!$option_value['subtract'] || ($option_value['quantity'] > 0)) {
+LINE: 469
+CODE: $product_option_value_data[] = array(
+LINE: 492
+CODE: 'product_option_value_id' => $option_value['product_option_value_id'],
+LINE: 497
+
+FILE: catalog/model/catalog/product.php
+CODE: public function getTotalProductSpecials() {
+LINE: 545
+
+FILE: admin/model/sale/order.php
+CODE: 'order_id'                => $order_query->row['order_id'],
+LINE: 101
+
+FILE: catalog/controller/checkout/cart.php
+CODE: $this->cart->add($this->request->post['product_id'], $quantity, $option, $recurring_id);
+LINE: 340
+
+FILE: catalog/view/theme/default/template/product/product.tpl
+CODE: <li><?php echo $text_stock; ?> <?php echo $stock; ?></li>
+LINE: 134
+CODE: <h2><?php echo $price; ?></h2>
+LINE: 140
+CODE: <li><?php echo $text_tax; ?> <?php echo $tax; ?></li>
+LINE: 149
+CODE: <li><?php echo $text_points; ?> <?php echo $points; ?></li>
+LINE: 152
+CODE: <option value="<?php echo $option_value['product_option_value_id']; ?>">
+LINE: 175
+CODE: <input type="radio" name="option[<?php echo $option['product_option_id']; ?>]"
+LINE: 191
+CODE: <input type="checkbox" name="option[<?php echo $option['product_option_id']; ?>][]"
+LINE: 212
+CODE: <input type="hidden" name="product_id" value="<?php echo $product_id; ?>" />
+LINE: 296
+CODE: $(document).ready(function() {
+LINE: 1069
+CODE: $(document).ready(function() {
+LINE: 1097
+
+FILE: catalog/view/theme/yourstore/template/product/product.tpl
+CODE: <li><?php echo $text_stock; ?> <?php echo $stock; ?></li>
+NOT FOUND - OPERATIONS ABORTED!
+----------------------------------------------------------------
+2016-11-15 20:17:55 - MOD: Modification Default
+
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 41
+
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 49
+LINE: 108
+LINE: 120
+LINE: 165
+
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 23
+
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 38
+LINE: 40
+LINE: 49
+LINE: 51
+LINE: 60
+LINE: 62
+
+FILE: system/library/template/php.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 18
+
+FILE: system/library/template/tiwg.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 24
+----------------------------------------------------------------
+MOD: Yourstore changes
+
+FILE: admin/controller/common/column_left.php
+CODE: if ($report) {
+LINE: 836
+
+FILE: admin/language/en-gb/common/column_left.php
+CODE: <?php
+LINE: 1
+
+FILE: catalog/controller/startup/seo_url.php
+CODE: $this->request->get['route'] = 'error/not_found';
+LINE: 47
+CODE: if ($report) {
+LINE: 917
+CODE: <?php
+LINE: 11
+
+FILE: admin/language/ru-ru/common/column_left.php
+CODE: <?php
+LINE: 11
+CODE: $this->url->link('catalog/category', 'token=' . $this->session->data['token'], true)
+LINE: 48
+CODE: $this->url->link('catalog/product', 'token=' . $this->session->data['token'], true)
+LINE: 56
+
+FILE: catalog/controller/error/not_found.php
+CODE: public function index() {
+LINE: 7
+
+FILE: catalog/controller/common/header.php
+CODE: $this->load->model('catalog/category');
+LINE: 97
+CODE: if ($category['top']) {
+LINE: 121
+CODE: foreach ($children as $child) {
+LINE: 143
+CODE: $children_data[] = array(
+LINE: 156
+CODE: 'name'     => $category['name'],
+LINE: 173
+CODE: return $this->load->view('common/header', $data);
+LINE: 289
+CODE: <!--custom colors-->
+NOT FOUND - OPERATIONS ABORTED!
+
+FILE: catalog/controller/common/footer.php
+CODE: return $this->load->view('common/footer', $data);
+LINE: 178
+
+FILE: catalog/controller/common/home.php
+CODE: $this->response->setOutput($this->load->view('common/home', $data));
+LINE: 58
+
+FILE: catalog/controller/common/cart.php
+CODE: return $this->load->view('common/cart', $data);
+LINE: 149
+
+FILE: catalog/controller/common/search.php
+CODE: return $this->load->view('common/search', $data);
+LINE: 19
+
+FILE: catalog/controller/common/currency.php
+CODE: return $this->load->view('common/currency', $data);
+LINE: 54
+
+FILE: catalog/controller/common/language.php
+CODE: return $this->load->view('common/language', $data);
+LINE: 50
+
+FILE: catalog/controller/common/column_left.php
+CODE: return $this->load->view('common/column_left', $data);
+LINE: 78
+
+FILE: catalog/controller/information/contact.php
+CODE: public function index() {
+LINE: 10
+
+FILE: catalog/controller/extension/module/featured.php
+CODE: $data['products'][] = array(
+LINE: 122
+CODE: 'product_id'  => $product_info['product_id'],
+LINE: 141
+
+FILE: catalog/controller/extension/module/bestseller.php
+CODE: $data['products'][] = array(
+LINE: 115
+CODE: 'product_id'  => $result['product_id'],
+LINE: 134
+
+FILE: catalog/controller/extension/module/special.php
+CODE: $data['products'][] = array(
+LINE: 122
+CODE: 'product_id'  => $result['product_id'],
+LINE: 141
+
+FILE: catalog/controller/extension/module/latest.php
+CODE: $data['products'][] = array(
+LINE: 122
+CODE: 'product_id'  => $result['product_id'],
+LINE: 141
+
+FILE: catalog/controller/extension/module/carousel.php
+CODE: $data['banners'] = array()
+LINE: 21
+CODE: $this->document->addStyle('catalog/view/javascript/jquery/owl-carousel/owl.carousel.css');
+		    $this->document->addScript('catalog/view/javascript/jquery/owl-carousel/owl.carousel.min.js');
+NOT FOUND - OPERATIONS ABORTED!
+
+FILE: catalog/controller/extension/module/category.php
+CODE: $this->load->model('catalog/category');
+LINE: 35
+CODE: foreach($children as $child) {
+LINE: 63
+CODE: $children_data[] = array(
+LINE: 72
+
+FILE: catalog/controller/product/category.php
+CODE: $data['categories'][] = array(
+LINE: 172
+CODE: $data['categories'][] = array(
+LINE: 179
+CODE: $data['products'][] = array(
+LINE: 294
+CODE: 'product_id'  => $result['product_id'],
+LINE: 314
+
+FILE: catalog/controller/product/search.php
+CODE: $data['products'][] = array(
+LINE: 309
+CODE: 'product_id'  => $result['product_id'],
+LINE: 329
+
+FILE: catalog/controller/product/special.php
+CODE: $data['products'][] = array(
+LINE: 194
+CODE: 'product_id'  => $result['product_id'],
+LINE: 214
+
+FILE: catalog/controller/product/manufacturer.php
+CODE: $data['products'][] = array(
+LINE: 272
+CODE: 'product_id'  => $result['product_id'],
+LINE: 292
+
+FILE: catalog/controller/product/product.php
+CODE: if ($product_info) {
+LINE: 190
+----------------------------------------------------------------
+MOD: Tweak for OpenCart 2x Russkaya sborka
+
+FILE: admin/view/template/common/header.tpl
+CODE: <?php foreach ($links as $link) { ?>
+LINE: 32
+CODE: <li><a href="http://www.opencart.com" target="_blank"><?php echo $text_homepage; ?></a></li>
+LINE: 80
+CODE: <li><a href="http://docs.opencart.com" target="_blank"><?php echo $text_documentation; ?></a></li>
+LINE: 83
+CODE: <li><a href="http://forum.opencart.com" target="_blank"><?php echo $text_support; ?></a></li>
+LINE: 86
+
+FILE: admin/view/template/catalog/product_form.tpl
+CODE: <label class="col-sm-2 control-label" for="input-sku"><span data-toggle="tooltip" title="<?php echo $help_sku; ?>"><?php echo $entry_sku; ?></span></label>
+LINE: 109
+CODE: <label class="col-sm-2 control-label" for="input-sku">
+LINE: 115
+CODE: <label class="col-sm-2 control-label" for="input-location"><?php echo $entry_location; ?></label>
+LINE: 155
+CODE: <input type="text" name="model" value="<?php echo $model; ?>" placeholder="<?php echo $entry_model; ?>" id="input-model" class="form-control" />
+LINE: 101
+
+FILE: admin/view/template/tool/backup.tpl
+CODE: <input type="file" name="import" id="input-import" />
+LINE: 36
+
+FILE: admin/controller/common/filemanager.php
+CODE: $this->load->language('common/filemanager');
+LINE: 13
+CODE: // Parent
+LINE: 148
+CODE: $pagination = new Pagination();
+LINE: 209
+CODE: $directory = rtrim(DIR_IMAGE . 'catalog/' . str_replace('*', '', $this->request->get['directory']), '/');
+LINE: 33
+
+FILE: admin/view/template/common/filemanager.tpl
+CODE: <?php foreach (array_chunk($images, 4) as $image) { ?>
+LINE: 34
+CODE: <script type="text/javascript" src="view/javascript/summernote/summernote.js"></script>
+LINE: 939
+
+FILE: admin/view/template/catalog/information_form.tpl
+CODE: <script type="text/javascript" src="view/javascript/summernote/summernote.js"></script>
+LINE: 209
+
+FILE: admin/view/template/catalog/category_form.tpl
+CODE: <script type="text/javascript" src="view/javascript/summernote/summernote.js"></script>
+LINE: 241
+
+FILE: admin/view/template/extension/module/html.tpl
+CODE: <script type="text/javascript" src="view/javascript/summernote/summernote.js"></script>
+LINE: 80
+
+FILE: admin/view/template/marketing/contact.tpl
+CODE: <script type="text/javascript" src="view/javascript/summernote/summernote.js"></script>
+LINE: 95
+
+FILE: admin/view/template/extension/extension.tpl
+CODE: <?php echo $header; ?><?php echo $column_left; ?>
+LINE: 1
+CODE: $data['lastname'] = $user_info['lastname'];
+LINE: 17
+----------------------------------------------------------------
+MOD: Exchange Module for OpenCart 2.x
+
+FILE: system/library/image.php
+CODE: $mime = $this->info['mime'];
+NOT FOUND - OPERATIONS ABORTED!
+CODE: if ($product_info['quantity'] <= 0) {
+LINE: 401
+CODE: if (!$option_value['subtract'] || ($option_value['quantity'] > 0)) {
+LINE: 469
+CODE: $product_option_value_data[] = array(
+LINE: 492
+CODE: 'product_option_value_id' => $option_value['product_option_value_id'],
+LINE: 497
+
+FILE: catalog/model/catalog/product.php
+CODE: public function getTotalProductSpecials() {
+LINE: 545
+
+FILE: admin/model/sale/order.php
+CODE: 'order_id'                => $order_query->row['order_id'],
+LINE: 101
+
+FILE: catalog/controller/checkout/cart.php
+CODE: $this->cart->add($this->request->post['product_id'], $quantity, $option, $recurring_id);
+LINE: 340
+
+FILE: catalog/view/theme/default/template/product/product.tpl
+CODE: <li><?php echo $text_stock; ?> <?php echo $stock; ?></li>
+LINE: 134
+CODE: <h2><?php echo $price; ?></h2>
+LINE: 140
+CODE: <li><?php echo $text_tax; ?> <?php echo $tax; ?></li>
+LINE: 149
+CODE: <li><?php echo $text_points; ?> <?php echo $points; ?></li>
+LINE: 152
+CODE: <option value="<?php echo $option_value['product_option_value_id']; ?>">
+LINE: 175
+CODE: <input type="radio" name="option[<?php echo $option['product_option_id']; ?>]"
+LINE: 191
+CODE: <input type="checkbox" name="option[<?php echo $option['product_option_id']; ?>][]"
+LINE: 212
+CODE: <input type="hidden" name="product_id" value="<?php echo $product_id; ?>" />
+LINE: 296
+CODE: $(document).ready(function() {
+LINE: 1069
+CODE: $(document).ready(function() {
+LINE: 1097
+
+FILE: catalog/view/theme/yourstore/template/product/product.tpl
+CODE: <li><?php echo $text_stock; ?> <?php echo $stock; ?></li>
+NOT FOUND - OPERATIONS ABORTED!
+----------------------------------------------------------------
+2016-11-24 8:51:11 - MOD: Modification Default
+
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 41
+
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 49
+LINE: 108
+LINE: 120
+LINE: 165
+
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 23
+
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 38
+LINE: 40
+LINE: 49
+LINE: 51
+LINE: 60
+LINE: 62
+
+FILE: system/library/template/php.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 18
+
+FILE: system/library/template/tiwg.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 24
+----------------------------------------------------------------
+MOD: Yourstore changes
+
+FILE: admin/controller/common/column_left.php
+CODE: if ($report) {
+LINE: 836
+
+FILE: admin/language/en-gb/common/column_left.php
+CODE: <?php
+LINE: 1
+
+FILE: catalog/controller/startup/seo_url.php
+CODE: $this->request->get['route'] = 'error/not_found';
+LINE: 47
+CODE: if ($report) {
+LINE: 917
+CODE: <?php
+LINE: 11
+
+FILE: admin/language/ru-ru/common/column_left.php
+CODE: <?php
+LINE: 11
+CODE: $this->url->link('catalog/category', 'token=' . $this->session->data['token'], true)
+LINE: 48
+CODE: $this->url->link('catalog/product', 'token=' . $this->session->data['token'], true)
+LINE: 56
+
+FILE: catalog/controller/error/not_found.php
+CODE: public function index() {
+LINE: 7
+
+FILE: catalog/controller/common/header.php
+CODE: $this->load->model('catalog/category');
+LINE: 97
+CODE: if ($category['top']) {
+LINE: 121
+CODE: foreach ($children as $child) {
+LINE: 143
+CODE: $children_data[] = array(
+LINE: 156
+CODE: 'name'     => $category['name'],
+LINE: 173
+CODE: return $this->load->view('common/header', $data);
+LINE: 289
+CODE: <!--custom colors-->
+NOT FOUND - OPERATIONS ABORTED!
+
+FILE: catalog/controller/common/footer.php
+CODE: return $this->load->view('common/footer', $data);
+LINE: 178
+
+FILE: catalog/controller/common/home.php
+CODE: $this->response->setOutput($this->load->view('common/home', $data));
+LINE: 58
+
+FILE: catalog/controller/common/cart.php
+CODE: return $this->load->view('common/cart', $data);
+LINE: 149
+
+FILE: catalog/controller/common/search.php
+CODE: return $this->load->view('common/search', $data);
+LINE: 19
+
+FILE: catalog/controller/common/currency.php
+CODE: return $this->load->view('common/currency', $data);
+LINE: 54
+
+FILE: catalog/controller/common/language.php
+CODE: return $this->load->view('common/language', $data);
+LINE: 50
+
+FILE: catalog/controller/common/column_left.php
+CODE: return $this->load->view('common/column_left', $data);
+LINE: 78
+
+FILE: catalog/controller/information/contact.php
+CODE: public function index() {
+LINE: 10
+
+FILE: catalog/controller/extension/module/featured.php
+CODE: $data['products'][] = array(
+LINE: 122
+CODE: 'product_id'  => $product_info['product_id'],
+LINE: 141
+
+FILE: catalog/controller/extension/module/bestseller.php
+CODE: $data['products'][] = array(
+LINE: 115
+CODE: 'product_id'  => $result['product_id'],
+LINE: 134
+
+FILE: catalog/controller/extension/module/special.php
+CODE: $data['products'][] = array(
+LINE: 122
+CODE: 'product_id'  => $result['product_id'],
+LINE: 141
+
+FILE: catalog/controller/extension/module/latest.php
+CODE: $data['products'][] = array(
+LINE: 122
+CODE: 'product_id'  => $result['product_id'],
+LINE: 141
+
+FILE: catalog/controller/extension/module/carousel.php
+CODE: $data['banners'] = array()
+LINE: 21
+CODE: $this->document->addStyle('catalog/view/javascript/jquery/owl-carousel/owl.carousel.css');
+		    $this->document->addScript('catalog/view/javascript/jquery/owl-carousel/owl.carousel.min.js');
+NOT FOUND - OPERATIONS ABORTED!
+
+FILE: catalog/controller/extension/module/category.php
+CODE: $this->load->model('catalog/category');
+LINE: 35
+CODE: foreach($children as $child) {
+LINE: 63
+CODE: $children_data[] = array(
+LINE: 72
+
+FILE: catalog/controller/product/category.php
+CODE: $data['categories'][] = array(
+LINE: 172
+CODE: $data['categories'][] = array(
+LINE: 179
+CODE: $data['products'][] = array(
+LINE: 294
+CODE: 'product_id'  => $result['product_id'],
+LINE: 314
+
+FILE: catalog/controller/product/search.php
+CODE: $data['products'][] = array(
+LINE: 309
+CODE: 'product_id'  => $result['product_id'],
+LINE: 329
+
+FILE: catalog/controller/product/special.php
+CODE: $data['products'][] = array(
+LINE: 194
+CODE: 'product_id'  => $result['product_id'],
+LINE: 214
+
+FILE: catalog/controller/product/manufacturer.php
+CODE: $data['products'][] = array(
+LINE: 272
+CODE: 'product_id'  => $result['product_id'],
+LINE: 292
+
+FILE: catalog/controller/product/product.php
+CODE: if ($product_info) {
+LINE: 190
+----------------------------------------------------------------
+MOD: Tweak for OpenCart 2x Russkaya sborka
+
+FILE: admin/view/template/common/header.tpl
+CODE: <?php foreach ($links as $link) { ?>
+LINE: 32
+CODE: <li><a href="http://www.opencart.com" target="_blank"><?php echo $text_homepage; ?></a></li>
+LINE: 80
+CODE: <li><a href="http://docs.opencart.com" target="_blank"><?php echo $text_documentation; ?></a></li>
+LINE: 83
+CODE: <li><a href="http://forum.opencart.com" target="_blank"><?php echo $text_support; ?></a></li>
+LINE: 86
+
+FILE: admin/view/template/catalog/product_form.tpl
+CODE: <label class="col-sm-2 control-label" for="input-sku"><span data-toggle="tooltip" title="<?php echo $help_sku; ?>"><?php echo $entry_sku; ?></span></label>
+LINE: 109
+CODE: <label class="col-sm-2 control-label" for="input-sku">
+LINE: 115
+CODE: <label class="col-sm-2 control-label" for="input-location"><?php echo $entry_location; ?></label>
+LINE: 155
+CODE: <input type="text" name="model" value="<?php echo $model; ?>" placeholder="<?php echo $entry_model; ?>" id="input-model" class="form-control" />
+LINE: 101
+
+FILE: admin/view/template/tool/backup.tpl
+CODE: <input type="file" name="import" id="input-import" />
+LINE: 36
+
+FILE: admin/controller/common/filemanager.php
+CODE: $this->load->language('common/filemanager');
+LINE: 13
+CODE: // Parent
+LINE: 148
+CODE: $pagination = new Pagination();
+LINE: 209
+CODE: $directory = rtrim(DIR_IMAGE . 'catalog/' . str_replace('*', '', $this->request->get['directory']), '/');
+LINE: 33
+
+FILE: admin/view/template/common/filemanager.tpl
+CODE: <?php foreach (array_chunk($images, 4) as $image) { ?>
+LINE: 34
+CODE: <script type="text/javascript" src="view/javascript/summernote/summernote.js"></script>
+LINE: 939
+
+FILE: admin/view/template/catalog/information_form.tpl
+CODE: <script type="text/javascript" src="view/javascript/summernote/summernote.js"></script>
+LINE: 209
+
+FILE: admin/view/template/catalog/category_form.tpl
+CODE: <script type="text/javascript" src="view/javascript/summernote/summernote.js"></script>
+LINE: 241
+
+FILE: admin/view/template/extension/module/html.tpl
+CODE: <script type="text/javascript" src="view/javascript/summernote/summernote.js"></script>
+LINE: 80
+
+FILE: admin/view/template/marketing/contact.tpl
+CODE: <script type="text/javascript" src="view/javascript/summernote/summernote.js"></script>
+LINE: 95
+
+FILE: admin/view/template/extension/extension.tpl
+CODE: <?php echo $header; ?><?php echo $column_left; ?>
+LINE: 1
+CODE: $data['lastname'] = $user_info['lastname'];
+LINE: 17
+----------------------------------------------------------------
+MOD: Exchange Module for OpenCart 2.x
+
+FILE: system/library/image.php
+CODE: $mime = $this->info['mime'];
+NOT FOUND - OPERATIONS ABORTED!
+CODE: if ($product_info['quantity'] <= 0) {
+LINE: 401
+CODE: if (!$option_value['subtract'] || ($option_value['quantity'] > 0)) {
+LINE: 469
+CODE: $product_option_value_data[] = array(
+LINE: 492
+CODE: 'product_option_value_id' => $option_value['product_option_value_id'],
+LINE: 497
+
+FILE: catalog/model/catalog/product.php
+CODE: public function getTotalProductSpecials() {
+LINE: 545
+
+FILE: admin/model/sale/order.php
+CODE: 'order_id'                => $order_query->row['order_id'],
+LINE: 101
+
+FILE: catalog/controller/checkout/cart.php
+CODE: $this->cart->add($this->request->post['product_id'], $quantity, $option, $recurring_id);
+LINE: 340
+
+FILE: catalog/view/theme/default/template/product/product.tpl
+CODE: <li><?php echo $text_stock; ?> <?php echo $stock; ?></li>
+LINE: 134
+CODE: <h2><?php echo $price; ?></h2>
+LINE: 140
+CODE: <li><?php echo $text_tax; ?> <?php echo $tax; ?></li>
+LINE: 149
+CODE: <li><?php echo $text_points; ?> <?php echo $points; ?></li>
+LINE: 152
+CODE: <option value="<?php echo $option_value['product_option_value_id']; ?>">
+LINE: 175
+CODE: <input type="radio" name="option[<?php echo $option['product_option_id']; ?>]"
+LINE: 191
+CODE: <input type="checkbox" name="option[<?php echo $option['product_option_id']; ?>][]"
+LINE: 212
+CODE: <input type="hidden" name="product_id" value="<?php echo $product_id; ?>" />
+LINE: 296
+CODE: $(document).ready(function() {
+LINE: 1069
+CODE: $(document).ready(function() {
+LINE: 1097
+
+FILE: catalog/view/theme/yourstore/template/product/product.tpl
+CODE: <li><?php echo $text_stock; ?> <?php echo $stock; ?></li>
+NOT FOUND - OPERATIONS ABORTED!
+----------------------------------------------------------------
+2016-12-02 9:38:37 - MOD: Modification Default
+
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 41
+
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 49
+LINE: 108
+LINE: 120
+LINE: 165
+
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 23
+
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 38
+LINE: 40
+LINE: 49
+LINE: 51
+LINE: 60
+LINE: 62
+
+FILE: system/library/template/php.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 18
+
+FILE: system/library/template/tiwg.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 24
+----------------------------------------------------------------
+MOD: Yourstore changes
+
+FILE: admin/controller/common/column_left.php
+CODE: if ($report) {
+LINE: 836
+
+FILE: admin/language/en-gb/common/column_left.php
+CODE: <?php
+LINE: 1
+
+FILE: catalog/controller/startup/seo_url.php
+CODE: $this->request->get['route'] = 'error/not_found';
+LINE: 47
+CODE: if ($report) {
+LINE: 917
+CODE: <?php
+LINE: 11
+
+FILE: admin/language/ru-ru/common/column_left.php
+CODE: <?php
+LINE: 11
+CODE: $this->url->link('catalog/category', 'token=' . $this->session->data['token'], true)
+LINE: 48
+CODE: $this->url->link('catalog/product', 'token=' . $this->session->data['token'], true)
+LINE: 56
+
+FILE: catalog/controller/error/not_found.php
+CODE: public function index() {
+LINE: 7
+
+FILE: catalog/controller/common/header.php
+CODE: $this->load->model('catalog/category');
+LINE: 97
+CODE: if ($category['top']) {
+LINE: 121
+CODE: foreach ($children as $child) {
+LINE: 143
+CODE: $children_data[] = array(
+LINE: 156
+CODE: 'name'     => $category['name'],
+LINE: 173
+CODE: return $this->load->view('common/header', $data);
+LINE: 289
+CODE: <!--custom colors-->
+NOT FOUND - OPERATIONS ABORTED!
+
+FILE: catalog/controller/common/footer.php
+CODE: return $this->load->view('common/footer', $data);
+LINE: 178
+
+FILE: catalog/controller/common/home.php
+CODE: $this->response->setOutput($this->load->view('common/home', $data));
+LINE: 58
+
+FILE: catalog/controller/common/cart.php
+CODE: return $this->load->view('common/cart', $data);
+LINE: 149
+
+FILE: catalog/controller/common/search.php
+CODE: return $this->load->view('common/search', $data);
+LINE: 19
+
+FILE: catalog/controller/common/currency.php
+CODE: return $this->load->view('common/currency', $data);
+LINE: 54
+
+FILE: catalog/controller/common/language.php
+CODE: return $this->load->view('common/language', $data);
+LINE: 50
+
+FILE: catalog/controller/common/column_left.php
+CODE: return $this->load->view('common/column_left', $data);
+LINE: 78
+
+FILE: catalog/controller/information/contact.php
+CODE: public function index() {
+LINE: 10
+
+FILE: catalog/controller/extension/module/featured.php
+CODE: $data['products'][] = array(
+LINE: 122
+CODE: 'product_id'  => $product_info['product_id'],
+LINE: 141
+
+FILE: catalog/controller/extension/module/bestseller.php
+CODE: $data['products'][] = array(
+LINE: 115
+CODE: 'product_id'  => $result['product_id'],
+LINE: 134
+
+FILE: catalog/controller/extension/module/special.php
+CODE: $data['products'][] = array(
+LINE: 122
+CODE: 'product_id'  => $result['product_id'],
+LINE: 141
+
+FILE: catalog/controller/extension/module/latest.php
+CODE: $data['products'][] = array(
+LINE: 122
+CODE: 'product_id'  => $result['product_id'],
+LINE: 141
+
+FILE: catalog/controller/extension/module/carousel.php
+CODE: $data['banners'] = array()
+LINE: 21
+CODE: $this->document->addStyle('catalog/view/javascript/jquery/owl-carousel/owl.carousel.css');
+		    $this->document->addScript('catalog/view/javascript/jquery/owl-carousel/owl.carousel.min.js');
+NOT FOUND - OPERATIONS ABORTED!
+
+FILE: catalog/controller/extension/module/category.php
+CODE: $this->load->model('catalog/category');
+LINE: 35
+CODE: foreach($children as $child) {
+LINE: 63
+CODE: $children_data[] = array(
+LINE: 72
+
+FILE: catalog/controller/product/category.php
+CODE: $data['categories'][] = array(
+LINE: 172
+CODE: $data['categories'][] = array(
+LINE: 179
+CODE: $data['products'][] = array(
+LINE: 294
+CODE: 'product_id'  => $result['product_id'],
+LINE: 314
+
+FILE: catalog/controller/product/search.php
+CODE: $data['products'][] = array(
+LINE: 309
+CODE: 'product_id'  => $result['product_id'],
+LINE: 329
+
+FILE: catalog/controller/product/special.php
+CODE: $data['products'][] = array(
+LINE: 194
+CODE: 'product_id'  => $result['product_id'],
+LINE: 214
+
+FILE: catalog/controller/product/manufacturer.php
+CODE: $data['products'][] = array(
+LINE: 272
+CODE: 'product_id'  => $result['product_id'],
+LINE: 292
+
+FILE: catalog/controller/product/product.php
+CODE: if ($product_info) {
+LINE: 190
+----------------------------------------------------------------
+MOD: Tweak for OpenCart 2x Russkaya sborka
+
+FILE: admin/view/template/common/header.tpl
+CODE: <?php foreach ($links as $link) { ?>
+LINE: 32
+CODE: <li><a href="http://www.opencart.com" target="_blank"><?php echo $text_homepage; ?></a></li>
+LINE: 80
+CODE: <li><a href="http://docs.opencart.com" target="_blank"><?php echo $text_documentation; ?></a></li>
+LINE: 83
+CODE: <li><a href="http://forum.opencart.com" target="_blank"><?php echo $text_support; ?></a></li>
+LINE: 86
+
+FILE: admin/view/template/catalog/product_form.tpl
+CODE: <label class="col-sm-2 control-label" for="input-sku"><span data-toggle="tooltip" title="<?php echo $help_sku; ?>"><?php echo $entry_sku; ?></span></label>
+LINE: 109
+CODE: <label class="col-sm-2 control-label" for="input-sku">
+LINE: 115
+CODE: <label class="col-sm-2 control-label" for="input-location"><?php echo $entry_location; ?></label>
+LINE: 155
+CODE: <input type="text" name="model" value="<?php echo $model; ?>" placeholder="<?php echo $entry_model; ?>" id="input-model" class="form-control" />
+LINE: 101
+
+FILE: admin/view/template/tool/backup.tpl
+CODE: <input type="file" name="import" id="input-import" />
+LINE: 36
+
+FILE: admin/controller/common/filemanager.php
+CODE: $this->load->language('common/filemanager');
+LINE: 13
+CODE: // Parent
+LINE: 148
+CODE: $pagination = new Pagination();
+LINE: 209
+CODE: $directory = rtrim(DIR_IMAGE . 'catalog/' . str_replace('*', '', $this->request->get['directory']), '/');
+LINE: 33
+
+FILE: admin/view/template/common/filemanager.tpl
+CODE: <?php foreach (array_chunk($images, 4) as $image) { ?>
+LINE: 34
+CODE: <script type="text/javascript" src="view/javascript/summernote/summernote.js"></script>
+LINE: 939
+
+FILE: admin/view/template/catalog/information_form.tpl
+CODE: <script type="text/javascript" src="view/javascript/summernote/summernote.js"></script>
+LINE: 209
+
+FILE: admin/view/template/catalog/category_form.tpl
+CODE: <script type="text/javascript" src="view/javascript/summernote/summernote.js"></script>
+LINE: 241
+
+FILE: admin/view/template/extension/module/html.tpl
+CODE: <script type="text/javascript" src="view/javascript/summernote/summernote.js"></script>
+LINE: 80
+
+FILE: admin/view/template/marketing/contact.tpl
+CODE: <script type="text/javascript" src="view/javascript/summernote/summernote.js"></script>
+LINE: 95
+
+FILE: admin/view/template/extension/extension.tpl
+CODE: <?php echo $header; ?><?php echo $column_left; ?>
+LINE: 1
+CODE: $data['lastname'] = $user_info['lastname'];
+LINE: 17
+----------------------------------------------------------------
+MOD: Exchange Module for OpenCart 2.x
+
+FILE: system/library/image.php
+CODE: $mime = $this->info['mime'];
+NOT FOUND - OPERATIONS ABORTED!
+CODE: if ($product_info['quantity'] <= 0) {
+LINE: 401
+CODE: if (!$option_value['subtract'] || ($option_value['quantity'] > 0)) {
+LINE: 469
+CODE: $product_option_value_data[] = array(
+LINE: 492
+CODE: 'product_option_value_id' => $option_value['product_option_value_id'],
+LINE: 497
+
+FILE: catalog/model/catalog/product.php
+CODE: public function getTotalProductSpecials() {
+LINE: 545
+
+FILE: admin/model/sale/order.php
+CODE: 'order_id'                => $order_query->row['order_id'],
+LINE: 101
+
+FILE: catalog/controller/checkout/cart.php
+CODE: $this->cart->add($this->request->post['product_id'], $quantity, $option, $recurring_id);
+LINE: 340
+
+FILE: catalog/view/theme/default/template/product/product.tpl
+CODE: <li><?php echo $text_stock; ?> <?php echo $stock; ?></li>
+LINE: 134
+CODE: <h2><?php echo $price; ?></h2>
+LINE: 140
+CODE: <li><?php echo $text_tax; ?> <?php echo $tax; ?></li>
+LINE: 149
+CODE: <li><?php echo $text_points; ?> <?php echo $points; ?></li>
+LINE: 152
+CODE: <option value="<?php echo $option_value['product_option_value_id']; ?>">
+LINE: 175
+CODE: <input type="radio" name="option[<?php echo $option['product_option_id']; ?>]"
+LINE: 191
+CODE: <input type="checkbox" name="option[<?php echo $option['product_option_id']; ?>][]"
+LINE: 212
+CODE: <input type="hidden" name="product_id" value="<?php echo $product_id; ?>" />
+LINE: 296
+CODE: $(document).ready(function() {
+LINE: 1069
+CODE: $(document).ready(function() {
+LINE: 1097
+
+FILE: catalog/view/theme/yourstore/template/product/product.tpl
+CODE: <li><?php echo $text_stock; ?> <?php echo $stock; ?></li>
+NOT FOUND - OPERATIONS ABORTED!
+----------------------------------------------------------------
+2016-12-02 9:38:39 - MOD: Modification Default
+
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 41
+
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 49
+LINE: 108
+LINE: 120
+LINE: 165
+
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 23
+
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 38
+LINE: 40
+LINE: 49
+LINE: 51
+LINE: 60
+LINE: 62
+
+FILE: system/library/template/php.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 18
+
+FILE: system/library/template/tiwg.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 24
+----------------------------------------------------------------
+MOD: Yourstore changes
+
+FILE: admin/controller/common/column_left.php
+CODE: if ($report) {
+LINE: 836
+
+FILE: admin/language/en-gb/common/column_left.php
+CODE: <?php
+LINE: 1
+
+FILE: catalog/controller/startup/seo_url.php
+CODE: $this->request->get['route'] = 'error/not_found';
+LINE: 47
+CODE: if ($report) {
+LINE: 917
+CODE: <?php
+LINE: 11
+
+FILE: admin/language/ru-ru/common/column_left.php
+CODE: <?php
+LINE: 11
+CODE: $this->url->link('catalog/category', 'token=' . $this->session->data['token'], true)
+LINE: 48
+CODE: $this->url->link('catalog/product', 'token=' . $this->session->data['token'], true)
+LINE: 56
+
+FILE: catalog/controller/error/not_found.php
+CODE: public function index() {
+LINE: 7
+
+FILE: catalog/controller/common/header.php
+CODE: $this->load->model('catalog/category');
+LINE: 97
+CODE: if ($category['top']) {
+LINE: 121
+CODE: foreach ($children as $child) {
+LINE: 143
+CODE: $children_data[] = array(
+LINE: 156
+CODE: 'name'     => $category['name'],
+LINE: 173
+CODE: return $this->load->view('common/header', $data);
+LINE: 289
+CODE: <!--custom colors-->
+NOT FOUND - OPERATIONS ABORTED!
+
+FILE: catalog/controller/common/footer.php
+CODE: return $this->load->view('common/footer', $data);
+LINE: 178
+
+FILE: catalog/controller/common/home.php
+CODE: $this->response->setOutput($this->load->view('common/home', $data));
+LINE: 58
+
+FILE: catalog/controller/common/cart.php
+CODE: return $this->load->view('common/cart', $data);
+LINE: 149
+
+FILE: catalog/controller/common/search.php
+CODE: return $this->load->view('common/search', $data);
+LINE: 19
+
+FILE: catalog/controller/common/currency.php
+CODE: return $this->load->view('common/currency', $data);
+LINE: 54
+
+FILE: catalog/controller/common/language.php
+CODE: return $this->load->view('common/language', $data);
+LINE: 50
+
+FILE: catalog/controller/common/column_left.php
+CODE: return $this->load->view('common/column_left', $data);
+LINE: 78
+
+FILE: catalog/controller/information/contact.php
+CODE: public function index() {
+LINE: 10
+
+FILE: catalog/controller/extension/module/featured.php
+CODE: $data['products'][] = array(
+LINE: 122
+CODE: 'product_id'  => $product_info['product_id'],
+LINE: 141
+
+FILE: catalog/controller/extension/module/bestseller.php
+CODE: $data['products'][] = array(
+LINE: 115
+CODE: 'product_id'  => $result['product_id'],
+LINE: 134
+
+FILE: catalog/controller/extension/module/special.php
+CODE: $data['products'][] = array(
+LINE: 122
+CODE: 'product_id'  => $result['product_id'],
+LINE: 141
+
+FILE: catalog/controller/extension/module/latest.php
+CODE: $data['products'][] = array(
+LINE: 122
+CODE: 'product_id'  => $result['product_id'],
+LINE: 141
+
+FILE: catalog/controller/extension/module/carousel.php
+CODE: $data['banners'] = array()
+LINE: 21
+CODE: $this->document->addStyle('catalog/view/javascript/jquery/owl-carousel/owl.carousel.css');
+		    $this->document->addScript('catalog/view/javascript/jquery/owl-carousel/owl.carousel.min.js');
+NOT FOUND - OPERATIONS ABORTED!
+
+FILE: catalog/controller/extension/module/category.php
+CODE: $this->load->model('catalog/category');
+LINE: 35
+CODE: foreach($children as $child) {
+LINE: 63
+CODE: $children_data[] = array(
+LINE: 72
+
+FILE: catalog/controller/product/category.php
+CODE: $data['categories'][] = array(
+LINE: 172
+CODE: $data['categories'][] = array(
+LINE: 179
+CODE: $data['products'][] = array(
+LINE: 294
+CODE: 'product_id'  => $result['product_id'],
+LINE: 314
+
+FILE: catalog/controller/product/search.php
+CODE: $data['products'][] = array(
+LINE: 309
+CODE: 'product_id'  => $result['product_id'],
+LINE: 329
+
+FILE: catalog/controller/product/special.php
+CODE: $data['products'][] = array(
+LINE: 194
+CODE: 'product_id'  => $result['product_id'],
+LINE: 214
+
+FILE: catalog/controller/product/manufacturer.php
+CODE: $data['products'][] = array(
+LINE: 272
+CODE: 'product_id'  => $result['product_id'],
+LINE: 292
+
+FILE: catalog/controller/product/product.php
+CODE: if ($product_info) {
+LINE: 190
+----------------------------------------------------------------
+MOD: Tweak for OpenCart 2x Russkaya sborka
+
+FILE: admin/view/template/common/header.tpl
+CODE: <?php foreach ($links as $link) { ?>
+LINE: 32
+CODE: <li><a href="http://www.opencart.com" target="_blank"><?php echo $text_homepage; ?></a></li>
+LINE: 80
+CODE: <li><a href="http://docs.opencart.com" target="_blank"><?php echo $text_documentation; ?></a></li>
+LINE: 83
+CODE: <li><a href="http://forum.opencart.com" target="_blank"><?php echo $text_support; ?></a></li>
+LINE: 86
+
+FILE: admin/view/template/catalog/product_form.tpl
+CODE: <label class="col-sm-2 control-label" for="input-sku"><span data-toggle="tooltip" title="<?php echo $help_sku; ?>"><?php echo $entry_sku; ?></span></label>
+LINE: 109
+CODE: <label class="col-sm-2 control-label" for="input-sku">
+LINE: 115
+CODE: <label class="col-sm-2 control-label" for="input-location"><?php echo $entry_location; ?></label>
+LINE: 155
+CODE: <input type="text" name="model" value="<?php echo $model; ?>" placeholder="<?php echo $entry_model; ?>" id="input-model" class="form-control" />
+LINE: 101
+
+FILE: admin/view/template/tool/backup.tpl
+CODE: <input type="file" name="import" id="input-import" />
+LINE: 36
+
+FILE: admin/controller/common/filemanager.php
+CODE: $this->load->language('common/filemanager');
+LINE: 13
+CODE: // Parent
+LINE: 148
+CODE: $pagination = new Pagination();
+LINE: 209
+CODE: $directory = rtrim(DIR_IMAGE . 'catalog/' . str_replace('*', '', $this->request->get['directory']), '/');
+LINE: 33
+
+FILE: admin/view/template/common/filemanager.tpl
+CODE: <?php foreach (array_chunk($images, 4) as $image) { ?>
+LINE: 34
+CODE: <script type="text/javascript" src="view/javascript/summernote/summernote.js"></script>
+LINE: 939
+
+FILE: admin/view/template/catalog/information_form.tpl
+CODE: <script type="text/javascript" src="view/javascript/summernote/summernote.js"></script>
+LINE: 209
+
+FILE: admin/view/template/catalog/category_form.tpl
+CODE: <script type="text/javascript" src="view/javascript/summernote/summernote.js"></script>
+LINE: 241
+
+FILE: admin/view/template/extension/module/html.tpl
+CODE: <script type="text/javascript" src="view/javascript/summernote/summernote.js"></script>
+LINE: 80
+
+FILE: admin/view/template/marketing/contact.tpl
+CODE: <script type="text/javascript" src="view/javascript/summernote/summernote.js"></script>
+LINE: 95
+
+FILE: admin/view/template/extension/extension.tpl
+CODE: <?php echo $header; ?><?php echo $column_left; ?>
+LINE: 1
+CODE: $data['lastname'] = $user_info['lastname'];
+LINE: 17
+----------------------------------------------------------------
+MOD: Exchange Module for OpenCart 2.x
+
+FILE: system/library/image.php
+CODE: $mime = $this->info['mime'];
+NOT FOUND - OPERATIONS ABORTED!
+CODE: if ($product_info['quantity'] <= 0) {
+LINE: 401
+CODE: if (!$option_value['subtract'] || ($option_value['quantity'] > 0)) {
+LINE: 469
+CODE: $product_option_value_data[] = array(
+LINE: 492
+CODE: 'product_option_value_id' => $option_value['product_option_value_id'],
+LINE: 497
+
+FILE: catalog/model/catalog/product.php
+CODE: public function getTotalProductSpecials() {
+LINE: 545
+
+FILE: admin/model/sale/order.php
+CODE: 'order_id'                => $order_query->row['order_id'],
+LINE: 101
+
+FILE: catalog/controller/checkout/cart.php
+CODE: $this->cart->add($this->request->post['product_id'], $quantity, $option, $recurring_id);
+LINE: 340
+
+FILE: catalog/view/theme/default/template/product/product.tpl
+CODE: <li><?php echo $text_stock; ?> <?php echo $stock; ?></li>
+LINE: 134
+CODE: <h2><?php echo $price; ?></h2>
+LINE: 140
+CODE: <li><?php echo $text_tax; ?> <?php echo $tax; ?></li>
+LINE: 149
+CODE: <li><?php echo $text_points; ?> <?php echo $points; ?></li>
+LINE: 152
+CODE: <option value="<?php echo $option_value['product_option_value_id']; ?>">
+LINE: 175
+CODE: <input type="radio" name="option[<?php echo $option['product_option_id']; ?>]"
+LINE: 191
+CODE: <input type="checkbox" name="option[<?php echo $option['product_option_id']; ?>][]"
+LINE: 212
+CODE: <input type="hidden" name="product_id" value="<?php echo $product_id; ?>" />
+LINE: 296
+CODE: $(document).ready(function() {
+LINE: 1069
+CODE: $(document).ready(function() {
+LINE: 1097
+
+FILE: catalog/view/theme/yourstore/template/product/product.tpl
+CODE: <li><?php echo $text_stock; ?> <?php echo $stock; ?></li>
+NOT FOUND - OPERATIONS ABORTED!
+----------------------------------------------------------------
