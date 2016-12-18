@@ -26,3 +26,8 @@ define('DB_PASSWORD', 'rBrDa13cl4lBYF0S');
 define('DB_DATABASE', 'd33007_db');
 define('DB_PORT', '3306');
 define('DB_PREFIX', 'oc_');
+
+//CRM
+define('CRM_ADRESS', 'http://crm:8080/crm.php');
+
+//api key for Novaya Pochta set in admin/config.php

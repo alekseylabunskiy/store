@@ -475,6 +475,7 @@ h6,
 }
 p {
   margin: 0 0 13.5px;
+  font-size: 16px;
 }
 .lead {
   margin-bottom: 27px;
@@ -18826,6 +18827,10 @@ body.stop-scrolling #slider .tp-leftarrow {
   .instafeed {
     margin-left: 48px;
   }
+  #your_order_my{width: 415px;}
+  textarea.form-control {
+    width:415px;
+  }
 }
 /* instafeed-center
 ==================================== */
@@ -21509,10 +21514,10 @@ li.open .expander-list ul {
 /* card
 ==================================== */
 .card {
-  border: 1px solid #e5e5e5;
+  /*border: 1px solid #e5e5e5;*/
 }
 .card--padding {
-  padding: 25px 30px 30px 30px;
+  padding: 25px 0px 30px 0px;
 }
 .card--padding.collapse-block {
   padding: 12px 30px 10px 30px;
@@ -21789,7 +21794,7 @@ li.open .expander-list ul {
 * End Checkout one page
 *****************************************/
 .title-checkout {
-  font-size: 26px;
+  font-size: 23px;
   margin-bottom: 33px;
 }
 .title-checkout .icon {
@@ -24378,12 +24383,12 @@ input:-ms-input-placeholder {
 .select-basket {
   padding-right: 0;
   position: relative;
-  line-height: 1.67em;
+  line-height: 1.98em;
 }
 .select-basket .dropdown-toggle {
   background-color: #1fc0a0;
-  padding: 7px 135px 10px 19px;
-  font-size: 20px;
+  padding: 8px 97px 12px 19px;
+  font-size: 17px;
   font-weight: 500;
   color: #fff;
 }
@@ -27175,7 +27180,7 @@ input[type="email"].form-control,
 input[type="url"].form-control,
 input[type="search"].form-control,
 input[type="tel"].form-control,
-input[type="color"].form-control{font-size:inherit;}
+input[type="color"].form-control{font-size:16px;border-color: #c2c2c2;}
 .list-group{margin:10px 0 6px 0;padding:0;list-style-type:none;counter-reset:myCounter;}
 .list-group a{padding:0 0 7px 18px;position:relative;list-style-type:none;}
 .list-group a:before{position:absolute;display:block;top:10px;left:0;font-family:'Material Icons';content:"\e3a6";font-size:0.53em;line-height:1em;}
@@ -27190,7 +27195,7 @@ input[type="color"].form-control{font-size:inherit;}
 }
 .dropdown-menu li > a:hover{color:inherit;}
 .form-horizontal .buttons{margin-bottom:100px}
-.btn{position:relative;padding:10px 14px;font-size:0.875em;line-height:1.486em;height:40px;color:#ffffff;border-radius:0;vertical-align:top;border:0;text-transform:uppercase;letter-spacing:1px;-webkit-transition:all 300ms 0s ease;-moz-transition:all 300ms 0s ease;-ms-transition:all 300ms 0s ease;-o-transition:all 300ms 0s ease;transition:all 300ms 0s ease;}
+.btn{position:relative;padding:10px 14px;font-size:14px;line-height:1.486em;height:40px;color:#ffffff;border-radius:0;vertical-align:top;border:0;text-transform:uppercase;letter-spacing:1px;-webkit-transition:all 300ms 0s ease;-moz-transition:all 300ms 0s ease;-ms-transition:all 300ms 0s ease;-o-transition:all 300ms 0s ease;transition:all 300ms 0s ease;}
 .btn:focus,
 .btn:active:focus,
 .btn.active:focus,
@@ -27738,4 +27743,9 @@ header .mainMenu .navbar-nav > li.custom_item > a,
 .storelayout_10 .carousel-products__button span.btn-prev,.storelayout_10 .carousel-products__button span.btn-next{background-color:#000}
 .buttons .pull-left,.buttons .pull-right{margin-bottom:10px}
 .category-carousel.main-layout .banner .figure{background-color:transparent}
-
+#shipping_icon{padding-right: 8px;top: -3px;}
+#icon-account_balance_wallet{padding-right: 4px;padding-top: -2px;top:6px;}
+#h2shipping_icon{height: 52px;padding-top: 7px;}
+@media (min-width: 1889px){
+  #local_shipping{padding-left: 159px;}
+}

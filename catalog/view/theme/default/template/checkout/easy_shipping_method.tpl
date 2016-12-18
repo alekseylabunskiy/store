@@ -1,7 +1,7 @@
 <?php if ($error_warning) { ?>
 <div class="alert alert-warning"><i class="fa fa-exclamation-circle"></i> <?php echo $error_warning; ?></div>
 <?php } ?>
-<h2 class="title-checkout tt_uppercase"><i class="icon fa fa-truck color" aria-hidden="true"></i> <?php echo $text_checkout_shipping_method; ?></h2>
+<h2 class="title-checkout tt_uppercase" id="h2shipping_icon"><i id="shipping_icon" class="icon fa fa-truck color" aria-hidden="true"></i> <?php echo $text_checkout_shipping_method; ?></h2>
 
 <?php if ($shipping_methods) { ?>
 <p><?php echo $text_shipping_method; ?></p>

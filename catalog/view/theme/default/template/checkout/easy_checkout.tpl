@@ -149,64 +149,46 @@
 
 
                 <?php //if (!isset($address)) { ?>
-				  <div class="form-group" >
-                      <h6 class="color"><?php echo $entry_customer_group; ?></h6>
-				    <?php foreach ($customer_groups as $customer_group) { ?>
-
-                      <?php if ($customer_group['customer_group_id'] == $customer_group_id) { ?>
-                      <label class="radio">
-                          <input id="customer_group_id" type="radio" name="customer_group_id" value="<?php echo $customer_group['customer_group_id']; ?>" checked="checked">
-                                    <span class="outer">
-                                        <span class="inner"></span>
-                                    </span>
-                          <?php echo $customer_group['name']; ?>
-                      </label>
-                      <?php } else { ?>
-                      <label class="radio">
-                          <input id="customer_group_id" type="radio" name="customer_group_id" value="<?php echo $customer_group['customer_group_id']; ?>" checked="checked">
-                                    <span class="outer">
-                                        <span class="inner"></span>
-                                    </span>
-                          <?php echo $customer_group['name']; ?>
-                      </label>
-				    <?php } ?>
-				    <?php } ?>
-				  </div>
 
                 <div class="row">
                     <div class="form-group required col-md-6">
                         <label class="control-label" for="input-payment-firstname"><?php echo $entry_firstname; ?></label>
-                        <input type="text" name="firstname" value="<?php if (isset($address['firstname'])) echo $address['firstname']; elseif (isset($firstname)) echo $firstname; ?>" placeholder="<?php echo str_replace(':','',$entry_firstname); ?>" id="input-payment-firstname" class="form-control" <?php if (isset($customer_id)) {?> readonly<?php }?>/>
+                        <input type="text" name="firstname" value="<?php if (isset($address['firstname'])) echo $address['firstname']; elseif (isset($firstname)) echo $firstname; ?>" placeholder="" id="input-payment-firstname" class="form-control" <?php if (isset($customer_id)) {?> readonly<?php }?>/>
                     </div>
                     <div class="form-group required col-md-6">
                         <label class="control-label" for="input-payment-lastname"><?php echo $entry_lastname; ?></label>
-                        <input type="text" name="lastname" value="<?php if (isset($lastname)) echo $lastname;?>" placeholder="<?php echo str_replace(':','',$entry_lastname); ?>" id="input-payment-lastname" class="form-control" <?php if (isset($customer_id)) {?> readonly<?php }?>/>
+                        <input type="text" name="lastname" value="<?php if (isset($lastname)) echo $lastname;?>" placeholder="" id="input-payment-lastname" class="form-control" <?php if (isset($customer_id)) {?> readonly<?php }?>/>
                     </div>
-
                 </div>
-
-				  <div class="form-group required">
+				<div class="form-group required" id="country">
+					<label class="control-label" for="input-payment-country"><?php echo $entry_country; ?></label>
+					<select name="country_id" id="input-payment-country" class="form-control">
+						<option value=""><?php echo $text_select; ?></option>
+						<?php foreach ($countries as $country) { ?>
+						<?php if ($country['country_id'] == $country_id) { ?>
+						<option value="<?php echo $country['country_id']; ?>" selected="selected"><?php echo $country['name']; ?></option>
+						<?php } else { ?>
+						<option value="<?php echo $country['country_id']; ?>"><?php echo $country['name']; ?></option>
+						<?php } ?>
+						<?php } ?>
+					</select>
+				</div>
+				<div class="form-group required">
+					<label class="control-label" for="input-payment-zone"><?php echo $entry_zone;; ?></label>
+					<select name="zone_id" id="input-payment-zone" class="form-control">
+					</select>
+				</div>
+				<div class="form-group required">
+					<label class="control-label" for="input-payment-telephone"><?php echo $entry_telephone; ?></label>
+					<input type="text" name="telephone" value="<?php if (isset($telephone)) echo $telephone;?>" placeholder="" id="input-payment-telephone" class="form-control" <?php if (isset($customer_id)) {?> readonly<?php }?>/>
+				</div>
+			  	<div class="form-group">
 				    <label class="control-label" for="input-payment-email"><?php echo $entry_email; ?></label>
-				    <input type="text" name="email" value="<?php if (isset($email)) echo $email;?>" placeholder="<?php echo str_replace(':','',$entry_email); ?>" id="input-payment-email" class="form-control" <?php if (isset($customer_id)) {?> readonly<?php }?>/>
-				  </div>
-				  <div class="form-group required">
-				    <label class="control-label" for="input-payment-telephone"><?php echo $entry_telephone; ?></label>
-				    <input type="text" name="telephone" value="<?php if (isset($telephone)) echo $telephone;?>" placeholder="<?php echo str_replace(':','',$entry_telephone); ?>" id="input-payment-telephone" class="form-control" <?php if (isset($customer_id)) {?> readonly<?php }?>/>
-				  </div>
-				  <?php //if (!$checkout_hide_fax) { ?>
-				  <div class="form-group" >
-				    <label class="control-label" for="input-payment-fax"><?php echo $entry_fax; ?></label>
-				    <input type="text" name="fax" value="<?php if (isset($fax)) echo $fax;?>" placeholder="<?php echo str_replace(':','',$entry_fax); ?>" id="input-payment-fax" class="form-control" <?php if (isset($customer_id)) {?> readonly<?php }?>/>
-				  </div>
-				  <?php //}?>
+				    <input type="text" name="email" value="<?php if (isset($email)) echo $email;?>" placeholder="" id="input-payment-email" class="form-control" <?php if (isset($customer_id)) {?> readonly<?php }?>/>
+			  	</div>
 
                 <!--1-->
                 <div class="divider--xl"></div>
-
-                      <h2 class="clearfix title-checkout tt_uppercase">
-                          <span class="icon icon-store color"></span>
-                          <?php echo $text_checkout_payment_address; ?>
-                      </h2>
 
 			      <?php if ($addresses) { ?>
 				  <?php if (isset($customer_id)) { ?>
@@ -243,71 +225,52 @@
 
                 <div id="payment-address-new" <?php if (isset($customer_id) && $addresses) { ?>	style="display:none"<?php }?>>
 				  <?php // if (!$checkout_hide_company){ ?>
-				  <div class="form-group" >
-				    <label class="control-label" for="input-payment-company"><?php echo $entry_company; ?></label>
-				    <input type="text" name="company" value="<?php if (isset($company)) echo $company;?>" placeholder="<?php echo str_replace(':','',$entry_company); ?>" id="input-payment-company" class="form-control" />
-				  </div>
-				   <?php //} else { ?>
-					   <input type="hidden" name="company" value="" />
-				   <?php //}?>
-				  
-				  <?php if (isset($entry_company_id)) { ?>
-				  <?php if (!$checkout_hide_company_id){ ?>
-				  <div class="form-group" >
-				    <label class="control-label" for="input-payment-company"><?php echo $entry_company_id; ?></label>
-				    <input type="text" name="company_id" value="<?php if (isset($company_id)) echo $company_id; ?>" placeholder="<?php echo str_replace(':','',$entry_company_id); ?>" id="input-payment-company-id" class="form-control" />
-				  </div>
-				   <?php } else { ?>
-					   <input type="hidden" name="company_id" value="" />
-				   <?php }?>
+				  <div class="form-group" hidden >
+					<label hidden class="control-label" for="input-payment-company"><?php echo $entry_company; ?></label>
+					<input type="hidden" name="company" value="<?php if (isset($company)) echo $company;?>" placeholder="<?php echo str_replace(':','',$entry_company); ?>" id="input-payment-company" class="form-control" />
+				</div>
+				<?php //} else { ?>
+				<input type="hidden" name="company" value="" />
+				<?php //}?>
 
-				  <?php if (!$checkout_hide_tax_id){ ?>
-				  <div class="form-group">
-				    <label class="control-label" for="input-tax-id-"><?php echo $entry_tax_id; ?></label>
-				    <input type="text" name="tax_id" value="<?php if (isset($tax_id)) echo $tax_id; ?>" placeholder="<?php echo str_replace(':','',$entry_tax_id); ?>" id="input-tax-id-" class="form-control" />
-				  </div>
-				   <?php } else { ?>
-					   <input type="hidden" name="tax_id" value="" />
-				   <?php } }?>
-				  
-				  <div class="form-group required">
+				<?php if (isset($entry_company_id)) { ?>
+				<?php if (!$checkout_hide_company_id){ ?>
+				<div class="form-group" hidden>
+					<label class="control-label" for="input-payment-company"><?php echo $entry_company_id; ?></label>
+					<input type="hidden" name="company_id" value="" placeholder="<?php echo str_replace(':','',$entry_company_id); ?>" id="input-payment-company-id" class="form-control" />
+				</div>
+				<?php } else { ?>
+				<input type="hidden" name="company_id" value="" />
+				<?php }?>
+
+				<?php if (!$checkout_hide_tax_id){ ?>
+				<div class="form-group" hidden>
+					<label class="control-label" for="input-tax-id-"><?php echo $entry_tax_id; ?></label>
+					<input type="hidden" name="tax_id" value="<?php if (isset($tax_id)) echo $tax_id; ?>" placeholder="<?php echo str_replace(':','',$entry_tax_id); ?>" id="input-tax-id-" class="form-control" />
+				</div>
+				<?php } else { ?>
+				<input type="hidden" name="tax_id" value="" />
+				<?php } }?>
+
+				  <div class="form-group" hidden>
 				    <label class="control-label" for="input-payment-address-1"><?php echo $entry_address_1; ?></label>
 				    <input type="text" name="address_1" value="<?php if (isset($address_1)) echo $address_1;?>" placeholder="<?php echo str_replace(':','',$entry_address_1); ?>" id="input-payment-address-1" class="form-control" />
 				  </div>
-				  <div class="form-group">
+				  <div class="form-group" hidden>
 				    <label class="control-label" for="input-payment-address-2"><?php echo $entry_address_2; ?></label>
 				    <input type="text" name="address_2" value="<?php if (isset($address_2)) echo $address_2;?>" placeholder="<?php echo str_replace(':','',$entry_address_2); ?>" id="input-payment-address-2" class="form-control" />
 				  </div>
-				  <div class="form-group required">
-				    <label class="control-label" for="input-payment-country"><?php echo $entry_country; ?></label>
-				    <select name="country_id" id="input-payment-country" class="form-control">
-				      <option value=""><?php echo $text_select; ?></option>
-				      <?php foreach ($countries as $country) { ?>
-				      <?php if ($country['country_id'] == $country_id) { ?>
-				      <option value="<?php echo $country['country_id']; ?>" selected="selected"><?php echo $country['name']; ?></option>
-				      <?php } else { ?>
-				      <option value="<?php echo $country['country_id']; ?>"><?php echo $country['name']; ?></option>
-				      <?php } ?>
-				      <?php } ?>
-				    </select>
-				  </div>
-				  <div class="form-group required">
-				    <label class="control-label" for="input-payment-zone"><?php echo $entry_zone;; ?></label>
-				    <select name="zone_id" id="input-payment-zone" class="form-control">
-				    </select>
-				  </div>
-				  <div class="form-group required">
+				  <div class="form-group" hidden>
 				    <label class="control-label" for="input-payment-city"><?php echo $entry_city; ?></label>
 				    <input type="text" name="city" value="<?php if (isset($city)) echo $city;?>" placeholder="<?php echo str_replace(':','',$entry_city); ?>" id="input-payment-city" class="form-control" />
 				  </div>
-				  <div class="form-group required" >
+				  <div class="form-group" hidden >
 				    <label class="control-label" for="input-payment-postcode"><?php echo $entry_postcode; ?></label>
 				    <input type="text" name="postcode" value="<?php if (isset($postcode)) echo $postcode;?>" placeholder="<?php echo str_replace(':','',$entry_postcode); ?>" id="input-payment-postcode" class="form-control" />
 				  </div>
 				</div>
-
 				<?php if (!isset($customer_id)) { ?>
-            <div class="checkbox-group">
+            <div class="checkbox-group" hidden>
                 <input type="checkbox" id="register" type="checkbox" name="register" onclick="jQuery('.register-form').toggle()">
                 <label for="register">
                     <span class="check"></span>
@@ -401,9 +364,9 @@
     <!--================= /col-left =================-->
 
     <!--================= col-center =================-->
-    <div class="col-md-12 col-lg-4">
+    <div class="col-md-12 col-lg-5" id="local_shipping" >
     <?php if ($shipping_required) { ?>
-    <div class="shiptobilling clearfix">
+    <div class="shiptobilling clearfix" hidden>
         <h2 class="title-checkout tt_uppercase">
             <span class="icon color icon-local_shipping"></span>
             <?php echo $text_checkout_shipping_address; ?>
@@ -626,8 +589,6 @@
 			      </div>
 			</div>
 
-    <div class="divider--xl"></div>
-
     <div class="shipping-method" >
         <h2 class="title-checkout tt_uppercase"><i class="icon fa fa-truck color" aria-hidden="true"></i> <?php echo $text_checkout_shipping_method; ?></h2>
 
@@ -674,7 +635,7 @@
     <!--================= /col-center =================-->
 
     <!--================= col-right =================-->
-    <div class="col-md-12 col-lg-4">
+    <div class="col-md-12 col-lg-3">
         <!--payment-->
         <div class="payment-method">
 
@@ -715,7 +676,7 @@
         </p>
         <!--//payment-->
 
-        <div class="your_order">
+        <div class="your_order" id="your_order_my">
             <?php if ($text_agree) { ?>
             <div class="buttons clearfix" id="terms-id">
                 <div class="checkbox-group">
@@ -732,7 +693,7 @@
                 </div>
             </div>
             <?php } else { ?>
-				<div class="buttons">
+				<div class="buttons" hidden>
 				  <div class="pull-right">
 				    <input type="button" value="<?php echo $button_continue; ?>" id="button-payment-method" data-loading-text="<?php echo $text_loading; ?>" class="btn btn--ys btn--full btn--xl" />
 				  </div>
@@ -996,5 +957,7 @@ jQuery(document).ready(function()
 
 
 //--></script> 
-
+<script>
+	$('#country').hide();
+</script>
 <?php echo $footer; ?>

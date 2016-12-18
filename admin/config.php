@@ -29,3 +29,7 @@ define('DB_PASSWORD', 'rBrDa13cl4lBYF0S');
 define('DB_DATABASE', 'd33007_db');
 define('DB_PORT', '3306');
 define('DB_PREFIX', 'oc_');
+
+//Set new API_KEY for Nova Pochta
+
+define('API_KEY','7f8ed623412deab364586c185c293edb');

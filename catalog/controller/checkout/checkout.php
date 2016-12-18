@@ -1075,30 +1075,24 @@ class ControllerCheckoutCheckout extends Controller {
 					$json['error']['lastname'] = $this->language->get('error_lastname');
 				}
 
-				if (isset($this->request->post['email']) && ((utf8_strlen($this->request->post['email']) > 96) || !preg_match('/^[^\@]+@.*.[a-z]{2,15}$/i', $this->request->post['email']))) {
-					$json['error']['email'] = $this->language->get('error_email');
-				}
 
 				if (isset($this->request->post['telephone']) && ((utf8_strlen($this->request->post['telephone']) < 3) || (utf8_strlen($this->request->post['telephone']) > 32))) {
 					$json['error']['telephone'] = $this->language->get('error_telephone');
 				}
 
-				if (isset($this->request->post['address_1']) && ((utf8_strlen(trim($this->request->post['address_1'])) < 3) || (utf8_strlen(trim($this->request->post['address_1'])) > 128))) {
-					$json['error']['address_1'] = $this->language->get('error_address_1');
-				}
-
+                /*
 				if (isset($this->request->post['city']) && ((utf8_strlen(trim($this->request->post['city'])) < 2) || (utf8_strlen(trim($this->request->post['city'])) > 128))) {
 					$json['error']['city'] = $this->language->get('error_city');
 				}
-
+                */
 				$this->load->model('localisation/country');
 				$country_info = array();
 				if (isset($this->request->post['country_id'])) $country_info = $this->model_localisation_country->getCountry($this->request->post['country_id']);
-
+                /*
 				if ($country_info && $country_info['postcode_required'] && (utf8_strlen(trim($this->request->post['postcode'])) < 2 || utf8_strlen(trim($this->request->post['postcode'])) > 10)) {
 					$json['error']['postcode'] = $this->language->get('error_postcode');
 				}
-
+                */
 				if (isset($this->request->post['country_id']) && $this->request->post['country_id'] == '') {
 					$json['error']['country'] = $this->language->get('error_country');
 					$json['error']['country_id'] = $this->language->get('error_country');
@@ -1146,10 +1140,10 @@ class ControllerCheckoutCheckout extends Controller {
 
 				$this->session->data['payment_address']['firstname'] = $this->request->post['firstname'];
 				$this->session->data['payment_address']['lastname'] = $this->request->post['lastname'];
-				$this->session->data['payment_address']['company'] = $this->request->post['company'];
-				$this->session->data['payment_address']['address_1'] = $this->request->post['address_1'];
+				$this->session->data['payment_address']['company'] = ''/*$this->request->post['company']*/;
+				$this->session->data['payment_address']['address_1'] = ''/*$this->request->post['address_1']*/;
 				$this->session->data['payment_address']['address_2'] = $this->request->post['address_2'];
-				$this->session->data['payment_address']['postcode'] = $this->request->post['postcode'];
+				$this->session->data['payment_address']['postcode'] = ''/*$this->request->post['postcode']*/;
 				$this->session->data['payment_address']['city'] = $this->request->post['city'];
 				$this->session->data['payment_address']['country_id'] = $this->request->post['country_id'];
 				$this->session->data['payment_address']['zone_id'] = $this->request->post['zone_id'];
@@ -1198,11 +1192,11 @@ class ControllerCheckoutCheckout extends Controller {
 				if ($this->session->data['guest']['shipping_address'] || $this->session->data['shipping_address']) {
 					$this->session->data['shipping_address']['firstname'] = $this->request->post['firstname'];
 					$this->session->data['shipping_address']['lastname'] = $this->request->post['lastname'];
-					$this->session->data['shipping_address']['company'] = $this->request->post['company'];
-					$this->session->data['shipping_address']['address_1'] = $this->request->post['address_1'];
-					$this->session->data['shipping_address']['address_2'] = $this->request->post['address_2'];
-					$this->session->data['shipping_address']['postcode'] = $this->request->post['postcode'];
-					$this->session->data['shipping_address']['city'] = $this->request->post['city'];
+					$this->session->data['shipping_address']['company'] = ''/*$this->request->post['company']*/;
+					$this->session->data['shipping_address']['address_1'] = ''/*$this->request->post['address_1']*/;
+					$this->session->data['shipping_address']['address_2'] = ''/* $this->request->post['address_2']*/;
+					$this->session->data['shipping_address']['postcode'] = ''/*$this->request->post['postcode']*/;
+					$this->session->data['shipping_address']['city'] = ''/*$this->request->post['city']*/;
 					$this->session->data['shipping_address']['country_id'] = $this->request->post['country_id'];
 					$this->session->data['shipping_address']['zone_id'] = $this->request->post['zone_id'];
 
@@ -1296,11 +1290,8 @@ class ControllerCheckoutCheckout extends Controller {
 			if (isset($this->request->post['lastname']) && ((utf8_strlen($this->request->post['lastname']) < 1) || (utf8_strlen($this->request->post['lastname']) > 32))) {
 				$json['error']['lastname'] = $this->language->get('error_lastname');
 			}
-		
-			if (isset($this->request->post['email']) && ((utf8_strlen($this->request->post['email']) > 96) || !preg_match('/^[^\@]+@.*\.[a-z]{2,6}$/i', $this->request->post['email']))) {
-				$json['error']['email'] = $this->language->get('error_email');
-			}
-	
+
+
 			if (isset($this->request->post['email']) && ($this->model_account_customer->getTotalCustomersByEmail($this->request->post['email']))) {
 				$json['error']['warning'] = $this->language->get('error_exists');
 			}
@@ -1332,15 +1323,12 @@ class ControllerCheckoutCheckout extends Controller {
 					}						
 				}*/
 			
-			
-			if (isset($this->request->post['address_1']) && ((utf8_strlen($this->request->post['address_1']) < 3) || (utf8_strlen($this->request->post['address_1']) > 128))) {
-				$json['error']['address_1'] = $this->language->get('error_address');
-			}
-	
+
+	        /*
 			if (isset($this->request->post['city']) && ((utf8_strlen($this->request->post['city']) < 2) || (utf8_strlen($this->request->post['city']) > 128))) {
 				$json['error']['city'] = $this->language->get('error_city');
 			}
-	
+	        */
 			$this->load->model('localisation/country');
 			
 			$country_info = $this->model_localisation_country->getCountry(isset($this->request->post['country_id'])?$this->request->post['country_id']:0);
@@ -1513,15 +1501,12 @@ class ControllerCheckoutCheckout extends Controller {
 						if (!isset($this->request->post['lastname']) || ( (utf8_strlen(trim($this->request->post['lastname'])) < 1) || (utf8_strlen(trim($this->request->post['lastname'])) > 32))) {
 							$json['error']['lastname'] = $this->language->get('error_lastname');
 						}
-							
-						if (!isset($this->request->post['address_1']) || ( (utf8_strlen(trim($this->request->post['address_1'])) < 3) || (utf8_strlen(trim($this->request->post['address_1'])) > 128))) {
-							$json['error']['address_1'] = $this->language->get('error_address_1');
-						}
-				
+
+				        /*
 						if (!isset($this->request->post['city']) || ( (utf8_strlen($this->request->post['city']) < 2) || (utf8_strlen($this->request->post['city']) > 32))) {
 							$json['error']['city'] = $this->language->get('error_city');
 						}
-						
+						*/
 						$this->load->model('localisation/country');
 						
 						if (isset($this->request->post['country_id'])) $country_info = $this->model_localisation_country->getCountry($this->request->post['country_id']);
@@ -1654,10 +1639,7 @@ class ControllerCheckoutCheckout extends Controller {
 				if ((utf8_strlen($this->request->post['shipping_lastname']) < 1) || (utf8_strlen($this->request->post['shipping_lastname']) > 32)) {
 					$json['error']['shipping_lastname'] = $this->language->get('error_lastname');
 				}
-		
-				if ((utf8_strlen($this->request->post['shipping_address_1']) < 3) || (utf8_strlen($this->request->post['shipping_address_1']) > 128)) {
-					$json['error']['shipping_address_1'] = $this->language->get('error_address_1');
-				}
+
 		
 				if ((utf8_strlen($this->request->post['shipping_city']) < 2) || (utf8_strlen($this->request->post['shipping_city']) > 128)) {
 					$json['error']['shipping_city'] = $this->language->get('error_city');

@@ -2,7 +2,7 @@
 <div class="alert alert-warning"><i class="fa fa-exclamation-circle"></i> <?php echo $error_warning; ?></div>
 <?php } ?>
 <h2 class="title-checkout tt_uppercase">
-    <span class="icon icon-account_balance_wallet color"></span>
+    <span id="icon-account_balance_wallet" class="icon icon-account_balance_wallet color"></span>
     <?php echo $text_checkout_payment_method; ?>
 </h2>
 			  

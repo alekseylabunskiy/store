@@ -1,4 +1,5 @@
 <?php echo $header; ?>
+<?php echo $header; ?>
 <div class="breadcrumbs">
     <div class="container">
         <ol class="breadcrumb breadcrumb--ys pull-left">
