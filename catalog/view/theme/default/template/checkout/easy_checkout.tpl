@@ -268,10 +268,6 @@
 				    <label class="control-label" for="input-payment-city"><?php echo $entry_city; ?></label>
 				    <input type="text" name="city" value="<?php if (isset($city)) echo $city;?>" placeholder="<?php echo str_replace(':','',$entry_city); ?>" id="input-payment-city" class="form-control" />
 				  </div>
-				  <div class="form-group" hidden >
-				    <label class="control-label" for="input-payment-postcode"><?php echo $entry_postcode; ?></label>
-				    <input type="text" name="postcode" value="<?php if (isset($postcode)) echo $postcode;?>" placeholder="<?php echo str_replace(':','',$entry_postcode); ?>" id="input-payment-postcode" class="form-control" />
-				  </div>
 				</div>
 				<?php if (!isset($customer_id)) { ?>
             <div class="checkbox-group" hidden>
