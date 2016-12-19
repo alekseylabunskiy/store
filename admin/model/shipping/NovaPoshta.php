@@ -17,4 +17,11 @@ class ModelShippingNovaPoshta extends Model
             $this->db->query("INSERT INTO `". DB_PREFIX . "zone` SET code = '" . $area['Ref'] . "', country_id = '" . $country_id . "', name = '" . $area['Description'] . "', status = '" . $status . "'");
         }
     }
+
+    public function setWarehouses($cites)
+    {
+        foreach ($cites as $key) {
+            var_dump($key);
+        }
+    }
 }

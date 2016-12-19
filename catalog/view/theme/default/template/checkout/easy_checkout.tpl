@@ -180,7 +180,7 @@
 				</div>
 				<div class="form-group required">
 					<label class="control-label" for="input-payment-city"><?php echo $entry_city; ?></label>
-					<input type="text" name="city" value="<?php if (isset($city)) echo $city;?>" placeholder="<?php echo str_replace(':','',$entry_city); ?>" id="input-payment-city" class="form-control" />
+					<select name="city" id="input-payment-city" class="form-control"></select>
 				</div>
 				<div class="form-group required">
 					<label class="control-label" for="input-payment-telephone"><?php echo $entry_telephone; ?></label>
@@ -265,8 +265,7 @@
 				    <input type="text" name="address_2" value="<?php if (isset($address_2)) echo $address_2;?>" placeholder="<?php echo str_replace(':','',$entry_address_2); ?>" id="input-payment-address-2" class="form-control" />
 				  </div>
 				  <div class="form-group" hidden>
-				    <label class="control-label" for="input-payment-city"><?php echo $entry_city; ?></label>
-				    <input type="text" name="city" value="<?php if (isset($city)) echo $city;?>" placeholder="<?php echo str_replace(':','',$entry_city); ?>" id="input-payment-city" class="form-control" />
+
 				  </div>
 				</div>
 				<?php if (!isset($customer_id)) { ?>
@@ -730,8 +729,6 @@
 
 </div>
 
-
-
 <script type="text/javascript"><!--
 var error = true;
 $ = jQuery.noConflict();
@@ -959,5 +956,29 @@ jQuery(document).ready(function()
 //--></script> 
 <script>
 	$('#country').hide();
+</script>
+<script>
+    $('select[name=\'zone_id\']').on('change',function(){
+        var id = $(this).val();
+        var d = {
+            new_zone_id: id
+        };
+        $.ajax({
+            url: 'index.php?route=checkout/checkout/getCityList',
+            dataType: 'json',
+            type: 'post',
+            data: d,
+            success: function(json) {
+                html = '<option value=""><?php echo $text_select; ?></option>';
+                for (var i = 0; i < json.length; i++) {
+                    html += '<option value="' + json[i]['descriptionRu'] + '"';
+                    html += '>' + json[i]['descriptionRu'] + '</option>';
+                }
+
+                $('select[name=\'city\']').html(html).val("");
+            }
+        });
+
+    });
 </script>
 <?php echo $footer; ?>

@@ -3113,4 +3113,14 @@ class ControllerCheckoutCheckout extends Controller {
 			}
 	
   	}
+  	public function getCityList()
+    {
+        $zone_id = $this->request->post['new_zone_id'];
+
+        $this->load->model('shipping/novaposhta');
+
+        $cities = $this->model_shipping_novaposhta->getCities($zone_id);
+
+        $this->response->setOutput(json_encode($cities));
+    }
 }

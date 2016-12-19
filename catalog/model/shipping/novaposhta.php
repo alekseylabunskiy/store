@@ -37,4 +37,17 @@ class ModelShippingNovaposhta extends Model {
 
 		return $method_data;
 	}
+
+	public function getCities($zone_id)
+    {
+        $result = [];
+        $query = $this->db->query("SELECT * FROM " . DB_PREFIX . "zone WHERE zone_id = '" . (int)$zone_id . "' AND status = '1'");
+
+        $query1 = $this->db->query("SELECT * FROM " . DB_PREFIX . "cities_nova_poshta WHERE area LIKE '" . $query->row['code'] . "%'");
+
+        foreach ($query1->rows as $row) {
+            $result[] = $row;
+        }
+        return $result;
+    }
 }

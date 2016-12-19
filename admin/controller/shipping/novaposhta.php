@@ -102,14 +102,6 @@ class ControllerShippingNovaposhta extends Controller {
         $this->load->model('shipping/NovaPoshtaApi2');
         $this->load->model('shipping/NovaPoshta');
 
-        //Достаем список областей
-        $areas = $this->model_shipping_NovaPoshtaApi2->getAreas();
-
-        //записываем области в базу данных
-        $this->model_shipping_NovaPoshta->setsAreas($areas);
-
-
-        $this->response->setOutput(json_encode($areas));
     }
 
 }
