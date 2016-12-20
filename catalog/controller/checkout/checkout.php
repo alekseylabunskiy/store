@@ -3113,6 +3113,7 @@ class ControllerCheckoutCheckout extends Controller {
 			}
 	
   	}
+
   	public function getCityList()
     {
         $zone_id = $this->request->post['new_zone_id'];
@@ -3122,5 +3123,16 @@ class ControllerCheckoutCheckout extends Controller {
         $cities = $this->model_shipping_novaposhta->getCities($zone_id);
 
         $this->response->setOutput(json_encode($cities));
+    }
+
+    public function getWarehousesList()
+    {
+        $city_name = $this->request->post['city_id'];
+
+        $this->load->model('shipping/novaposhta');
+
+        $warehouses = $this->model_shipping_novaposhta->getWarehouses($city_name);
+
+        $this->response->setOutput(json_encode($warehouses));
     }
 }

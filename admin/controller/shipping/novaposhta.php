@@ -96,12 +96,6 @@ class ControllerShippingNovaposhta extends Controller {
 
         return !$this->error;
     }
-	public function updateNovaPochtaLocations()
-    {
-        //подключаем модель
-        $this->load->model('shipping/NovaPoshtaApi2');
-        $this->load->model('shipping/NovaPoshta');
 
-    }
 
 }

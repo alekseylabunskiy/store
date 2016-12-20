@@ -21794,7 +21794,7 @@ li.open .expander-list ul {
 * End Checkout one page
 *****************************************/
 .title-checkout {
-  font-size: 23px;
+  font-size: 20px;
   margin-bottom: 33px;
 }
 .title-checkout .icon {
@@ -27745,7 +27745,7 @@ header .mainMenu .navbar-nav > li.custom_item > a,
 .category-carousel.main-layout .banner .figure{background-color:transparent}
 #shipping_icon{padding-right: 8px;top: -3px;}
 #icon-account_balance_wallet{padding-right: 4px;padding-top: -2px;top:6px;}
-#h2shipping_icon{height: 52px;padding-top: 7px;}
+#h2shipping_icon{height: 52px;padding-top: 6px;}
 @media (min-width: 1889px){
   #local_shipping{padding-left: 159px;}
 }

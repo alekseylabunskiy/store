@@ -176,11 +176,18 @@
 				<div class="form-group required">
 					<label class="control-label" for="input-payment-zone"><?php echo $entry_zone; ?></label>
 					<select name="zone_id" id="input-payment-zone" class="form-control">
+						<?php if ($address['address_id']) { ?>
+						<option value="<?php echo $address['city']; ?>" selected="selected"><?php echo $address['city']; ?></option>
+						<?php } ?>
 					</select>
 				</div>
 				<div class="form-group required">
 					<label class="control-label" for="input-payment-city"><?php echo $entry_city; ?></label>
-					<select name="city" id="input-payment-city" class="form-control"></select>
+					<select name="city" id="input-payment-city" class="form-control">
+						<?php if ($address['address_id']) { ?>
+						<option value="<?php echo $address['city']; ?>" selected="selected"><?php echo $address['city']; ?></option>
+						<?php } ?>
+					</select>
 				</div>
 				<div class="form-group required">
 					<label class="control-label" for="input-payment-telephone"><?php echo $entry_telephone; ?></label>
@@ -196,14 +203,9 @@
 
 			      <?php if ($addresses) { ?>
 				  <?php if (isset($customer_id)) { ?>
-			      <div class="radio">
-				 <label>
-				  <input type="radio" name="payment_address" value="existing" checked="checked" onclick="jQuery('#payment-address-new').hide()" />
-				  <?php echo $text_address_existing; ?>
-                 </label>
-			      </div>
 
-			      <div id="payment-existing">
+
+			      <div id="payment-existing" hidden>
 					<select name="payment_address_id" class="form-control">
 				  <?php foreach ($addresses as $address) { ?>
 				  <?php if (isset($payment_address_id) && $address['address_id'] == $payment_address_id) { ?>
@@ -216,12 +218,6 @@
 			      </div>
 			      <?php } ?>
 			    <?php if (isset($customer_id)) { ?>
-			      <div class="radio">
-				  <label>
-				  <input type="radio" name="payment_address" value="new" onclick="jQuery('#payment-address-new').show();"/>
-				  <?php echo $text_address_new; ?>
-                  </label>
-			      </div>
 				  <?php } ?>
 			      <?php } ?>
 
@@ -255,11 +251,6 @@
 				<?php } else { ?>
 				<input type="hidden" name="tax_id" value="" />
 				<?php } }?>
-
-				  <div class="form-group" hidden>
-				    <label class="control-label" for="input-payment-address-1"><?php echo $entry_address_1; ?></label>
-				    <input type="text" name="address_1" value="<?php if (isset($address_1)) echo $address_1;?>" placeholder="<?php echo str_replace(':','',$entry_address_1); ?>" id="input-payment-address-1" class="form-control" />
-				  </div>
 				  <div class="form-group" hidden>
 				    <label class="control-label" for="input-payment-address-2"><?php echo $entry_address_2; ?></label>
 				    <input type="text" name="address_2" value="<?php if (isset($address_2)) echo $address_2;?>" placeholder="<?php echo str_replace(':','',$entry_address_2); ?>" id="input-payment-address-2" class="form-control" />
@@ -324,14 +315,14 @@
 				    <p><?php echo $address['company']; ?></p>
 				  </div>
 				  <?php }?>
-			
+
 				  <?php if (!empty($address['address_1'])) { ?>
 				  <div class="form-group required col-md-12">
 				    <label class="control-label" for="input-payment-address-1"><?php echo $entry_address_1; ?></label>
 				    <p><?php echo $address['address_1'];?></p>
 				  </div>
 				   <?php }?>
-				  
+
 				  <?php if (!empty($address['address_2'])) { ?>
 				  <div class="form-group col-md-12">
 				    <label class="control-label" for="input-payment-address-2"><?php echo $entry_address_2; ?></label>
@@ -384,7 +375,7 @@
 					<?php } ?>
 			    </div>
 
-    <div class="shipping-address" <?php if (isset($shipping_address_id) || isset($customer_id)) echo 'style="display:block"'; else echo 'style="display:none"'; ?>>
+    <div class="shipping-address" <?php if (isset($shipping_address_id) || isset($customer_id)) echo 'style="display:none"'; else echo 'style="display:none"'; ?>>
 			      <?php if ($addresses) { ?>
 				  <?php if (isset($customer_id)) { ?>
 			      <div class="radio">
@@ -398,7 +389,7 @@
 			      
 
     <div id="shipping-existing">
-        <select name="shipping_address_id" class="form-control">
+        <select name="shipping_address_id" class="form-control" >
 				  <?php foreach ($addresses as $address) { ?>
 				  <?php if (isset($shipping_address_id) && $address['address_id'] == $shipping_address_id) { ?>
 				  <option value="<?php echo $address['address_id']; ?>" selected="selected"><?php echo $address['firstname']; ?> <?php echo $address['lastname']; ?>, <?php echo $address['address_1']; ?>, <?php echo $address['city']; ?>, <?php echo $address['zone']; ?>, <?php echo $address['country']; ?></option>
@@ -606,20 +597,16 @@
                 <?php if ($quote['code'] == $code || !$code) { ?>
                 <?php $code = $quote['code']; ?>
                 <input id="shipping_method<?php echo $quote['code']; ?>" type="radio" name="shipping_method" value="<?php echo $quote['code']; ?>"  title="<?php echo $quote['title']; ?>" checked="checked" />
-                <?php } else { ?>
+				<?php } else { ?>
                 <input id="shipping_method<?php echo $quote['code']; ?>" type="radio" name="shipping_method" value="<?php echo $quote['code']; ?>"  title="<?php echo $quote['title']; ?>" />
-                <?php } ?>
+				<?php } ?>
                 <span class="outer">
                     <span class="inner"></span>
                 </span>
                 <?php echo $quote['title']; ?> - <?php echo $quote['text']; ?>
             </label>
+
         </div>
-
-
-
-
-
         <?php } ?>
         <?php } else { ?>
         <div class="alert alert-danger"><?php echo $shipping_method['error']; ?></div>
@@ -628,7 +615,10 @@
         <?php } ?>
     </div>
     <?php } ?>
-
+		<div class="form-group col-lg-10" style="padding-left: 0px">
+			<label class="control-label" for="input-payment-address-1"><?php echo $entry_address_1; ?></label>
+			<select   name="address_1"  id="input-payment-address-1" class="form-control" ></select>
+		</div>
 
     </div>
     <!--================= /col-center =================-->
@@ -980,5 +970,30 @@ jQuery(document).ready(function()
         });
 
     });
+</script>
+<script>
+    $('select[name=\'city\']').on('change',function(){
+		var m_city_id = $(this).val();
+
+		var data = {
+			city_id: m_city_id
+		};
+        $.ajax({
+            url: 'index.php?route=checkout/checkout/getWarehousesList',
+            dataType: 'json',
+            type: 'post',
+            data: data,
+            success: function(json) {
+                console.log(json);
+
+                html = '<option value=""><?php echo $text_select; ?></option>';
+                for (var i = 0; i < json.length; i++) {
+                    html += '<option value="' + json[i]['descriptionRu'] + '"';
+                    html += '>' + json[i]['descriptionRu'] + '</option>';
+                }
+                $('select[name=\'address_1\']').html(html).val("");
+            }
+        });
+	});
 </script>
 <?php echo $footer; ?>

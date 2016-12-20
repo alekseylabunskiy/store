@@ -21,7 +21,7 @@
                 <span class="outer">
                     <span class="inner"></span>
                 </span>
-        <?php echo $quote['title']; ?> - <?php echo $quote['text']; ?>
+        <?php echo $quote['title']; ?><?php echo $quote['text']; ?>
     </label>
 </div>
 

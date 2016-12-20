@@ -23,7 +23,7 @@ class ModelShippingNovaposhta extends Model {
 				'title'        => $this->language->get('text_description'),
 				'cost'         => 0.00,
 				'tax_class_id' => 0,
-				'text'         => '(за счет получателя)'//$this->currency->format(0.00)
+				'text'         => ''//$this->currency->format(0.00)
 			);
 
 			$method_data = array(
@@ -41,11 +41,24 @@ class ModelShippingNovaposhta extends Model {
 	public function getCities($zone_id)
     {
         $result = [];
+
         $query = $this->db->query("SELECT * FROM " . DB_PREFIX . "zone WHERE zone_id = '" . (int)$zone_id . "' AND status = '1'");
 
-        $query1 = $this->db->query("SELECT * FROM " . DB_PREFIX . "cities_nova_poshta WHERE area LIKE '" . $query->row['code'] . "%'");
+        $query1 = $this->db->query("SELECT * FROM " . DB_PREFIX . "cities_np WHERE area LIKE '" . $query->row['code'] . "%'");
 
         foreach ($query1->rows as $row) {
+            $result[] = $row;
+        }
+        return $result;
+    }
+
+    public function getWarehouses($city_name)
+    {
+        $result = [];
+
+        $query = $this->db->query("SELECT * FROM " . DB_PREFIX . "warehouses_np WHERE сityDescriptionRu = '" . $city_name . "'");
+
+        foreach ($query->rows as $row) {
             $result[] = $row;
         }
         return $result;
