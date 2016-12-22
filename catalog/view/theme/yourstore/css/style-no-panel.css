@@ -27743,9 +27743,19 @@ header .mainMenu .navbar-nav > li.custom_item > a,
 .storelayout_10 .carousel-products__button span.btn-prev,.storelayout_10 .carousel-products__button span.btn-next{background-color:#000}
 .buttons .pull-left,.buttons .pull-right{margin-bottom:10px}
 .category-carousel.main-layout .banner .figure{background-color:transparent}
-#shipping_icon{padding-right: 8px;top: -3px;}
-#icon-account_balance_wallet{padding-right: 4px;padding-top: -2px;top:6px;}
+#shipping_icon{padding-right: 8px;top: 3px;}
+#icon_person{font-size: 44px; top:7px;}
+
+#icon-account_balance_wallet{padding-right: 4px;top:5px;font-size: 40px;}
 #h2shipping_icon{height: 52px;padding-top: 6px;}
 @media (min-width: 1889px){
   #local_shipping{padding-left: 159px;}
 }
+#contact_data{
+  margin-top: 2px;
+}
+#balance_wallet{
+  font-size: 40px;
+  top:10px;
+}
+#balance_wallet_checkout{margin-top: 6px;}

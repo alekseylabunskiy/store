@@ -28,6 +28,6 @@ define('DB_PORT', '3306');
 define('DB_PREFIX', 'oc_');
 
 //CRM
-define('CRM_ADRESS', 'http://crm:8080/crm.php');
+define('CRM_ADRESS', 'http://alexeytestdomain.esy.es/crm.php');
 
-//api key for Novaya Pochta set in admin/config.php
+

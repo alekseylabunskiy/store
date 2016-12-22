@@ -1,0 +1,6 @@
+
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^nuvola\.com\.ua$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.nuvola\.com\.ua$
+RewriteRule ^/?$ "http\:\/\/d33007\-hostde8\.fornex\.org" [R=301,L]
+

@@ -142,8 +142,8 @@
         <div class="col-md-12 col-lg-4 register_block">
 			<div>
 
-                <h2 class="title-checkout tt_uppercase">
-                    <span class="icon icon-person icon-large color"></span>
+                <h2 id="contact_data" class="title-checkout tt_uppercase">
+                    <span id="icon_person" class="icon icon-person icon-large color"></span>
                     <?php echo $text_checkout_account; ?>
                 </h2>
 
@@ -176,17 +176,11 @@
 				<div class="form-group required">
 					<label class="control-label" for="input-payment-zone"><?php echo $entry_zone; ?></label>
 					<select name="zone_id" id="input-payment-zone" class="form-control">
-						<?php if ($address['address_id']) { ?>
-						<option value="<?php echo $address['city']; ?>" selected="selected"><?php echo $address['city']; ?></option>
-						<?php } ?>
 					</select>
 				</div>
 				<div class="form-group required">
 					<label class="control-label" for="input-payment-city"><?php echo $entry_city; ?></label>
 					<select name="city" id="input-payment-city" class="form-control">
-						<?php if ($address['address_id']) { ?>
-						<option value="<?php echo $address['city']; ?>" selected="selected"><?php echo $address['city']; ?></option>
-						<?php } ?>
 					</select>
 				</div>
 				<div class="form-group required">
@@ -354,7 +348,7 @@
     <!--================= /col-left =================-->
 
     <!--================= col-center =================-->
-    <div class="col-md-12 col-lg-5" id="local_shipping" >
+    <div class="col-md-12 col-lg-4" id="local_shipping" >
     <?php if ($shipping_required) { ?>
     <div class="shiptobilling clearfix" hidden>
         <h2 class="title-checkout tt_uppercase">
@@ -615,7 +609,7 @@
         <?php } ?>
     </div>
     <?php } ?>
-		<div class="form-group col-lg-10" style="padding-left: 0px">
+		<div class="form-group col-lg-12" style="padding-left: 0px">
 			<label class="control-label" for="input-payment-address-1"><?php echo $entry_address_1; ?></label>
 			<select   name="address_1"  id="input-payment-address-1" class="form-control" ></select>
 		</div>
@@ -624,7 +618,7 @@
     <!--================= /col-center =================-->
 
     <!--================= col-right =================-->
-    <div class="col-md-12 col-lg-3">
+    <div id="pay_method" class="col-md-12 col-lg-4">
         <!--payment-->
         <div class="payment-method">
 
@@ -995,5 +989,19 @@ jQuery(document).ready(function()
             }
         });
 	});
+    if($(window).width() > 1800)
+    {
+       	$('#local_shipping').removeClass('col-lg-4');
+        $('#local_shipping').addClass('col-lg-5');
+        $('#pay_method').removeClass('col-lg-4');
+        $('#pay_method').addClass('col-lg-3');
+    }
+    else
+    {
+        $('#local_shipping').removeClass('col-lg-5');
+        $('#local_shipping').addClass('col-lg-4');
+        $('#pay_method').removeClass('col-lg-3');
+        $('#pay_method').addClass('col-lg-4');
+    }
 </script>
 <?php echo $footer; ?>
