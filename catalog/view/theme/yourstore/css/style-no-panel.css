@@ -21288,7 +21288,7 @@ li.open .expander-list ul {
   width: 100%;
 }
 .shopping-cart-table tr {
-  border-bottom: 1px solid #e5e5e5;
+ /* border-bottom: 1px solid #e5e5e5;*/
 }
 .shopping-cart-table th {
   border-top: 1px solid #e5e5e5;
@@ -21297,7 +21297,7 @@ li.open .expander-list ul {
   padding: 11px 0;
 }
 .shopping-cart-table td {
-  padding: 50px 0;
+  padding: 0px 0;
 }
 .shopping-cart-table td,
 .shopping-cart-table th {
@@ -21319,24 +21319,30 @@ li.open .expander-list ul {
 }
 .shopping-cart-table td:nth-child(1),
 .shopping-cart-table th:nth-child(1) {
-  width: 18.3%;
+  width: 2%;
+  padding-top: 22px;
 }
 .shopping-cart-table td:nth-child(2),
 .shopping-cart-table th:nth-child(2) {
-  width: 22.7%;
+  width: 9%;
   text-align: left;
 }
 .shopping-cart-table td:nth-child(3),
 .shopping-cart-table th:nth-child(3) {
   width: 10%;
+  padding-top: 23px;
+  border: none;
 }
 .shopping-cart-table td:nth-child(4),
 .shopping-cart-table th:nth-child(4) {
-  width: 14%;
+  width: 1%;
+  padding-top: 60px;
+  border: none;
 }
 .shopping-cart-table td:nth-child(5),
 .shopping-cart-table th:nth-child(5) {
-  width: 15%;
+  width: 4%;
+  padding-top: 40px;
 }
 .shopping-cart-table td:nth-child(6),
 .shopping-cart-table th:nth-child(6) {
@@ -27292,7 +27298,8 @@ fieldset[disabled] .btn-primary.active{background-color:#f5f5f5;border:none;}
 .bootstrap-datetimepicker-widget.dropdown-menu li > a:hover{background-color:#f5f5f5;}
 .panel-collapse .radio input,.modal-dialog .radio input{width:auto;height:auto;opacity:1}
 .darken{background:black;opacity:0.5;}
-#modalAddToCart.modal{font-family:Ubuntu, sans-serif;font-size:16px;line-height:1.6875;color:#777777;}
+#modalAddToCart.modal{font-family:Ubuntu, sans-serif;font-size:16px;line-height:1.6875;}
+
 @media (min-width:768px){#modalAddToCart .modal-sm{width:400px;}
 }
 .collapse-block__title.category_name{text-transform:uppercase}
@@ -27759,3 +27766,6 @@ header .mainMenu .navbar-nav > li.custom_item > a,
   top:10px;
 }
 #balance_wallet_checkout{margin-top: 6px;}
+#total_sum{margin-top: 20px;}
+#logo_img_cart{padding-top: 34px;}
+#confirm_order{width: 100%;}

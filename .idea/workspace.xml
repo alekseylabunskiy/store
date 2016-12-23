@@ -3,13 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="e07c87bc-55c4-435f-9541-5b3d23762672" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catalog/controller/module/sendOrder.php" afterPath="$PROJECT_DIR$/catalog/controller/module/sendOrder.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catalog/language/ru-ru/checkout/checkout.php" afterPath="$PROJECT_DIR$/catalog/language/ru-ru/checkout/checkout.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catalog/view/theme/default/template/checkout/easy_checkout.tpl" afterPath="$PROJECT_DIR$/catalog/view/theme/default/template/checkout/easy_checkout.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catalog/view/theme/default/template/checkout/easy_payment_method.tpl" afterPath="$PROJECT_DIR$/catalog/view/theme/default/template/checkout/easy_payment_method.tpl" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catalog/view/theme/yourstore/css/style-no-panel.css" afterPath="$PROJECT_DIR$/catalog/view/theme/yourstore/css/style-no-panel.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config.php" afterPath="$PROJECT_DIR$/config.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catalog/view/theme/yourstore/js/theme_scripts.js" afterPath="$PROJECT_DIR$/catalog/view/theme/yourstore/js/theme_scripts.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/system/storage/logs/error.log" afterPath="$PROJECT_DIR$/system/storage/logs/error.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/system/storage/modification/catalog/controller/checkout/cart.php" afterPath="$PROJECT_DIR$/system/storage/modification/catalog/controller/checkout/cart.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -32,24 +30,27 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="style-no-panel.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../../userdata/temp/FileZillaPortableTemp/fz3temp-1/style-no-panel.css">
+      <file leaf-file-name="product.tpl" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/catalog/view/theme/yourstore/template/product/product.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="449688">
-              <caret line="27760" column="38" lean-forward="false" selection-start-line="27760" selection-start-column="38" selection-end-line="27760" selection-end-column="38" />
-              <folding />
+            <state relative-caret-position="217">
+              <caret line="506" column="52" lean-forward="false" selection-start-line="506" selection-start-column="52" selection-end-line="506" selection-end-column="52" />
+              <folding>
+                <marker date="1482475598019" expanded="true" signature="54517:54553" ph="..." />
+                <marker date="1482475598019" expanded="true" signature="57041:57055" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="easy_checkout.tpl" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/../../userdata/temp/FileZillaPortableTemp/fz3temp-1/easy_checkout.tpl">
+      <file leaf-file-name="theme_scripts.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../../userdata/temp/FileZillaPortableTemp/fz3temp-1/theme_scripts.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="460">
-              <caret line="995" column="49" lean-forward="true" selection-start-line="995" selection-start-column="49" selection-end-line="995" selection-end-column="49" />
+            <state relative-caret-position="160">
+              <caret line="584" column="52" lean-forward="true" selection-start-line="584" selection-start-column="52" selection-end-line="584" selection-end-column="52" />
               <folding>
-                <marker date="1482387821257" expanded="true" signature="38434:38441" ph="×" />
-                <marker date="1482387821257" expanded="true" signature="40174:40181" ph="×" />
+                <element signature="n#!!doc" expanded="true" />
+                <marker date="1482488715186" expanded="true" signature="12396:12432" ph="..." />
               </folding>
             </state>
           </provider>
@@ -59,10 +60,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>model</find>
-      <find>$query-&gt;row</find>
-      <find>checkout/checkout/confirm</find>
-      <find>entry_address</find>
       <find>entry_address_1</find>
       <find>Курьерская доставка по адресу</find>
       <find>name=\'city\</find>
@@ -82,7 +79,17 @@
       <find>title-checkout tt_uppercase</find>
       <find>Выберите способ оплаты для данного заказа</find>
       <find>col-md-12 col-lg-3</find>
+      <find>modal-dialog white-modal modal-sm</find>
+      <find>products</find>
+      <find>add</find>
+      <find>success</find>
+      <find>data</find>
       <find>col-md-12 col-lg-4</find>
+      <find>shopping-cart-table__delete icon icon-clear</find>
+      <find>modalAddToCart</find>
+      <find>class=&quot;btn btn--ys btn--light pull-left btn-right</find>
+      <find>text-center</find>
+      <find>number input-counter</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -106,9 +113,17 @@
         <option value="$PROJECT_DIR$/../../userdata/temp/FileZillaPortableTemp/fz3temp-1/crm.php" />
         <option value="$PROJECT_DIR$/../../userdata/temp/FileZillaPortableTemp/fz3temp-1/config.php" />
         <option value="$PROJECT_DIR$/../../userdata/temp/FileZillaPortableTemp/fz3temp-1/easy_payment_method.tpl" />
-        <option value="$PROJECT_DIR$/../../userdata/temp/FileZillaPortableTemp/fz3temp-1/style-no-panel.css" />
         <option value="$PROJECT_DIR$/../../userdata/temp/FileZillaPortableTemp/fz3temp-1/checkout.php" />
         <option value="$PROJECT_DIR$/../../userdata/temp/FileZillaPortableTemp/fz3temp-1/easy_checkout.tpl" />
+        <option value="$PROJECT_DIR$/catalog/view/theme/yourstore/template/product/product.tpl" />
+        <option value="$PROJECT_DIR$/../../userdata/temp/FileZillaPortableTemp/fz3temp-1/product.tpl" />
+        <option value="$PROJECT_DIR$/catalog/view/theme/yourstore/js/theme_scripts.js" />
+        <option value="$PROJECT_DIR$/../../userdata/temp/FileZillaPortableTemp/fz3temp-1/cart.tpl" />
+        <option value="$PROJECT_DIR$/../../userdata/temp/FileZillaPortableTemp/fz3temp-1/cart 2.tpl" />
+        <option value="$PROJECT_DIR$/../../userdata/temp/FileZillaPortableTemp/fz3temp-1/cart.php" />
+        <option value="$PROJECT_DIR$/../../userdata/temp/FileZillaPortableTemp/fz3temp-1/cart 2.php" />
+        <option value="$PROJECT_DIR$/../../userdata/temp/FileZillaPortableTemp/fz3temp-1/style-no-panel.css" />
+        <option value="$PROJECT_DIR$/../../userdata/temp/FileZillaPortableTemp/fz3temp-1/theme_scripts.js" />
       </list>
     </option>
   </component>
@@ -120,10 +135,10 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1296" />
-    <option name="height" value="1000" />
+    <option name="x" value="-15" />
+    <option name="y" value="136" />
+    <option name="width" value="1284" />
+    <option name="height" value="791" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -140,7 +155,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -184,26 +199,8 @@
               <option name="myItemId" value="model" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
-          </PATH>
-          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="backUpFromHostStore" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="backUpFromHostStore" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="catalog" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="model" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="extension" />
+              <option name="myItemId" value="tool" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -222,20 +219,12 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="model" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="extension" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shipping" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -317,22 +306,24 @@
       <workItem from="1482300901089" duration="10258000" />
       <workItem from="1482337312639" duration="3656000" />
       <workItem from="1482383154796" duration="517000" />
-      <workItem from="1482383790393" duration="3286000" />
+      <workItem from="1482383790393" duration="23278000" />
+      <workItem from="1482409213783" duration="12174000" />
+      <workItem from="1482473800473" duration="10278000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="53886000" />
+    <option name="totallyTimeSpent" value="96330000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1296" height="1000" extended-state="6" />
+    <frame x="-15" y="136" width="1284" height="791" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27265626" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2752366" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14673913" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26284876" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -350,25 +341,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../../userdata/temp/FileZillaPortableTemp/fz3temp-1/style-no-panel.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../userdata/temp/FileZillaPortableTemp/fz3temp-1/easy_checkout.tpl" />
-    <entry file="file://$PROJECT_DIR$/../../userdata/temp/FileZillaPortableTemp/fz3temp-1/style-no-panel.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="471733">
-          <caret line="27749" column="48" lean-forward="true" selection-start-line="27749" selection-start-column="48" selection-end-line="27749" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../userdata/temp/FileZillaPortableTemp/fz3temp-1/checkout.php" />
-    <entry file="file://$PROJECT_DIR$/../../userdata/temp/FileZillaPortableTemp/fz3temp-1/easy_checkout.tpl" />
     <entry file="file://$PROJECT_DIR$/catalog/model/shipping/novaposhta.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -463,9 +435,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-102">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1482253496779" expanded="true" signature="172:418" ph="SELECT * FRO... ${DB_PREFIX}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -521,29 +490,114 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../../userdata/temp/FileZillaPortableTemp/fz3temp-1/easy_payment_method.tpl" />
-    <entry file="file://$PROJECT_DIR$/../../userdata/temp/FileZillaPortableTemp/fz3temp-1/checkout.php">
+    <entry file="file://$PROJECT_DIR$/../../userdata/temp/FileZillaPortableTemp/fz3temp-1/checkout.php" />
+    <entry file="file://$PROJECT_DIR$/../../userdata/temp/FileZillaPortableTemp/fz3temp-1/product.tpl" />
+    <entry file="file://$PROJECT_DIR$/../opencartstore/admin/config.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="343">
-          <caret line="40" column="44" lean-forward="true" selection-start-line="40" selection-start-column="44" selection-end-line="40" selection-end-column="44" />
+        <state relative-caret-position="527">
+          <caret line="31" column="0" lean-forward="true" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../opencartstore/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../userdata/temp/FileZillaPortableTemp/fz3temp-1/easy_checkout.tpl" />
+    <entry file="file://$PROJECT_DIR$/../../userdata/temp/FileZillaPortableTemp/fz3temp-1/cart 2.tpl" />
+    <entry file="file://$PROJECT_DIR$/../../userdata/temp/FileZillaPortableTemp/fz3temp-1/cart 2.php" />
+    <entry file="file://$PROJECT_DIR$/system/library/image.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="74" column="20" lean-forward="false" selection-start-line="74" selection-start-column="20" selection-end-line="74" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/catalog/model/tool/image.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="33" column="26" lean-forward="false" selection-start-line="33" selection-start-column="26" selection-end-line="33" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/catalog/view/theme/yourstore/js/theme_scripts.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="10132">
+          <caret line="596" column="69" lean-forward="false" selection-start-line="596" selection-start-column="69" selection-end-line="596" selection-end-column="69" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../../userdata/temp/FileZillaPortableTemp/fz3temp-1/style-no-panel.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="449688">
-          <caret line="27760" column="38" lean-forward="false" selection-start-line="27760" selection-start-column="38" selection-end-line="27760" selection-end-column="38" />
+        <state relative-caret-position="399">
+          <caret line="27300" column="87" lean-forward="false" selection-start-line="27300" selection-start-column="87" selection-end-line="27300" selection-end-column="87" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../userdata/temp/FileZillaPortableTemp/fz3temp-1/easy_checkout.tpl">
+    <entry file="file://$PROJECT_DIR$/catalog/view/theme/yourstore/js/custom.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="995" column="49" lean-forward="true" selection-start-line="995" selection-start-column="49" selection-end-line="995" selection-end-column="49" />
+        <state relative-caret-position="285">
+          <caret line="195" column="4" lean-forward="false" selection-start-line="195" selection-start-column="4" selection-end-line="212" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../userdata/temp/FileZillaPortableTemp/fz3temp-1/cart.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1666">
+          <caret line="98" column="45" lean-forward="false" selection-start-line="98" selection-start-column="45" selection-end-line="98" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../userdata/temp/FileZillaPortableTemp/fz3temp-1/cart.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1482387821257" expanded="true" signature="38434:38441" ph="×" />
-            <marker date="1482387821257" expanded="true" signature="40174:40181" ph="×" />
+            <marker date="1482475040856" expanded="true" signature="435:560" ph="DELETE FROM " />
+            <marker date="1482475040856" expanded="true" signature="991:1137" ph="SELECT * FRO... ${DB_PREFIX}" />
+            <marker date="1482475040856" expanded="true" signature="1206:1287" ph="DELETE FROM " />
+            <marker date="1482475040856" expanded="true" signature="1643:1913" ph="SELECT * FRO... ${DB_PREFIX}" />
+            <marker date="1482475040856" expanded="true" signature="2016:2479" ph="SELECT * FRO... ${DB_PREFIX}" />
+            <marker date="1482475040856" expanded="true" signature="2763:3207" ph="SELECT po.pr... ${DB_PREFIX}" />
+            <marker date="1482475040856" expanded="true" signature="3388:3979" ph="SELECT pov.o... ${DB_PREFIX}" />
+            <marker date="1482475040856" expanded="true" signature="6338:6859" ph="SELECT pov.o... ${DB_PREFIX}" />
+            <marker date="1482475040856" expanded="true" signature="10449:10852" ph="SELECT price... ${DB_PREFIX}" />
+            <marker date="1482475040856" expanded="true" signature="11033:11370" ph="SELECT price... ${DB_PREFIX}" />
+            <marker date="1482475040856" expanded="true" signature="11545:11735" ph="SELECT point... ${DB_PREFIX}" />
+            <marker date="1482475040856" expanded="true" signature="11962:12313" ph="SELECT * FRO... ${DB_PREFIX}" />
+            <marker date="1482475040856" expanded="true" signature="12776:13290" ph="SELECT * FRO... ${DB_PREFIX}" />
+            <marker date="1482475040856" expanded="true" signature="15755:16198" ph="SELECT COUNT... ${DB_PREFIX}" />
+            <marker date="1482475040856" expanded="true" signature="17706:18012" ph="DELETE FROM " />
+            <marker date="1482475040856" expanded="true" signature="18067:18335" ph="DELETE FROM " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/catalog/view/theme/yourstore/template/product/product.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="506" column="52" lean-forward="false" selection-start-line="506" selection-start-column="52" selection-end-line="506" selection-end-column="52" />
+          <folding>
+            <marker date="1482475598019" expanded="true" signature="54517:54553" ph="..." />
+            <marker date="1482475598019" expanded="true" signature="57041:57055" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../userdata/temp/FileZillaPortableTemp/fz3temp-1/theme_scripts.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="584" column="52" lean-forward="true" selection-start-line="584" selection-start-column="52" selection-end-line="584" selection-end-column="52" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <marker date="1482488715186" expanded="true" signature="12396:12432" ph="..." />
           </folding>
         </state>
       </provider>

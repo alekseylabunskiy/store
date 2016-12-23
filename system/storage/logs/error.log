@@ -33373,3 +33373,8 @@
 2016-12-22 6:17:06 - PHP Notice:  Undefined variable: text_loading in /home/d33007/public_html/catalog/view/theme/default/template/checkout/easy_checkout.tpl on line 681
 2016-12-22 6:19:39 - PHP Notice:  Undefined variable: text_loading in /home/d33007/public_html/catalog/view/theme/default/template/checkout/easy_checkout.tpl on line 681
 2016-12-22 6:20:32 - PHP Notice:  Undefined variable: text_loading in /home/d33007/public_html/catalog/view/theme/default/template/checkout/easy_checkout.tpl on line 681
+2016-12-22 6:23:53 - PHP Notice:  Undefined variable: text_loading in /home/d33007/public_html/catalog/view/theme/default/template/checkout/easy_checkout.tpl on line 681
+2016-12-22 11:14:31 - PHP Notice:  Undefined variable: text_loading in /home/d33007/public_html/catalog/view/theme/default/template/checkout/easy_checkout.tpl on line 681
+2016-12-22 14:24:36 - PHP Notice:  Undefined variable: text_loading in /home/d33007/public_html/catalog/view/theme/default/template/checkout/easy_checkout.tpl on line 681
+2016-12-22 14:27:18 - PHP Notice:  Undefined variable: text_loading in /home/d33007/public_html/catalog/view/theme/default/template/checkout/easy_checkout.tpl on line 681
+2016-12-23 9:13:50 - PHP Notice:  Undefined variable: text_loading in /home/d33007/public_html/catalog/view/theme/default/template/checkout/easy_checkout.tpl on line 681

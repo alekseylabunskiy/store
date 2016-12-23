@@ -384,9 +384,14 @@ var cart_theme = {
 
                 if (json['success']) {
                     var str=json['total'];
+                    console.log(str);
                     var myArray = str.split(' ');
                     var str1=myArray[1];
-
+                    if (json['products'].length > 1) {
+                        var cart = 'Корзина';
+                    } else {
+                        var cart = 'Вы добавили товар';
+                    }
 
                     $j('.mfp-close').click();
 
@@ -394,24 +399,93 @@ var cart_theme = {
 
                     var outputVariable =
                         '<div class="modal modal-window fade in" id="modalAddToCart" tabindex="-1" role="dialog" aria-label="myModalLabel" aria-hidden="true" style="display: block; padding-right: 17px;">' +
-                        '<div class="modal-dialog white-modal modal-sm">' +
+                        '<div class="modal-dialog white-modal modal-lg">' +
                         '<div class="modal-content ">' +
-                        '<div class="modal-header">' +
+                        '<div class="modal-header">' + cart +
                         '<button type="button" class="close"><span class="icon icon-clear"></span></button>' +
                         '</div>' +
                         '<div class="modal-body">' +
-                        '<div class="text-center">' + json['success'] + '</div>' +
+                        '<form action="<?php echo $action; ?>" method="post" enctype="multipart/form-data">' +
+                        '<div class="container-widget">' +
+                        '<table class="shopping-cart-table">' +
+                        '<tbody>';
+                        for(var i = 0;i < json['products'].length;i++) {
+                            outputVariable += '<tr>';
+                            outputVariable += '<td>';
+                            outputVariable += '<a class="shopping-cart-table__delete icon icon-clear" onclick="cart_theme.remove('  +  json['products'][i]['name'] + ');"></a>';
+                            outputVariable += '</td>';
+                            outputVariable += '<td>';
+                            outputVariable += '<div class="shopping-cart-table__product-image">';
+                            outputVariable += '<a href="'+ json['products'][i]['href'] +'"><img src="'  +  json['products'][i]['thumb'] + '" alt="'  +  json['products'][i]['name'] + '" title="'  +  json['products'][i]['name'] + '" class="img img-responsive" /></a>';
+                            outputVariable += '</div>';
+                            outputVariable += '</td>';
+                            outputVariable += '<td class="text-left">';
+                            outputVariable += '<h5 class="shopping-cart-table__product-name text-left text-uppercase">';
+                            outputVariable += '<a href="'+ json['products'][i]['href'] +'">'  +  json['products'][i]['name'] + '</a>';
+                            outputVariable += '</h5>';
+                            outputVariable += '</td>';
+                            outputVariable += '<td class="text-center">';
+                            outputVariable += '<div class="shopping-cart-table__input">';
+                            outputVariable += '<div class="number input-counter">';
+                            outputVariable += '<span class="minus-btn"></span>';
+                            outputVariable += '<input type="text" name="quantity[' + json['products'][i]['cart_id'] + ']" value="' + json['products'][i]['quantity'] + '" size="1" class="form-control7" />';
+                            outputVariable += '<span class="plus-btn"></span>';
+                            outputVariable += '</div>';
+                            outputVariable += '</div>';
+                            outputVariable += '</td>';
+                            outputVariable += '<td>';
+                            outputVariable += '<div>Сумма</div>';
+                            outputVariable += '<div class="shopping-cart-table__product-price subtotal">' + json['products'][i]['total'] + '</div>';
+                            outputVariable += '</td>';
+                            outputVariable += '</tr>';
+                        }
+                    var outputVariable2 =
+                        '<tr>' +
+                        '<td>' +
+                        '</td>' +
+                        '<td id="logo_img_cart">' +
+                        '<img class="logo replace-2x img-responsive" src="http://d33007-hostde8.fornex.org/image/catalog/u50.png" title="Yourstore" alt="Yourstore">' +
+                        '</td>' +
+                        '<td>' +
+                        '</td>' +
+                        '<td>' +
+                        '<div>Итого :</div>' +
+                        '</td>' +
+                        '<td>' +
+                        '<div id="total_sum">' + json['total'] + '</div>' +
+                        '</td>' +
+                        '</tr>' +
+                        '</tbody>' +
+                        '</table>' +
                         '</div>' +
-                        '<div class="modal-footer text-center">' +
-                            '<a href="index.php?route=checkout/cart" class="btn btn--ys btn--lg"><span class="icon icon-shopping_basket"></span></a>' +
-                            '</div>' +
+                        '</form>' +
+                        '<table>' +
+                        '<tbody>' +
+                        '<tr>' +
+                        '<td>' +
+                        '<div class="pull-left">' +
+                        '<a href="http://d33007-hostde8.fornex.org/" class="btn btn--ys btn--light pull-left btn-right">' +
+                        '<span class="icon icon-keyboard_arrow_left"></span>Продолжить покупки' +
+                        '</a>' +
+                        '</div>' +
+                        '</td>' +
+                        '<td id="confirm_order">' +
+                        '<div class="pull-right">' +
+                        '<a href="index.php?route=checkout/checkout" class="btn btn--ys btn--light pull-right btn-right">Оформить заказ<span class="icon icon-keyboard_arrow_right"></span>' +
+                        '</a>' +
+                        '</div>' +
+                        '</td>' +
+                        '</tr>' +
+                        '</tbody>' +
+                        '</table>' +
+                        '</div>' +
                         '</div>' +
                         '</div>' +
                         '</div>';
                     var bg = '<div class="modal-backdrop fade in"></div>';
 
                     $j('body').after(bg);
-                    $j('#notification').parent().before(outputVariable);
+                    $j('#notification').parent().before(outputVariable + outputVariable2);
                     //$j('.success_ev').fadeIn('');
                     //$j('body').addClass('darken');
 
@@ -503,6 +577,37 @@ var cart_theme = {
         });
     }
 }
+function inputCounter(){
+    console.log($j(".input-counter").length);
+    if ($j(".input-counter").length > 0) {
+        $j('.minus-btn').click(function () {
+            var $jinput = $j(this).parent().find('input');
+            var count = parseInt($jinput.val()) - 1;
+            count = count < 1 ? 1 : count;
+            $jinput.val(count);
+            $jinput.change();
+            marker = false;
+            return false;
+        });
+        $j('.plus-btn').click(function () {
+            var $jinput = $j(this).parent().find('input');
+            $jinput.val(parseInt($jinput.val()) + 1);
+            $jinput.change();
+            marker = false;
+            return false;
+        });
+    }
+}
+var marker = true;
+
+$(window).on('click', function (event) {
+    var target = event.target;
+    console.log(marker);
+    marker = true;
+        if (marker) {
+            inputCounter();
+        }
+});
 
 
 var wishlist_theme = {
