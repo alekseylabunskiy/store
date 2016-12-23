@@ -598,14 +598,14 @@ function inputCounter(){
         });
     }
 }
-var marker = true;
 
 $(window).on('click', function () {
 
-    marker = true;
-        if (marker) {
-            inputCounter();
-        }
+    var  marker = true;
+
+    if (marker) {
+        inputCounter();
+    }
 });
 
 
