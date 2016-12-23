@@ -600,13 +600,10 @@ function inputCounter(){
 }
 var marker = true;
 
-$(window).on('click', function (event) {
-    var target = event.target;
-    console.log(marker);
-    marker = true;
-        if (marker) {
-            inputCounter();
-        }
+$(window).on('click', function () {
+    if (marker) {
+        inputCounter();
+    }
 });
 
 
