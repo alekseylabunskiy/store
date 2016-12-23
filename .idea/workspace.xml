@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e07c87bc-55c4-435f-9541-5b3d23762672" name="Default" comment="" />
+    <list default="true" id="e07c87bc-55c4-435f-9541-5b3d23762672" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catalog/view/theme/yourstore/js/theme_scripts.js" afterPath="$PROJECT_DIR$/catalog/view/theme/yourstore/js/theme_scripts.js" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -39,11 +42,11 @@
       <file leaf-file-name="theme_scripts.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../../userdata/temp/FileZillaPortableTemp/fz3temp-1/theme_scripts.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="262">
-              <caret line="605" column="5" lean-forward="true" selection-start-line="605" selection-start-column="5" selection-end-line="605" selection-end-column="5" />
+            <state relative-caret-position="296">
+              <caret line="607" column="9" lean-forward="true" selection-start-line="607" selection-start-column="9" selection-end-line="607" selection-end-column="9" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
-                <marker date="1482490998978" expanded="true" signature="12396:12432" ph="..." />
+                <marker date="1482491482563" expanded="true" signature="12396:12432" ph="..." />
               </folding>
             </state>
           </provider>
@@ -247,12 +250,12 @@
       <workItem from="1482383154796" duration="517000" />
       <workItem from="1482383790393" duration="23278000" />
       <workItem from="1482409213783" duration="12174000" />
-      <workItem from="1482473800473" duration="10737000" />
+      <workItem from="1482473800473" duration="11401000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="96789000" />
+    <option name="totallyTimeSpent" value="97453000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-15" y="136" width="1284" height="791" extended-state="0" />
@@ -532,11 +535,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../../userdata/temp/FileZillaPortableTemp/fz3temp-1/theme_scripts.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
-          <caret line="605" column="5" lean-forward="true" selection-start-line="605" selection-start-column="5" selection-end-line="605" selection-end-column="5" />
+        <state relative-caret-position="296">
+          <caret line="607" column="9" lean-forward="true" selection-start-line="607" selection-start-column="9" selection-end-line="607" selection-end-column="9" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
-            <marker date="1482490998978" expanded="true" signature="12396:12432" ph="..." />
+            <marker date="1482491482563" expanded="true" signature="12396:12432" ph="..." />
           </folding>
         </state>
       </provider>

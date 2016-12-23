@@ -601,9 +601,11 @@ function inputCounter(){
 var marker = true;
 
 $(window).on('click', function () {
-    if (marker) {
-        inputCounter();
-    }
+
+    marker = true;
+        if (marker) {
+            inputCounter();
+        }
 });
 
 
