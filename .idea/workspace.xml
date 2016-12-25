@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e07c87bc-55c4-435f-9541-5b3d23762672" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/config.php" afterPath="$PROJECT_DIR$/admin/config.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catalog/view/theme/default/template/checkout/easy_checkout.tpl" afterPath="$PROJECT_DIR$/catalog/view/theme/default/template/checkout/easy_checkout.tpl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catalog/view/theme/yourstore/css/style-no-panel.css" afterPath="$PROJECT_DIR$/catalog/view/theme/yourstore/css/style-no-panel.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catalog/view/theme/yourstore/js/theme_scripts.js" afterPath="$PROJECT_DIR$/catalog/view/theme/yourstore/js/theme_scripts.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -54,6 +57,7 @@
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
+                <marker date="1482654476442" expanded="true" signature="12481:12517" ph="..." />
                 <marker date="1482654476442" expanded="true" signature="25575:25611" ph="..." />
                 <marker date="1482654476442" expanded="true" signature="28234:28270" ph="..." />
               </folding>
@@ -399,15 +403,15 @@
       <workItem from="1482499308582" duration="10635000" />
       <workItem from="1482566826393" duration="1261000" />
       <workItem from="1482576444592" duration="21278000" />
-      <workItem from="1482651845565" duration="2808000" />
+      <workItem from="1482651845565" duration="2875000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="89868000" />
+    <option name="totallyTimeSpent" value="89935000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1296" height="1000" extended-state="6" />
+    <frame x="-8" y="-8" width="1296" height="1000" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3046875" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -648,6 +652,7 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
+            <marker date="1482654476442" expanded="true" signature="12481:12517" ph="..." />
             <marker date="1482654476442" expanded="true" signature="25575:25611" ph="..." />
             <marker date="1482654476442" expanded="true" signature="28234:28270" ph="..." />
           </folding>
