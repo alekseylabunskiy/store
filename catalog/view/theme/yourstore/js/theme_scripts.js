@@ -587,84 +587,35 @@ function calcTotal() {
     $('#total_sum').html(total + ' грн.');
 
 }
-/*
-function sendTotalOrder(){
-    var table = $('.shopping-cart-table');
-        var items = table.find('td.text-left a');
-        items.each(function () {
-            var ids = $(this)[0].href;
-            var preg = /.\d$/g;
-            var idm = ids.match(preg);
-            console.log(idm[0]);
 
-            var t = $(this).parents('tr');
-            var fg = t.find('input');
-            var rr = fg[1];
-            console.log(rr);
-            //console.log(value);
-        })
-}
-*/
-function inputCounter(){
-    if ($j(".input-counter").length > 0) {
-        $j('.minus-btn').click(function () {
-            var $jinput = $j(this).parent().find('input');
-            var count = parseInt($jinput.val()) - 1;
-            count = count < 1 ? 1 : count;
-            $jinput.val(count);
-            $jinput.change();
+$('html').on("click",".minus-btn,.plus-btn",function () {
+    var $jinput = $(this).parent().find('input');
+    var count = parseInt($jinput.val());
 
-            var t = $(this).parents('tr');
-            var p = t.find('input');
-            var price = parseFloat(p.val()).toFixed(2);
-            var total = count * price;
-            total = total.toFixed(2);
-            t.find('div.subtotal').html(total + 'грн.');
-            calcTotal();
-            //sendTotalOrder();
-            var id_item = t.find('td.text-left a');
-            var id = id_item[0].href;
-            var preg = /.\d$/g;
-            var ids = id.match(preg);
-            cart_theme.update(ids,count);
-            marker = false;
-            return false;
-        });
-        $j('.plus-btn').click(function () {
-            var $jinput = $j(this).parent().find('input');
-            var plus = parseInt($jinput.val()) + 1;
-            $jinput.val(parseInt($jinput.val()) + 1);
-            $jinput.change();
-
-            var t = $(this).parents('tr');
-            var p = t.find('input');
-            var price = parseFloat(p.val()).toFixed(2);
-
-            var total = plus * price;
-            total = total.toFixed(2);
-            t.find('div.subtotal').html(total + 'грн.');
-            calcTotal();
-            //sendTotalOrder();
-            var id_item = t.find('td.text-left a');
-            var id = id_item[0].href;
-            var preg = /.\d$/g;
-            var ids = id.match(preg);
-            cart_theme.update(ids,plus);
-            marker = false;
-            return false;
-        });
+    if($(this).hasClass('minus-btn')){
+        count -= 1;
+    } else if($(this).hasClass('plus-btn')){
+        count += 1;
+    } else {
+        return 1;
     }
-}
+    $jinput.val(count);
+    $jinput.change();
 
-$(window).on('click', function () {
-
-    var  marker = true;
-
-    if (marker) {
-        inputCounter();
-    }
+    var t = $(this).parents('tr');
+    var p = t.find('input');
+    var price = parseFloat(p.val()).toFixed(2);
+    var total = count * price;
+    total = total.toFixed(2);
+    t.find('div.subtotal').html(total + 'грн.');
+    calcTotal();
+    //sendTotalOrder();
+    var id_item = t.find('td.text-left a');
+    var id = id_item[0].href;
+    var preg = /.\d$/g;
+    var ids = id.match(preg);
+    cart_theme.update(ids,count);
 });
-
 
 var wishlist_theme = {
     'add': function(product_id) {
