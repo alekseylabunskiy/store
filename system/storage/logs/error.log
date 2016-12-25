@@ -33392,3 +33392,77 @@
 2016-12-24 14:49:28 - PHP Notice:  Undefined variable: text_loading in /home/d33007/public_html/catalog/view/theme/default/template/checkout/easy_checkout.tpl on line 681
 2016-12-24 15:16:23 - PHP Notice:  Undefined variable: text_loading in /home/d33007/public_html/catalog/view/theme/default/template/checkout/easy_checkout.tpl on line 681
 2016-12-25 8:31:33 - PHP Notice:  Undefined variable: text_loading in /home/d33007/public_html/catalog/view/theme/default/template/checkout/easy_checkout.tpl on line 681
+2016-12-25 13:33:50 - PHP Notice:  Undefined variable: text_loading in /home/d33007/public_html/catalog/view/theme/default/template/checkout/easy_checkout.tpl on line 681
+2016-12-25 15:40:47 - PHP Notice:  Undefined variable: total in /home/d33007/public_html/system/storage/modification/catalog/controller/checkout/cart.php on line 513
+2016-12-25 15:40:51 - PHP Notice:  Undefined variable: total in /home/d33007/public_html/system/storage/modification/catalog/controller/checkout/cart.php on line 513
+2016-12-25 17:14:19 - PHP Notice:  Undefined variable: text_loading in /home/d33007/public_html/catalog/view/theme/default/template/checkout/easy_checkout.tpl on line 681
+2016-12-25 18:40:01 - PHP Notice:  Undefined offset: 1 in /home/d33007/public_html/catalog/view/theme/yourstore/template/common/cart.tpl on line 59
+2016-12-25 18:40:01 - PHP Notice:  Undefined offset: 1 in /home/d33007/public_html/catalog/view/theme/yourstore/template/common/cart.tpl on line 59
+2016-12-25 18:40:01 - PHP Notice:  Undefined offset: 1 in /home/d33007/public_html/catalog/view/theme/yourstore/template/common/cart.tpl on line 59
+2016-12-25 18:40:01 - PHP Notice:  Undefined offset: 1 in /home/d33007/public_html/catalog/view/theme/yourstore/template/common/cart.tpl on line 59
+2016-12-25 18:44:16 - PHP Notice:  Undefined offset: 1 in /home/d33007/public_html/catalog/view/theme/yourstore/template/common/cart.tpl on line 59
+2016-12-25 18:44:16 - PHP Notice:  Undefined offset: 1 in /home/d33007/public_html/catalog/view/theme/yourstore/template/common/cart.tpl on line 59
+2016-12-25 18:44:16 - PHP Notice:  Undefined offset: 1 in /home/d33007/public_html/catalog/view/theme/yourstore/template/common/cart.tpl on line 59
+2016-12-25 18:44:16 - PHP Notice:  Undefined offset: 1 in /home/d33007/public_html/catalog/view/theme/yourstore/template/common/cart.tpl on line 59
+2016-12-25 18:44:32 - PHP Notice:  Undefined offset: 1 in /home/d33007/public_html/catalog/view/theme/yourstore/template/common/cart.tpl on line 59
+2016-12-25 18:44:32 - PHP Notice:  Undefined offset: 1 in /home/d33007/public_html/catalog/view/theme/yourstore/template/common/cart.tpl on line 59
+2016-12-25 18:44:32 - PHP Notice:  Undefined offset: 1 in /home/d33007/public_html/catalog/view/theme/yourstore/template/common/cart.tpl on line 59
+2016-12-25 18:44:32 - PHP Notice:  Undefined offset: 1 in /home/d33007/public_html/catalog/view/theme/yourstore/template/common/cart.tpl on line 59
+2016-12-25 18:44:56 - PHP Notice:  Undefined offset: 1 in /home/d33007/public_html/catalog/view/theme/yourstore/template/common/cart.tpl on line 59
+2016-12-25 18:44:56 - PHP Notice:  Undefined offset: 1 in /home/d33007/public_html/catalog/view/theme/yourstore/template/common/cart.tpl on line 59
+2016-12-25 18:44:56 - PHP Notice:  Undefined offset: 1 in /home/d33007/public_html/catalog/view/theme/yourstore/template/common/cart.tpl on line 59
+2016-12-25 18:44:56 - PHP Notice:  Undefined offset: 1 in /home/d33007/public_html/catalog/view/theme/yourstore/template/common/cart.tpl on line 59
+2016-12-25 18:45:03 - PHP Notice:  Undefined offset: 1 in /home/d33007/public_html/catalog/view/theme/yourstore/template/common/cart.tpl on line 59
+2016-12-25 18:45:03 - PHP Notice:  Undefined offset: 1 in /home/d33007/public_html/catalog/view/theme/yourstore/template/common/cart.tpl on line 59
+2016-12-25 18:45:03 - PHP Notice:  Undefined offset: 1 in /home/d33007/public_html/catalog/view/theme/yourstore/template/common/cart.tpl on line 59
+2016-12-25 18:45:03 - PHP Notice:  Undefined offset: 1 in /home/d33007/public_html/catalog/view/theme/yourstore/template/common/cart.tpl on line 59
+2016-12-25 18:45:03 - PHP Notice:  Undefined offset: 1 in /home/d33007/public_html/catalog/view/theme/yourstore/template/common/cart.tpl on line 59
+2016-12-25 18:45:03 - PHP Notice:  Undefined offset: 1 in /home/d33007/public_html/catalog/view/theme/yourstore/template/common/cart.tpl on line 59
+2016-12-25 18:45:03 - PHP Notice:  Undefined offset: 1 in /home/d33007/public_html/catalog/view/theme/yourstore/template/common/cart.tpl on line 59
+2016-12-25 18:45:03 - PHP Notice:  Undefined offset: 1 in /home/d33007/public_html/catalog/view/theme/yourstore/template/common/cart.tpl on line 59
+2016-12-25 18:45:06 - PHP Notice:  Undefined offset: 1 in /home/d33007/public_html/catalog/view/theme/yourstore/template/common/cart.tpl on line 59
+2016-12-25 18:45:06 - PHP Notice:  Undefined offset: 1 in /home/d33007/public_html/catalog/view/theme/yourstore/template/common/cart.tpl on line 59
+2016-12-25 18:45:06 - PHP Notice:  Undefined offset: 1 in /home/d33007/public_html/catalog/view/theme/yourstore/template/common/cart.tpl on line 59
+2016-12-25 18:45:06 - PHP Notice:  Undefined offset: 1 in /home/d33007/public_html/catalog/view/theme/yourstore/template/common/cart.tpl on line 59
+2016-12-25 18:45:08 - PHP Notice:  Undefined offset: 1 in /home/d33007/public_html/catalog/view/theme/yourstore/template/common/cart.tpl on line 59
+2016-12-25 18:45:08 - PHP Notice:  Undefined offset: 1 in /home/d33007/public_html/catalog/view/theme/yourstore/template/common/cart.tpl on line 59
+2016-12-25 18:45:08 - PHP Notice:  Undefined offset: 1 in /home/d33007/public_html/catalog/view/theme/yourstore/template/common/cart.tpl on line 59
+2016-12-25 18:45:08 - PHP Notice:  Undefined offset: 1 in /home/d33007/public_html/catalog/view/theme/yourstore/template/common/cart.tpl on line 59
+2016-12-25 18:45:10 - PHP Notice:  Undefined offset: 1 in /home/d33007/public_html/catalog/view/theme/yourstore/template/common/cart.tpl on line 59
+2016-12-25 18:45:10 - PHP Notice:  Undefined offset: 1 in /home/d33007/public_html/catalog/view/theme/yourstore/template/common/cart.tpl on line 59
+2016-12-25 18:45:10 - PHP Notice:  Undefined offset: 1 in /home/d33007/public_html/catalog/view/theme/yourstore/template/common/cart.tpl on line 59
+2016-12-25 18:45:10 - PHP Notice:  Undefined offset: 1 in /home/d33007/public_html/catalog/view/theme/yourstore/template/common/cart.tpl on line 59
+2016-12-25 18:45:11 - PHP Notice:  Undefined offset: 1 in /home/d33007/public_html/catalog/view/theme/yourstore/template/common/cart.tpl on line 59
+2016-12-25 18:45:11 - PHP Notice:  Undefined offset: 1 in /home/d33007/public_html/catalog/view/theme/yourstore/template/common/cart.tpl on line 59
+2016-12-25 18:45:11 - PHP Notice:  Undefined offset: 1 in /home/d33007/public_html/catalog/view/theme/yourstore/template/common/cart.tpl on line 59
+2016-12-25 18:45:11 - PHP Notice:  Undefined offset: 1 in /home/d33007/public_html/catalog/view/theme/yourstore/template/common/cart.tpl on line 59
+2016-12-25 18:47:52 - PHP Notice:  Undefined offset: 1 in /home/d33007/public_html/catalog/view/theme/yourstore/template/common/cart.tpl on line 59
+2016-12-25 18:47:52 - PHP Notice:  Undefined offset: 1 in /home/d33007/public_html/catalog/view/theme/yourstore/template/common/cart.tpl on line 59
+2016-12-25 18:47:52 - PHP Notice:  Undefined offset: 1 in /home/d33007/public_html/catalog/view/theme/yourstore/template/common/cart.tpl on line 59
+2016-12-25 18:47:52 - PHP Notice:  Undefined offset: 1 in /home/d33007/public_html/catalog/view/theme/yourstore/template/common/cart.tpl on line 59
+2016-12-25 18:48:07 - PHP Notice:  Undefined offset: 1 in /home/d33007/public_html/catalog/view/theme/yourstore/template/common/cart.tpl on line 59
+2016-12-25 18:48:07 - PHP Notice:  Undefined offset: 1 in /home/d33007/public_html/catalog/view/theme/yourstore/template/common/cart.tpl on line 59
+2016-12-25 18:48:07 - PHP Notice:  Undefined offset: 1 in /home/d33007/public_html/catalog/view/theme/yourstore/template/common/cart.tpl on line 59
+2016-12-25 18:48:07 - PHP Notice:  Undefined offset: 1 in /home/d33007/public_html/catalog/view/theme/yourstore/template/common/cart.tpl on line 59
+2016-12-25 18:48:08 - PHP Notice:  Undefined offset: 1 in /home/d33007/public_html/catalog/view/theme/yourstore/template/common/cart.tpl on line 59
+2016-12-25 18:48:08 - PHP Notice:  Undefined offset: 1 in /home/d33007/public_html/catalog/view/theme/yourstore/template/common/cart.tpl on line 59
+2016-12-25 18:48:08 - PHP Notice:  Undefined offset: 1 in /home/d33007/public_html/catalog/view/theme/yourstore/template/common/cart.tpl on line 59
+2016-12-25 18:48:08 - PHP Notice:  Undefined offset: 1 in /home/d33007/public_html/catalog/view/theme/yourstore/template/common/cart.tpl on line 59
+2016-12-25 18:52:11 - PHP Notice:  Use of undefined constant title - assumed 'title' in /home/d33007/public_html/catalog/view/theme/yourstore/template/common/cart.tpl on line 58
+2016-12-25 18:52:11 - PHP Notice:  Use of undefined constant text - assumed 'text' in /home/d33007/public_html/catalog/view/theme/yourstore/template/common/cart.tpl on line 58
+2016-12-25 18:52:14 - PHP Notice:  Use of undefined constant title - assumed 'title' in /home/d33007/public_html/catalog/view/theme/yourstore/template/common/cart.tpl on line 58
+2016-12-25 18:52:14 - PHP Notice:  Use of undefined constant text - assumed 'text' in /home/d33007/public_html/catalog/view/theme/yourstore/template/common/cart.tpl on line 58
+2016-12-25 18:52:35 - PHP Notice:  Use of undefined constant title - assumed 'title' in /home/d33007/public_html/catalog/view/theme/yourstore/template/common/cart.tpl on line 58
+2016-12-25 18:52:38 - PHP Notice:  Use of undefined constant title - assumed 'title' in /home/d33007/public_html/catalog/view/theme/yourstore/template/common/cart.tpl on line 58
+2016-12-25 18:57:02 - PHP Warning:  Illegal string offset 'title' in /home/d33007/public_html/catalog/view/theme/yourstore/template/common/cart.tpl on line 59
+2016-12-25 18:57:02 - PHP Warning:  Illegal string offset 'text' in /home/d33007/public_html/catalog/view/theme/yourstore/template/common/cart.tpl on line 59
+2016-12-25 18:57:02 - PHP Warning:  Illegal string offset 'title' in /home/d33007/public_html/catalog/view/theme/yourstore/template/common/cart.tpl on line 59
+2016-12-25 18:57:02 - PHP Warning:  Illegal string offset 'text' in /home/d33007/public_html/catalog/view/theme/yourstore/template/common/cart.tpl on line 59
+2016-12-25 18:57:07 - PHP Warning:  Illegal string offset 'title' in /home/d33007/public_html/catalog/view/theme/yourstore/template/common/cart.tpl on line 59
+2016-12-25 18:57:07 - PHP Warning:  Illegal string offset 'text' in /home/d33007/public_html/catalog/view/theme/yourstore/template/common/cart.tpl on line 59
+2016-12-25 18:57:07 - PHP Warning:  Illegal string offset 'title' in /home/d33007/public_html/catalog/view/theme/yourstore/template/common/cart.tpl on line 59
+2016-12-25 18:57:07 - PHP Warning:  Illegal string offset 'text' in /home/d33007/public_html/catalog/view/theme/yourstore/template/common/cart.tpl on line 59
+2016-12-25 20:11:23 - PHP Notice:  Undefined variable: text_loading in /home/d33007/public_html/catalog/view/theme/default/template/checkout/easy_checkout.tpl on line 681
+2016-12-25 20:12:32 - PHP Notice:  Undefined variable: text_loading in /home/d33007/public_html/catalog/view/theme/default/template/checkout/easy_checkout.tpl on line 681
+2016-12-25 20:14:22 - PHP Notice:  Undefined variable: text_loading in /home/d33007/public_html/catalog/view/theme/default/template/checkout/easy_checkout.tpl on line 681
+2016-12-25 21:09:33 - PHP Notice:  Undefined variable: text_loading in /home/d33007/public_html/catalog/view/theme/default/template/checkout/easy_checkout.tpl on line 681

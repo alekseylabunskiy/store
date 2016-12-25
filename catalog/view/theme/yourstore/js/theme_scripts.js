@@ -398,84 +398,13 @@ var cart_theme = {
                         '<div class="modal modal-window fade in" id="modalAddToCart" tabindex="-1" role="dialog" aria-label="myModalLabel" aria-hidden="true" style="display: block; padding-right: 17px;">' +
                         '<div class="modal-dialog white-modal modal-lg">' +
                         '<div class="modal-content ">' +
-                        '<div class="modal-header">' + cart +
+                        '<div class="modal-header">' + cart + '<span id="summ_o">Сумма</span>' +
                         '<button type="button" class="close"><span class="icon icon-clear"></span></button>' +
                         '</div>' +
                         '<div class="modal-body">' +
-                        '<form action="<?php echo $action; ?>" method="post" enctype="multipart/form-data">' +
-                        '<div class="container-widget">' +
-                        '<table class="shopping-cart-table">' +
-                        '<tbody>';
-                        for(var i = 0;i < json['products'].length;i++) {
-                            outputVariable += '<tr>';
-                            outputVariable += '<td>';
-                            outputVariable += '<a class="shopping-cart-table__delete icon icon-clear" onclick="cart_theme.remove('  +  json['products'][i]['name'] + ');"></a>';
-                            outputVariable += '</td>';
-                            outputVariable += '<td>';
-                            outputVariable += '<div class="shopping-cart-table__product-image">';
-                            outputVariable += '<a href="'+ json['products'][i]['href'] +'"><img src="'  +  json['products'][i]['thumb'] + '" alt="'  +  json['products'][i]['name'] + '" title="'  +  json['products'][i]['name'] + '" class="img img-responsive" /></a>';
-                            outputVariable += '</div>';
-                            outputVariable += '</td>';
-                            outputVariable += '<td class="text-left">';
-                            outputVariable += '<h5 class="shopping-cart-table__product-name text-left text-uppercase">';
-                            outputVariable += '<a href="'+ json['products'][i]['href'] +'">'  +  json['products'][i]['name'] + '</a>';
-                            outputVariable += '</h5>';
-                            outputVariable += '</td>';
-                            outputVariable += '<td class="text-center">';
-                            outputVariable += '<div class="shopping-cart-table__input">';
-                            outputVariable += '<input type="hidden" name="price" value="' + json['products'][i]['price'] + '"/>';
-                            outputVariable += '<div class="number input-counter">';
-                            outputVariable += '<span class="minus-btn"></span>';
-                            outputVariable += '<input type="text" name="quantity[' + json['products'][i]['cart_id'] + ']" value="' + json['products'][i]['quantity'] + '" size="1" class="form-control7" />';
-                            outputVariable += '<span class="plus-btn"></span>';
-                            outputVariable += '</div>';
-                            outputVariable += '</div>';
-                            outputVariable += '</td>';
-                            outputVariable += '<td>';
-                            outputVariable += '<div>Сумма</div>';
-                            outputVariable += '<div class="shopping-cart-table__product-price subtotal">' + json['products'][i]['total'] + '</div>';
-                            outputVariable += '</td>';
-                            outputVariable += '</tr>';
-                        }
-                    var outputVariable2 =
-                        '<tr>' +
-                        '<td>' +
-                        '</td>' +
-                        '<td id="logo_img_cart">' +
-                        '<img class="logo replace-2x img-responsive" src="http://d33007-hostde8.fornex.org/image/catalog/u50.png" title="Yourstore" alt="Yourstore">' +
-                        '</td>' +
-                        '<td>' +
-                        '</td>' +
-                        '<td>' +
-                        '<div>Итого :</div>' +
-                        '</td>' +
-                        '<td>' +
-                        '<div id="total_sum">' + total + ' грн.' + '</div>' +
-                        '</td>' +
-                        '</tr>' +
-                        '</tbody>' +
-                        '</table>' +
-                        '</div>' +
-                        '</form>' +
-                        '<table>' +
-                        '<tbody>' +
-                        '<tr>' +
-                        '<td>' +
-                        '<div class="pull-left">' +
-                        '<a href="http://d33007-hostde8.fornex.org/" class="btn btn--ys btn--light pull-left btn-right">' +
-                        '<span class="icon icon-keyboard_arrow_left"></span>Продолжить покупки' +
-                        '</a>' +
-                        '</div>' +
-                        '</td>' +
-                        '<td id="confirm_order">' +
-                        '<div class="pull-right">' +
-                        '<a href="index.php?route=checkout/checkout" class="btn btn--ys btn--light pull-right btn-right">Оформить заказ<span class="icon icon-keyboard_arrow_right"></span>' +
-                        '</a>' +
-                        '</div>' +
-                        '</td>' +
-                        '</tr>' +
-                        '</tbody>' +
-                        '</table>' +
+                        '<div id="cart"><ul style="padding-left: 0px">' +
+                        '</ul></div>'+
+
                         '</div>' +
                         '</div>' +
                         '</div>' +
@@ -483,7 +412,8 @@ var cart_theme = {
                     var bg = '<div class="modal-backdrop fade in"></div>';
 
                     $j('body').after(bg);
-                    $j('#notification').parent().before(outputVariable + outputVariable2);
+                    $j('#notification').parent().before(outputVariable);
+
                     //$j('.success_ev').fadeIn('');
                     //$j('body').addClass('darken');
 
@@ -587,6 +517,11 @@ function calcTotal() {
     $('#total_sum').html(total + ' грн.');
 
 }
+$('html').on("click","#cart_button_top", function () {
+    $('.cart__total span').first().hide();
+    $('#confirm_ord').style.marginLeft = '';
+});
+
 
 $('html').on("click",".minus-btn,.plus-btn",function () {
     var $jinput = $(this).parent().find('input');
@@ -606,15 +541,57 @@ $('html').on("click",".minus-btn,.plus-btn",function () {
     var p = t.find('input');
     var price = parseFloat(p.val()).toFixed(2);
     var total = count * price;
-    total = total.toFixed(2);
-    t.find('div.subtotal').html(total + 'грн.');
+    //total = total.toFixed(2);
+    //console.log(total);
+    //t.find('div.subtotal').html(total + 'грн.');
     calcTotal();
-    //sendTotalOrder();
+
     var id_item = t.find('td.text-left a');
     var id = id_item[0].href;
     var preg = /.\d$/g;
     var ids = id.match(preg);
     cart_theme.update(ids,count);
+});
+
+$("html").on("click",".icon-clear", function() {
+    var t = $(this).parents('tr');
+    var id_item = t.find('td.text-left a');
+    var id = id_item[0].href;
+    var preg = /.\d$/g;
+    var key = id.match(preg);
+    $.ajax({
+        url: 'index.php?route=checkout/cart/removeItem',
+        type: 'post',
+        data: 'key=' + key,
+        dataType: 'json',
+        beforeSend: function() {
+            //$j('#cart > button').button('loading');
+        },
+        complete: function() {
+            $j('#cart > button').button('reset');
+        },
+        success: function(json) {
+            var str=json['total'];
+            var myArray = str.split(' ');
+            var str1=myArray[1];
+
+            // Need to set timeout otherwise it wont update the total
+            setTimeout(function () {
+                $j('#cart > button').html('<span class="icon icon-shopping_basket"></span><span id="cart-total" class="badge badge--cart"> ' + str1 + '</span>');
+            }, 100);
+
+            if (getURLVar('route') == 'checkout/cart' || getURLVar('route') == 'checkout/checkout') {
+                location = 'index.php?route=checkout/cart';
+            } else {
+              // var ty = $j('#cart > ul').load('index.php?route=common/cart/info ul li');
+              // var uu = ty.outerHTML;
+               $('#cart > ul').load('index.php?route=common/cart/info ul li');
+            }
+        },
+        error: function(xhr, ajaxOptions, thrownError) {
+            alert(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText);
+        }
+    });
 });
 
 var wishlist_theme = {

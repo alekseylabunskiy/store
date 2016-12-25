@@ -3,3 +3,4 @@
 /admin/config.php
 /system/storage/logs/error.log
 /.idea
+/system/storage/cache/

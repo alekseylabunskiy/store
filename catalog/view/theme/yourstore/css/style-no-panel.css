@@ -4791,7 +4791,7 @@ button.close {
   min-height: 16.6875px;
 }
 .modal-header .close {
-  margin-top: -2px;
+  margin-top: -8px;
 }
 .modal-title {
   margin: 0;
@@ -11520,10 +11520,11 @@ footer.layout-7 .footer-copyright .row {
   -o-transform: rotate(90deg);
 }
 table .input-counter {
-  margin-right: 10px;
-  margin-bottom: 10px;
+  /*margin-right: 10px;
+  margin-bottom: 10px;*/
   width: 80px !important;
   display: inline-block;
+  margin-top: 15px;
 }
 table .input-counter input {
   height: 40px !important;
@@ -16006,7 +16007,7 @@ aside .recent-post-box {
   }
   .cart .dropdown-menu.slide-from-top .cart__total {
     position: absolute;
-    padding: 4px 150px 0 0;
+    padding: 4px 0px 0 0;
     right: 0;
     font-weight: 500;
     color: #ffffff;
@@ -21319,12 +21320,12 @@ li.open .expander-list ul {
 }
 .shopping-cart-table td:nth-child(1),
 .shopping-cart-table th:nth-child(1) {
-  width: 2%;
+  width: 1%;
   padding-top: 22px;
 }
 .shopping-cart-table td:nth-child(2),
 .shopping-cart-table th:nth-child(2) {
-  width: 9%;
+  width: 0.1%;
   text-align: left;
 }
 .shopping-cart-table td:nth-child(3),
@@ -21375,6 +21376,7 @@ li.open .expander-list ul {
   font-size: 30px;
   line-height: 1.1em;
   color: #1fc0a0;
+  margin-top: 36px;
 }
 @media (max-width: 1200px) {
   .shopping-cart-table__product-price {
@@ -21402,6 +21404,7 @@ li.open .expander-list ul {
 }
 .shopping-cart-table__product-name {
   margin-bottom: 20px;
+  padding-top: 2px;
 }
 .shopping-cart-table__product-name a {
   color: #1fc0a0;
@@ -25244,6 +25247,7 @@ body.modal-open {
   border: none;
   padding: 0;
   margin: 0 0 18px 0;
+  text-transform: uppercase;
 }
 .white-modal .modal-header .close {
   color: #1fc0a0;
@@ -27757,6 +27761,10 @@ header .mainMenu .navbar-nav > li.custom_item > a,
 #h2shipping_icon{height: 52px;padding-top: 6px;}
 @media (min-width: 1889px){
   #local_shipping{padding-left: 159px;}
+  #summ_o{padding-left: 66%;text-transform: initial;}
+}
+@media (max-width: 1500px){
+  #summ_o{padding-left: 76%;text-transform: initial;}
 }
 #contact_data{
   margin-top: 2px;
@@ -27769,3 +27777,5 @@ header .mainMenu .navbar-nav > li.custom_item > a,
 #total_sum{margin-top: 20px;}
 #logo_img_cart{padding-top: 34px;}
 #confirm_order{width: 100%;}
+#ref_buttons{margin-top: 30px;padding-left: 34px;}
+#confirm_ord{margin-left: 390px;}
