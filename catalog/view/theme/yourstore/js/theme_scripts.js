@@ -356,11 +356,6 @@ $j(document).ready(function() {
 
 })
 
-
-
-
-
-
 // Cart add remove functions
 var cart_theme = {
     'add': function(product_id, quantity) {
@@ -377,6 +372,9 @@ var cart_theme = {
             },
             success: function(json) {
                 $j('.alert, .text-danger').remove();
+                var tot = json['total'];
+                var reg = /\d{3,8}.\d{2}/;
+                var total = tot.match(reg);
 
                 if (json['redirect']) {
                     location = json['redirect'];
@@ -384,7 +382,6 @@ var cart_theme = {
 
                 if (json['success']) {
                     var str=json['total'];
-                    console.log(str);
                     var myArray = str.split(' ');
                     var str1=myArray[1];
                     if (json['products'].length > 1) {
@@ -426,6 +423,7 @@ var cart_theme = {
                             outputVariable += '</td>';
                             outputVariable += '<td class="text-center">';
                             outputVariable += '<div class="shopping-cart-table__input">';
+                            outputVariable += '<input type="hidden" name="price" value="' + json['products'][i]['price'] + '"/>';
                             outputVariable += '<div class="number input-counter">';
                             outputVariable += '<span class="minus-btn"></span>';
                             outputVariable += '<input type="text" name="quantity[' + json['products'][i]['cart_id'] + ']" value="' + json['products'][i]['quantity'] + '" size="1" class="form-control7" />';
@@ -452,7 +450,7 @@ var cart_theme = {
                         '<div>Итого :</div>' +
                         '</td>' +
                         '<td>' +
-                        '<div id="total_sum">' + json['total'] + '</div>' +
+                        '<div id="total_sum">' + total + ' грн.' + '</div>' +
                         '</td>' +
                         '</tr>' +
                         '</tbody>' +
@@ -525,11 +523,11 @@ var cart_theme = {
             success: function(json) {
                 var str=json['total'];
                 var myArray = str.split(' ');
-                var str1=myArray[1];
+                var str1= myArray[1];
 
                 // Need to set timeout otherwise it wont update the total
                 setTimeout(function () {
-                    $j('#cart > button').html('<span class="icon icon-shopping_basket"></span><span id="cart-total" class="badge badge--cart"> ' + str1 + '</span>');
+                    //$j('#cart > button').html('<span class="icon icon-shopping_basket"></span><span id="cart-total" class="badge badge--cart"> ' + str1 + '</span>');
                 }, 100);
 
                 if (getURLVar('route') == 'checkout/cart' || getURLVar('route') == 'checkout/checkout') {
@@ -577,8 +575,37 @@ var cart_theme = {
         });
     }
 }
+function calcTotal() {
+    var total = 0;
+    $('div.subtotal').each(function () {
+
+        var num = parseFloat($(this).html());
+        total += num;
+
+    });
+    total = total.toFixed(2);
+    $('#total_sum').html(total + ' грн.');
+
+}
+/*
+function sendTotalOrder(){
+    var table = $('.shopping-cart-table');
+        var items = table.find('td.text-left a');
+        items.each(function () {
+            var ids = $(this)[0].href;
+            var preg = /.\d$/g;
+            var idm = ids.match(preg);
+            console.log(idm[0]);
+
+            var t = $(this).parents('tr');
+            var fg = t.find('input');
+            var rr = fg[1];
+            console.log(rr);
+            //console.log(value);
+        })
+}
+*/
 function inputCounter(){
-    console.log($j(".input-counter").length);
     if ($j(".input-counter").length > 0) {
         $j('.minus-btn').click(function () {
             var $jinput = $j(this).parent().find('input');
@@ -586,13 +613,43 @@ function inputCounter(){
             count = count < 1 ? 1 : count;
             $jinput.val(count);
             $jinput.change();
+
+            var t = $(this).parents('tr');
+            var p = t.find('input');
+            var price = parseFloat(p.val()).toFixed(2);
+            var total = count * price;
+            total = total.toFixed(2);
+            t.find('div.subtotal').html(total + 'грн.');
+            calcTotal();
+            //sendTotalOrder();
+            var id_item = t.find('td.text-left a');
+            var id = id_item[0].href;
+            var preg = /.\d$/g;
+            var ids = id.match(preg);
+            cart_theme.update(ids,count);
             marker = false;
             return false;
         });
         $j('.plus-btn').click(function () {
             var $jinput = $j(this).parent().find('input');
+            var plus = parseInt($jinput.val()) + 1;
             $jinput.val(parseInt($jinput.val()) + 1);
             $jinput.change();
+
+            var t = $(this).parents('tr');
+            var p = t.find('input');
+            var price = parseFloat(p.val()).toFixed(2);
+
+            var total = plus * price;
+            total = total.toFixed(2);
+            t.find('div.subtotal').html(total + 'грн.');
+            calcTotal();
+            //sendTotalOrder();
+            var id_item = t.find('td.text-left a');
+            var id = id_item[0].href;
+            var preg = /.\d$/g;
+            var ids = id.match(preg);
+            cart_theme.update(ids,plus);
             marker = false;
             return false;
         });

@@ -505,6 +505,14 @@ class ControllerCheckoutCart extends Controller {
 		$json = array();
 
 		// Update
+        if (!empty($this->request->post['quantity']) || !empty($this->request->post['key'])) {
+            $key = $this->request->post['key'];
+            $value = $this->request->post['quantity'];
+            $this->cart->updateQuantity($key, $value);
+            $json['success'] = $this->language->get('text_success');
+            $json['total'] = '5';
+        }
+        /*
 		if (!empty($this->request->post['quantity'])) {
 			foreach ($this->request->post['quantity'] as $key => $value) {
 				$this->cart->update($key, $value);
@@ -520,7 +528,7 @@ class ControllerCheckoutCart extends Controller {
 
 			$this->response->redirect($this->url->link('checkout/cart'));
 		}
-
+        */
 		$this->response->addHeader('Content-Type: application/json');
 		$this->response->setOutput(json_encode($json));
 	}
