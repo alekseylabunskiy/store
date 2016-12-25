@@ -1,0 +1,658 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="e07c87bc-55c4-435f-9541-5b3d23762672" name="Default" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DatabaseView">
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_TABLE_DETAILS" value="true" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="theme_scripts.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../../userdata/temp/FileZillaPortableTemp/fz3temp-1/theme_scripts.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-10353">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="theme_scripts.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/catalog/view/theme/yourstore/js/theme_scripts.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-9521">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+                <marker date="1482653594780" expanded="true" signature="12396:12432" ph="..." />
+                <marker date="1482653594780" expanded="true" signature="23565:23601" ph="..." />
+                <marker date="1482653594780" expanded="true" signature="26224:26260" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>model</find>
+      <find>$query-&gt;row</find>
+      <find>checkout/checkout/confirm</find>
+      <find>entry_address</find>
+      <find>entry_address_1</find>
+      <find>Курьерская доставка по адресу</find>
+      <find>name=\'city\</find>
+      <find>shipping-method</find>
+      <find>&lt;input id=&quot;shipping_method&lt;?php echo $quote['code']; ?&gt;&quot; type=&quot;radio&quot; name=&quot;shipping_method&quot;</find>
+      <find>shipping_method</find>
+      <find>padding-left: 0px</find>
+      <find>shipping-existing</find>
+      <find>payment_address</find>
+      <find>2</find>
+      <find>shipping-address-2</find>
+      <find>entry_address_2</find>
+      <find>price</find>
+      <find>icon icon-person icon-large color</find>
+      <find>class=&quot;icon icon-account_balance_wallet color&quot;</find>
+      <find>icon-account_balance_wallet</find>
+      <find>title-checkout tt_uppercase</find>
+      <find>Выберите способ оплаты для данного заказа</find>
+      <find>col-md-12 col-lg-3</find>
+      <find>col-md-12 col-lg-4</find>
+      <find>&quot;UPDATE&quot;  . DB_PREFIX .&quot; cart&quot;</find>
+      <find>cart</find>
+      <find>update</find>
+      <find>cons</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/../../userdata/temp/FileZillaPortableTemp/fz3temp-1/shipping_method.tpl" />
+        <option value="$PROJECT_DIR$/../../userdata/temp/FileZillaPortableTemp/fz3temp-1/checkout 2.php" />
+        <option value="$PROJECT_DIR$/../js/js.php" />
+        <option value="$PROJECT_DIR$/../../userdata/temp/FileZillaPortableTemp/fz3temp-1/novaposhta.php" />
+        <option value="$PROJECT_DIR$/../../userdata/temp/FileZillaPortableTemp/fz3temp-1/novaposhta 2.php" />
+        <option value="$PROJECT_DIR$/../../userdata/temp/FileZillaPortableTemp/fz3temp-1/pickup.php" />
+        <option value="$PROJECT_DIR$/../../userdata/temp/FileZillaPortableTemp/fz3temp-1/easy_shipping_method.tpl" />
+        <option value="$PROJECT_DIR$/../../userdata/temp/FileZillaPortableTemp/fz3temp-1/address.php" />
+        <option value="$PROJECT_DIR$/../crm/crm.php" />
+        <option value="$PROJECT_DIR$/../../userdata/temp/FileZillaPortableTemp/fz3temp-1/sendOrder 2.php" />
+        <option value="$PROJECT_DIR$/../../userdata/temp/FileZillaPortableTemp/fz3temp-1/crm.php" />
+        <option value="$PROJECT_DIR$/../../userdata/temp/FileZillaPortableTemp/fz3temp-1/easy_payment_method.tpl" />
+        <option value="$PROJECT_DIR$/../../userdata/temp/FileZillaPortableTemp/fz3temp-1/style-no-panel.css" />
+        <option value="$PROJECT_DIR$/../../userdata/temp/FileZillaPortableTemp/fz3temp-1/checkout.php" />
+        <option value="$PROJECT_DIR$/../../userdata/temp/FileZillaPortableTemp/fz3temp-1/easy_checkout.tpl" />
+        <option value="$PROJECT_DIR$/../../userdata/temp/FileZillaPortableTemp/fz3temp-1/config 2.php" />
+        <option value="$PROJECT_DIR$/../../userdata/temp/FileZillaPortableTemp/fz3temp-1/config.php" />
+        <option value="$PROJECT_DIR$/../crm/test.php" />
+        <option value="$PROJECT_DIR$/system/library/cart/cart.php" />
+        <option value="$PROJECT_DIR$/../../userdata/temp/FileZillaPortableTemp/fz3temp-1/cart 2.php" />
+        <option value="$PROJECT_DIR$/../../userdata/temp/FileZillaPortableTemp/fz3temp-1/cart.php" />
+        <option value="$PROJECT_DIR$/../../userdata/temp/FileZillaPortableTemp/fz3temp-1/theme_scripts.js" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/catalog/view/theme/yourstore/js/theme_scripts.js" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1296" />
+    <option name="height" value="1000" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="backUpFromHostStore" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="backUpFromHostStore" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="backUpFromHostStore" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="backUpFromHostStore" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="system" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="backUpFromHostStore" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="backUpFromHostStore" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="system" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="storage" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="backUpFromHostStore" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="backUpFromHostStore" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="catalog" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="view" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="theme" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="backUpFromHostStore" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="backUpFromHostStore" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="catalog" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="view" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="theme" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="yourstore" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="backUpFromHostStore" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="backUpFromHostStore" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="catalog" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="view" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="theme" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="yourstore" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="backUpFromHostStore" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="backUpFromHostStore" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="catalog" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="view" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="backUpFromHostStore" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="backUpFromHostStore" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="catalog" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../crm/test.php" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="js.eslint.eslintPackage" value="" />
+    <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
+      <config-file value="" />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="project" working-dir="">
+      <method />
+    </configuration>
+    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpBehatConfigurationType" factoryName="Behat">
+      <BehatRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpSpecConfigurationType" factoryName="PHPSpec">
+      <PhpTestRunnerSettings />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="mocha-javascript-test-runner" factoryName="Mocha">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <working-directory />
+      <pass-parent-env>true</pass-parent-env>
+      <envs />
+      <ui />
+      <extra-mocha-options />
+      <test-kind>DIRECTORY</test-kind>
+      <test-directory />
+      <recursive>false</recursive>
+      <method />
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e07c87bc-55c4-435f-9541-5b3d23762672" name="Default" comment="" />
+      <created>1482169578365</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1482169578365</updated>
+      <workItem from="1482169582008" duration="9964000" />
+      <workItem from="1482214574094" duration="26205000" />
+      <workItem from="1482300901089" duration="10258000" />
+      <workItem from="1482337312639" duration="3656000" />
+      <workItem from="1482383154796" duration="517000" />
+      <workItem from="1482383790393" duration="3286000" />
+      <workItem from="1482499308582" duration="10635000" />
+      <workItem from="1482566826393" duration="1261000" />
+      <workItem from="1482576444592" duration="21278000" />
+      <workItem from="1482651845565" duration="2122000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="89182000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1296" height="1000" extended-state="7" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3046875" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25697502" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="processedProjectFiles" value="true" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/../../userdata/temp/FileZillaPortableTemp/fz3temp-1/style-no-panel.css" />
+    <entry file="file://$PROJECT_DIR$/../../userdata/temp/FileZillaPortableTemp/fz3temp-1/checkout.php" />
+    <entry file="file://$PROJECT_DIR$/../../userdata/temp/FileZillaPortableTemp/fz3temp-1/easy_checkout.tpl" />
+    <entry file="file://$PROJECT_DIR$/catalog/model/shipping/novaposhta.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="11" lean-forward="true" selection-start-line="1" selection-start-column="11" selection-end-line="1" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/controller/shipping/novaposhta.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="542">
+          <caret line="102" column="8" lean-forward="false" selection-start-line="102" selection-start-column="8" selection-end-line="102" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../userdata/temp/FileZillaPortableTemp/fz3temp-1/country.php" />
+    <entry file="file://$PROJECT_DIR$/catalog/model/affiliate/affiliate.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="166" column="197" lean-forward="false" selection-start-line="166" selection-start-column="197" selection-end-line="166" selection-end-column="197" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/catalog/model/localisation/zone.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="27" lean-forward="true" selection-start-line="3" selection-start-column="8" selection-end-line="5" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/model/setting/setting.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="17" lean-forward="false" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/controller/module/exchange1c.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="2176" column="38" lean-forward="false" selection-start-line="2176" selection-start-column="38" selection-end-line="2176" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/model/catalog/attribute.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="474">
+          <caret line="78" column="15" lean-forward="false" selection-start-line="78" selection-start-column="15" selection-end-line="78" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/controller/module/sendOrder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="458">
+          <caret line="67" column="35" lean-forward="false" selection-start-line="67" selection-start-column="8" selection-end-line="67" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../userdata/temp/FileZillaPortableTemp/fz3temp-1/payment_address.php" />
+    <entry file="file://$PROJECT_DIR$/../../userdata/temp/FileZillaPortableTemp/fz3temp-1/checkout 2.php" />
+    <entry file="file://$PROJECT_DIR$/../js/js.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-150">
+          <caret line="31" column="0" lean-forward="true" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../userdata/temp/FileZillaPortableTemp/fz3temp-1/shipping_method.tpl" />
+    <entry file="file://$PROJECT_DIR$/catalog/view/theme/default/template/checkout/easy_checkout.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="47">
+          <caret line="258" column="31" lean-forward="false" selection-start-line="258" selection-start-column="18" selection-end-line="261" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../userdata/temp/FileZillaPortableTemp/fz3temp-1/shipping_method.php" />
+    <entry file="file://$PROJECT_DIR$/../../userdata/temp/FileZillaPortableTemp/fz3temp-1/shipping_address.tpl" />
+    <entry file="file://$PROJECT_DIR$/catalog/language/ru-ru/extension/shipping/citylink.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="21" lean-forward="false" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/catalog/model/extension/shipping/pickup.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-102">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/catalog/language/ru-ru/extension/shipping/pickup.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="26" lean-forward="false" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/catalog/view/theme/default/template/checkout/checkout.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="474" column="37" lean-forward="false" selection-start-line="474" selection-start-column="37" selection-end-line="474" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../userdata/temp/FileZillaPortableTemp/fz3temp-1/novaposhta.php" />
+    <entry file="file://$PROJECT_DIR$/../../userdata/temp/FileZillaPortableTemp/fz3temp-1/pickup.php" />
+    <entry file="file://$PROJECT_DIR$/../../userdata/temp/FileZillaPortableTemp/fz3temp-1/novaposhta 2.php" />
+    <entry file="file://$PROJECT_DIR$/../../userdata/temp/FileZillaPortableTemp/fz3temp-1/easy_shipping_method.tpl" />
+    <entry file="file://$PROJECT_DIR$/admin/view/template/sale/order_form.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="651" column="107" lean-forward="false" selection-start-line="651" selection-start-column="107" selection-end-line="651" selection-end-column="107" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../userdata/temp/FileZillaPortableTemp/fz3temp-1/address.php" />
+    <entry file="file://$PROJECT_DIR$/../../userdata/temp/FileZillaPortableTemp/fz3temp-1/sendOrder.php" />
+    <entry file="file://$PROJECT_DIR$/../crm/crm.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-51">
+          <caret line="24" column="63" lean-forward="true" selection-start-line="24" selection-start-column="63" selection-end-line="24" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../userdata/temp/FileZillaPortableTemp/fz3temp-1/sendOrder 2.php" />
+    <entry file="file://$PROJECT_DIR$/../../userdata/temp/FileZillaPortableTemp/fz3temp-1/crm.php" />
+    <entry file="file://$PROJECT_DIR$/catalog/view/theme/yourstore/css/style-no-panel.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="314">
+          <caret line="27746" column="1" lean-forward="false" selection-start-line="27746" selection-start-column="1" selection-end-line="27746" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../userdata/temp/FileZillaPortableTemp/fz3temp-1/easy_payment_method.tpl" />
+    <entry file="file://$PROJECT_DIR$/../../userdata/temp/FileZillaPortableTemp/fz3temp-1/checkout.php" />
+    <entry file="file://$PROJECT_DIR$/../../userdata/temp/FileZillaPortableTemp/fz3temp-1/style-no-panel.css" />
+    <entry file="file://$PROJECT_DIR$/../../userdata/temp/FileZillaPortableTemp/fz3temp-1/easy_checkout.tpl" />
+    <entry file="file://$PROJECT_DIR$/../../userdata/temp/FileZillaPortableTemp/fz3temp-1/config 2.php" />
+    <entry file="file://$PROJECT_DIR$/../../userdata/temp/FileZillaPortableTemp/fz3temp-1/config.php" />
+    <entry file="file://$PROJECT_DIR$/../crm/test.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="596">
+          <caret line="58" column="6" lean-forward="false" selection-start-line="58" selection-start-column="6" selection-end-line="58" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/system/storage/modification/catalog/model/catalog/product.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-765">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/system/storage/modification/catalog/controller/common/cart.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-743">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/system/library/cart/cart.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="284" column="4" lean-forward="false" selection-start-line="284" selection-start-column="4" selection-end-line="286" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/catalog/controller/checkout/cart.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="412" column="35" lean-forward="false" selection-start-line="412" selection-start-column="16" selection-end-line="412" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/system/storage/modification/catalog/controller/checkout/cart.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="415" column="29" lean-forward="false" selection-start-line="415" selection-start-column="29" selection-end-line="415" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../userdata/temp/FileZillaPortableTemp/fz3temp-1/cart 2.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="284" column="34" lean-forward="true" selection-start-line="284" selection-start-column="20" selection-end-line="284" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../userdata/temp/FileZillaPortableTemp/fz3temp-1/cart.php" />
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/catalog/view/theme/yourstore/js/theme_scripts.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-9521">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <marker date="1482653594780" expanded="true" signature="12396:12432" ph="..." />
+            <marker date="1482653594780" expanded="true" signature="23565:23601" ph="..." />
+            <marker date="1482653594780" expanded="true" signature="26224:26260" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../userdata/temp/FileZillaPortableTemp/fz3temp-1/theme_scripts.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-10353">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
