@@ -25,7 +25,7 @@ define('DIR_CATALOG', '/home/d33007/public_html/catalog/');
 define('DB_DRIVER', 'mysqli');
 define('DB_HOSTNAME', 'localhost');
 define('DB_USERNAME', 'd33007_dbuser');
-define('DB_PASSWORD', 'rBrDa13cl4lBYF0S');
+define('DB_PASSWORD', 'Zvv~~hKX7RoZ');
 define('DB_DATABASE', 'd33007_db');
 define('DB_PORT', '3306');
 define('DB_PREFIX', 'oc_');

@@ -1,3 +1,22 @@
 # Created by .ignore support plugin (hsz.mobi)
+admin/config.php
 config.php
 .idea
+system/storage/cache/
+admin/controller/extension/openbay/
+admin/language/en-gb/extension/openbay/
+admin/language/ru-ru/extension/openbay/
+admin/model/extension/openbay/
+admin/view/javascript/openbay/
+admin/view/template/extension/openbay/
+catalog/controller/ebay/
+catalog/controller/extension/credit_card/
+catalog/controller/extension/openbay/
+catalog/language/en-gb/extension/credit_card/
+catalog/language/en-gb/extension/openbay/
+catalog/language/ru-ru/extension/openbay/
+catalog/model/extension/openbay/
+catalog/view/theme/default/template/extension/credit_card/
+cgi-bin/
+image/webdata 3/
+nuvola.com.ua/cgi-bin/

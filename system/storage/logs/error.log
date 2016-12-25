@@ -33373,3 +33373,21 @@
 2016-12-22 6:17:06 - PHP Notice:  Undefined variable: text_loading in /home/d33007/public_html/catalog/view/theme/default/template/checkout/easy_checkout.tpl on line 681
 2016-12-22 6:19:39 - PHP Notice:  Undefined variable: text_loading in /home/d33007/public_html/catalog/view/theme/default/template/checkout/easy_checkout.tpl on line 681
 2016-12-22 6:20:32 - PHP Notice:  Undefined variable: text_loading in /home/d33007/public_html/catalog/view/theme/default/template/checkout/easy_checkout.tpl on line 681
+2016-12-22 6:23:53 - PHP Notice:  Undefined variable: text_loading in /home/d33007/public_html/catalog/view/theme/default/template/checkout/easy_checkout.tpl on line 681
+2016-12-22 11:14:31 - PHP Notice:  Undefined variable: text_loading in /home/d33007/public_html/catalog/view/theme/default/template/checkout/easy_checkout.tpl on line 681
+2016-12-22 14:24:36 - PHP Notice:  Undefined variable: text_loading in /home/d33007/public_html/catalog/view/theme/default/template/checkout/easy_checkout.tpl on line 681
+2016-12-22 14:27:18 - PHP Notice:  Undefined variable: text_loading in /home/d33007/public_html/catalog/view/theme/default/template/checkout/easy_checkout.tpl on line 681
+2016-12-23 9:13:50 - PHP Notice:  Undefined variable: text_loading in /home/d33007/public_html/catalog/view/theme/default/template/checkout/easy_checkout.tpl on line 681
+2016-12-24 11:39:58 - PHP Notice:  Undefined variable: text_loading in /home/d33007/public_html/catalog/view/theme/default/template/checkout/easy_checkout.tpl on line 681
+2016-12-24 13:41:34 - PHP Warning:  Invalid argument supplied for foreach() in /home/d33007/public_html/system/storage/modification/catalog/controller/checkout/cart.php on line 509
+2016-12-24 13:41:34 - PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/d33007/public_html/catalog/controller/startup/error.php:34) in /home/d33007/public_html/system/library/response.php on line 12
+2016-12-24 13:43:28 - PHP Warning:  Invalid argument supplied for foreach() in /home/d33007/public_html/system/storage/modification/catalog/controller/checkout/cart.php on line 509
+2016-12-24 13:43:28 - PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/d33007/public_html/catalog/controller/startup/error.php:34) in /home/d33007/public_html/system/library/response.php on line 12
+2016-12-24 13:43:55 - PHP Warning:  Invalid argument supplied for foreach() in /home/d33007/public_html/system/storage/modification/catalog/controller/checkout/cart.php on line 509
+2016-12-24 13:43:55 - PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/d33007/public_html/catalog/controller/startup/error.php:34) in /home/d33007/public_html/system/library/response.php on line 12
+2016-12-24 13:50:28 - PHP Warning:  Invalid argument supplied for foreach() in /home/d33007/public_html/system/storage/modification/catalog/controller/checkout/cart.php on line 514
+2016-12-24 13:50:28 - PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/d33007/public_html/catalog/controller/startup/error.php:34) in /home/d33007/public_html/system/library/response.php on line 12
+2016-12-24 13:53:04 - PHP Notice:  Undefined variable: text_loading in /home/d33007/public_html/catalog/view/theme/default/template/checkout/easy_checkout.tpl on line 681
+2016-12-24 14:45:52 - PHP Notice:  Undefined variable: text_loading in /home/d33007/public_html/catalog/view/theme/default/template/checkout/easy_checkout.tpl on line 681
+2016-12-24 14:49:28 - PHP Notice:  Undefined variable: text_loading in /home/d33007/public_html/catalog/view/theme/default/template/checkout/easy_checkout.tpl on line 681
+2016-12-24 15:16:23 - PHP Notice:  Undefined variable: text_loading in /home/d33007/public_html/catalog/view/theme/default/template/checkout/easy_checkout.tpl on line 681
