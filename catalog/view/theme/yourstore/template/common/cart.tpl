@@ -3,8 +3,8 @@
     $text_items_number = $text_items_full[1];
 ?>
 
-<div id="cart" class="btn-group btn-block7 cart link-inline text-right">
-  <button id="cart_button_top" type="button" data-toggle="dropdown" class="btn7 btn-inverse7 btn-block7 btn-lg7 dropdown-toggle">
+<div  class="btn-group btn-block7 cart link-inline text-right">
+  <button onclick="cart_theme.list();"  type="button" class="btn7 btn-inverse7 btn-block7 btn-lg7">
       <span id="cart-total" class="badge badge--cart"><?php echo $text_items_number; ?></span>
       <span class="icon icon-shopping_basket"></span>
       <span class="name-text">My Cart</span>
@@ -49,21 +49,20 @@
             </div>
         </li>
           <?php endforeach; ?>
-    <li class="container">
+    <li>
         <div class="cart__bottom">
             <div class="cart__total">
-                <span><img style="width: 200px; padding-left: 34px;" src="http://d33007-hostde8.fornex.org/image/catalog/u50.png" title="Yourstore" alt="Yourstore"></span><span style="margin-left: 455px;"><?php echo $totals[1]['title']; ?>: <?php echo $totals[1]['text']; ?></span>
+                <span><img style="width: 200px; padding-left: 34px;padding-bottom: 28px;" src="http://d33007-hostde8.fornex.org/image/catalog/u50.png" title="Yourstore" alt="Yourstore"></span><span id="cart_total_price"><span style="font-size: 22px;"><?php echo $totals[1]['title']; ?>:</spansty> <?php echo $totals[1]['text']; ?></span>
             </div>
         </div>
         <div id="ref_buttons">
-            <a style="font-size: 12px;" href="index.php" class="btn btn--ys btn-checkout">Продолжить покупки</a>
+            <a id="continue_shop" style="font-size: 12px;margin-left: 1px;margin-right: 374px;" href="" class="btn btn--ys btn-checkout">Продолжить покупки</a>
             <a id="confirm_ord" href="index.php?route=checkout/checkout" class="btn btn--ys">Оформить заказ</a>
         </div>
    </li>
     <?php } else { ?>
-      <li class="container">
+      <li class="">
       <div class="text-center cart__top"><?php echo $text_empty; ?></div>
-          <a href="#" class="icon icon-close cart__close"><span><?php echo (isset($customisation_translation[$lang]["menu_close"][$store_id]) ? $customisation_translation[$lang]["menu_close"][$store_id] : 'close'); ?></span></a>
       </li>
     <?php } ?>
   </ul>

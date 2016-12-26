@@ -503,6 +503,7 @@ class ControllerCheckoutCart extends Controller {
 		$this->load->language('checkout/cart');
 
 		$json = array();
+		$total = 0;
 
 		// Update
         if (!empty($this->request->post['quantity']) || !empty($this->request->post['key'])) {
@@ -510,7 +511,7 @@ class ControllerCheckoutCart extends Controller {
             $value = $this->request->post['quantity'];
             $this->cart->updateQuantity($key, $value);
             $json['success'] = $this->language->get('text_success');
-            $json['total'] = '5';
+            $json['total'] = sprintf($this->language->get('text_items'), $this->cart->countProducts() + (isset($this->session->data['vouchers']) ? count($this->session->data['vouchers']) : 0), $this->currency->format($total, $this->session->data['currency']));
         }
         /*
 		if (!empty($this->request->post['quantity'])) {

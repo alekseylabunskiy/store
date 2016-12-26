@@ -33466,3 +33466,12 @@
 2016-12-25 20:12:32 - PHP Notice:  Undefined variable: text_loading in /home/d33007/public_html/catalog/view/theme/default/template/checkout/easy_checkout.tpl on line 681
 2016-12-25 20:14:22 - PHP Notice:  Undefined variable: text_loading in /home/d33007/public_html/catalog/view/theme/default/template/checkout/easy_checkout.tpl on line 681
 2016-12-25 21:09:33 - PHP Notice:  Undefined variable: text_loading in /home/d33007/public_html/catalog/view/theme/default/template/checkout/easy_checkout.tpl on line 681
+2016-12-25 22:26:34 - PHP Notice:  Undefined variable: text_loading in /home/d33007/public_html/catalog/view/theme/default/template/checkout/easy_checkout.tpl on line 681
+2016-12-26 6:27:52 - PHP Notice:  Undefined variable: text_loading in /home/d33007/public_html/catalog/view/theme/default/template/checkout/easy_checkout.tpl on line 681
+2016-12-26 6:28:17 - PHP Notice:  Undefined variable: text_loading in /home/d33007/public_html/catalog/view/theme/default/template/checkout/easy_checkout.tpl on line 681
+2016-12-26 6:36:44 - PHP Notice:  Undefined variable: text_loading in /home/d33007/public_html/catalog/view/theme/default/template/checkout/easy_checkout.tpl on line 681
+2016-12-26 7:14:05 - PHP Notice:  Undefined variable: text_loading in /home/d33007/public_html/catalog/view/theme/default/template/checkout/easy_checkout.tpl on line 681
+2016-12-26 10:01:08 - PHP Notice:  Undefined variable: text_loading in /home/d33007/public_html/catalog/view/theme/default/template/checkout/easy_checkout.tpl on line 681
+2016-12-26 10:06:58 - PHP Notice:  Undefined variable: text_loading in /home/d33007/public_html/catalog/view/theme/default/template/checkout/easy_checkout.tpl on line 681
+2016-12-26 15:50:29 - PHP Notice:  Undefined variable: text_loading in /home/d33007/public_html/catalog/view/theme/default/template/checkout/easy_checkout.tpl on line 681
+2016-12-26 17:09:45 - PHP Notice:  Undefined variable: text_loading in /home/d33007/public_html/catalog/view/theme/default/template/checkout/easy_checkout.tpl on line 681
