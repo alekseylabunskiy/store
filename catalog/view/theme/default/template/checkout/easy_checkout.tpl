@@ -31,7 +31,7 @@
     <div class="row">
         <?php if (!isset($address)) : ?>
         <div class="col-sm-4 col-xs-12">
-            <a href="#" onclick="jQuery('.login-form').toggle();return false;" class="btn btn--ys"><span class="icon icon-vpn_key"></span><?php echo $text_i_am_returning_customer; ?></a>
+            <a style="top: -3px;" href="#" onclick="jQuery('.login-form').toggle();return false;" class="btn btn--ys"><span class="icon icon-vpn_key"></span><?php echo $text_i_am_returning_customer; ?></a>
             <div class="login-form registerbox clearfix" style="display:none">
                 <div class="select-basket__inner">
                     <div class="message"></div>
