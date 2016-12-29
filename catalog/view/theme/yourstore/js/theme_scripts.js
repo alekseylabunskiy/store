@@ -580,14 +580,8 @@ function calcTotal() {
     $('#total_sum').html(total + ' грн.');
 
 }
-$('html').on("click","#cart_button_top", function () {
-    $('.cart__total span').first().hide();
-    $('#continue_shop').css("margin-right", "0px");
-    $('#cart_total_price').css("margin-left", "0px");
-});
 
-
-$('html').on("click",".minus-btn,.plus-btn",function () {
+$j('html').on("click",".minus-btn,.plus-btn",function () {
     var $jinput = $(this).parent().find('input');
     var count = parseInt($jinput.val());
 
@@ -621,7 +615,7 @@ $('html').on("click",".minus-btn,.plus-btn",function () {
     cart_theme.update(ids,count);
 });
 
-$("html").on("click",".icon-clear", function() {
+$j("html").on("click",".icon-clear", function() {
     var t = $(this).parents('tr');
     var id_item = t.find('td.text-left a');
     var id = id_item[0].href;
@@ -661,7 +655,7 @@ $("html").on("click",".icon-clear", function() {
         }
     });
 });
-$("html").on("click",".btn-checkout", function(event) {
+$j("html").on("click",".btn-checkout", function(event) {
     $('.modal-window').remove();
     $('.modal-backdrop').remove();
     event.preventDefault();

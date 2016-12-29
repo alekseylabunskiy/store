@@ -40,7 +40,7 @@
                     </td>
                     <td>
                         <div class="shopping-cart-table__product-price subtotal">
-                            <span><?php echo $product['total']; ?></span>
+                            <span style="float: right"><?php echo $product['total']; ?></span>
                         </div>
                     </td>
                 </tr>
@@ -50,7 +50,7 @@
     <li style="height: 110px;">
         <div class="cart__bottom">
             <div class="cart__total">
-                <span><img id="cart_logo" src="http://d33007-hostde8.fornex.org/image/catalog/u50.png" title="Yourstore" alt="Yourstore"></span><span id="cart_total_price"><span id="t_title"><?php echo $totals[1]['title']; ?>:</span> <?php echo $totals[1]['text']; ?></span>
+                <span><img id="cart_logo" src="http://d33007-hostde8.fornex.org/image/catalog/u50.png" title="Yourstore" alt="Yourstore"></span><span id="cart_total_price"><span id="t_title"><?php echo $totals[1]['title']; ?>:</span><span id="t_text"><?php echo $totals[1]['text']; ?></span></span>
             </div>
         </div>
         <div id="ref_buttons">
