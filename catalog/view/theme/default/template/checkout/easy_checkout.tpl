@@ -31,7 +31,7 @@
     <div class="row">
         <?php if (!isset($address)) : ?>
         <div class="col-sm-4 col-xs-12">
-            <a id="o_client" href="#" onclick="jQuery('.login-form').toggle();return false;" class="btn btn--ys"><span class="icon icon-vpn_key"></span><?php echo $text_i_am_returning_customer; ?></a>
+            <a id="o_client" href="#" onclick="jQuery('.login-form').toggle();return false;" class="btn btn--ys"><span class="icon fa fa-key"></span><?php echo $text_i_am_returning_customer; ?></a>
             <div class="login-form registerbox clearfix" style="display:none">
                 <div class="select-basket__inner">
                     <div class="message"></div>
@@ -62,13 +62,13 @@
         </div>
         <?php endif; ?>
         <!--cart-->
-        <div class="col-sm-8  col-xs-12">
+        <div id="cart_btn" class="col-sm-8  col-xs-12">
             <div class="visible-xs divider--sm"></div>
             <div class="pull-right pull-extra-left">
                 <div class="dropdown select-basket">
                     <a class="dropdown-toggle" data-toggle="dropdown">
                         <span class="caret"></span>
-                        <span class="icon icon-shopping_basket"></span>
+                        <span class="icon icon-shopping_cart"></span>
                         <?php
                              $last_price = array_pop($totals);
                              echo $last_price["text"];

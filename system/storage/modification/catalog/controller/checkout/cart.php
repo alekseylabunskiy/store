@@ -511,11 +511,7 @@ class ControllerCheckoutCart extends Controller {
             $value = $this->request->post['quantity'];
             $this->cart->updateQuantity($key, $value);
             $json['success'] = $this->language->get('text_success');
-<<<<<<< HEAD
-            $json['total'] = '5';
-=======
             $json['total'] = sprintf($this->language->get('text_items'), $this->cart->countProducts() + (isset($this->session->data['vouchers']) ? count($this->session->data['vouchers']) : 0), $this->currency->format($total, $this->session->data['currency']));
->>>>>>> newCart
         }
         /*
 		if (!empty($this->request->post['quantity'])) {

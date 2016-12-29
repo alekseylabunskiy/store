@@ -27213,7 +27213,7 @@ input[type="color"].form-control{font-size:16px;border-color: #c2c2c2;}
 }
 .dropdown-menu li > a:hover{color:inherit;}
 .form-horizontal .buttons{margin-bottom:100px}
-.btn{position:relative;padding:10px 14px;font-size:12px;line-height:1.486em;height:40px;color:#ffffff;border-radius:0;vertical-align:top;border:0;text-transform:uppercase;letter-spacing:1px;-webkit-transition:all 300ms 0s ease;-moz-transition:all 300ms 0s ease;-ms-transition:all 300ms 0s ease;-o-transition:all 300ms 0s ease;transition:all 300ms 0s ease;}
+.btn{position:relative;padding:10px 14px;font-size:14px;line-height:1.486em;height:40px;color:#ffffff;border-radius:0;vertical-align:top;border:0;text-transform:uppercase;letter-spacing:1px;-webkit-transition:all 300ms 0s ease;-moz-transition:all 300ms 0s ease;-ms-transition:all 300ms 0s ease;-o-transition:all 300ms 0s ease;transition:all 300ms 0s ease;}
 .btn:focus,
 .btn:active:focus,
 .btn.active:focus,
@@ -27802,6 +27802,6 @@ header .mainMenu .navbar-nav > li.custom_item > a,
 #cart{max-height: 550px; overflow: scroll;}
 #cart_logo{width: 185px; padding-left: 45px; padding-bottom: 28px;}
 #continue_shop{margin-left: 11px;}
-#o_client{padding: 11px 37px 9px 19px; width: 240px; top: -3px;}
+#o_client{padding: 10px 37px 9px 15px; width: 240px; top: -3px;}
 
 
