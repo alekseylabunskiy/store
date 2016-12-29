@@ -1,4 +1,5 @@
 # Created by .ignore support plugin (hsz.mobi)
+<<<<<<< HEAD
 admin/config.php
 config.php
 .idea
@@ -20,3 +21,11 @@ catalog/view/theme/default/template/extension/credit_card/
 cgi-bin/
 image/webdata 3/
 nuvola.com.ua/cgi-bin/
+=======
+/config.php
+/system/storage/cache/
+/admin/config.php
+/.idea
+/nuvola.com.ua
+/system/storage/logs/
+>>>>>>> newCart

@@ -354,15 +354,71 @@ $j(document).ready(function() {
     }
 
 
+<<<<<<< HEAD
 });
+=======
+})
+>>>>>>> newCart
 
 // Cart add remove functions
 var cart_theme = {
+    'list': function () {
+        var cart = 'Корзина';
+        var str1 = '1';
+        var outputVariable =
+            '<div class="modal modal-window fade in" id="modalAddToCart" tabindex="-1" role="dialog" aria-label="myModalLabel" aria-hidden="true" style="display: block; padding-right: 17px;">' +
+            '<div class="modal-dialog white-modal modal-lg">' +
+            '<div class="modal-content ">' +
+            '<div class="modal-header">' + cart + '<span id="summ_o">Сумма</span>' +
+            '<button type="button" class="close"><span class="icon icon-clear"></span></button>' +
+            '</div>' +
+            '<div class="modal-body">' +
+            '<div id="cart"><ul style="padding-left: 0px">' +
+            '</ul></div>'+
+            '</div>' +
+            '</div>' +
+            '</div>' +
+            '</div>';
+        var bg = '<div class="modal-backdrop fade in"></div>';
+
+        $j('body').after(bg);
+        $j('#notification').parent().before(outputVariable);
+
+        //$j('.success_ev').fadeIn('');
+        //$j('body').addClass('darken');
+
+        // Need to set timeout otherwise it wont update the total
+        setTimeout(function () {
+            $j('#cart > button').html('<span class="icon icon-shopping_basket"></span><span id="cart-total" class="badge badge--cart"> ' + str1 + '</span>');
+        }, 100);
+
+        $j('#cart > ul').load('index.php?route=common/cart/info ul li');
+        $j( ".close" ).click(function() {
+            //$j('body').removeClass('darken');
+            $j('.modal-window').remove();
+            $j('.modal-backdrop').remove();
+        });
+        $j( "#continue_shop" ).click(function() {
+            //$j('body').removeClass('darken');
+            $j('.modal-window').remove();
+            $j('.modal-backdrop').remove();
+        });
+        setTimeout(function () {
+            $j('#cart > button').html('<span class="icon icon-shopping_basket"></span><span id="cart-total" class="badge badge--cart"> ' + str1 + '</span>');
+        }, 1000);
+    },
     'add': function(product_id, quantity) {
+        var quantity1 = 0;
+
+        if (typeof(quantity) != 'undefined' && quantity != 0) {
+            quantity1 = quantity;
+        } else {
+            quantity1 = 1;
+        }
         $.ajax({
             url: 'index.php?route=checkout/cart/add',
             type: 'post',
-            data: 'product_id=' + product_id + '&quantity=' + (typeof(quantity) != 'undefined' ? quantity : 1),
+            data: 'product_id=' + product_id + '&quantity=' + quantity1,
             dataType: 'json',
             beforeSend: function() {
                 //$j('#cart > button').button('loading');
@@ -384,11 +440,17 @@ var cart_theme = {
                     var str=json['total'];
                     var myArray = str.split(' ');
                     var str1=myArray[1];
+<<<<<<< HEAD
                     if (json['products'].length > 1) {
                         var cart = 'Корзина';
                     } else {
                         var cart = 'Вы добавили товар';
                     }
+=======
+
+                    var cart = 'Корзина';
+
+>>>>>>> newCart
 
                     $j('.mfp-close').click();
 
@@ -398,6 +460,7 @@ var cart_theme = {
                         '<div class="modal modal-window fade in" id="modalAddToCart" tabindex="-1" role="dialog" aria-label="myModalLabel" aria-hidden="true" style="display: block; padding-right: 17px;">' +
                         '<div class="modal-dialog white-modal modal-lg">' +
                         '<div class="modal-content ">' +
+<<<<<<< HEAD
                         '<div class="modal-header">' + cart +
                         '<button type="button" class="close"><span class="icon icon-clear"></span></button>' +
                         '</div>' +
@@ -476,6 +539,14 @@ var cart_theme = {
                         '</tr>' +
                         '</tbody>' +
                         '</table>' +
+=======
+                        '<div class="modal-header">' + cart + '<span id="summ_o">Сумма</span>' +
+                        '<button type="button" class="close"><span class="icon icon-clear"></span></button>' +
+                        '</div>' +
+                        '<div class="modal-body">' +
+                        '<div id="cart"><ul style="padding-left: 0px">' +
+                        '</ul></div>'+
+>>>>>>> newCart
                         '</div>' +
                         '</div>' +
                         '</div>' +
@@ -483,20 +554,27 @@ var cart_theme = {
                     var bg = '<div class="modal-backdrop fade in"></div>';
 
                     $j('body').after(bg);
+<<<<<<< HEAD
                     $j('#notification').parent().before(outputVariable + outputVariable2);
+=======
+                    $j('#notification').parent().before(outputVariable);
+
+>>>>>>> newCart
                     //$j('.success_ev').fadeIn('');
                     //$j('body').addClass('darken');
 
                     // Need to set timeout otherwise it wont update the total
                     setTimeout(function () {
-                        $j('#cart > button').html('<span class="icon icon-shopping_basket"></span><span id="cart-total" class="badge badge--cart"> ' + str1 + '</span>');
-                    }, 1000);
-
-
-                    //$j('html, body').animate({ scrollTop: 0 }, 'slow');
+                        $('.btn-block7 > button').html('<span class="icon icon-shopping_basket"></span><span id="cart-total" class="badge badge--cart"> ' + str1 + '</span>');
+                    }, 100);
 
                     $j('#cart > ul').load('index.php?route=common/cart/info ul li');
                     $j( ".close" ).click(function() {
+                        //$j('body').removeClass('darken');
+                        $j('.modal-window').remove();
+                        $j('.modal-backdrop').remove();
+                    });
+                    $j( "#continue_shop" ).click(function() {
                         //$j('body').removeClass('darken');
                         $j('.modal-window').remove();
                         $j('.modal-backdrop').remove();
@@ -509,10 +587,18 @@ var cart_theme = {
         });
     },
     'update': function(key, quantity) {
+        var quantity1 = 0;
+
+        if (typeof(quantity) != 'undefined' && quantity != 0 ) {
+            quantity1 = quantity;
+        } else {
+            quantity1 = 1;
+        }
+
         $.ajax({
             url: 'index.php?route=checkout/cart/edit',
             type: 'post',
-            data: 'key=' + key + '&quantity=' + (typeof(quantity) != 'undefined' ? quantity : 1),
+            data: 'key=' + key + '&quantity=' + quantity1,
             dataType: 'json',
             beforeSend: function() {
                 //$j('#cart > button').button('loading');
@@ -527,7 +613,11 @@ var cart_theme = {
 
                 // Need to set timeout otherwise it wont update the total
                 setTimeout(function () {
+<<<<<<< HEAD
                     //$j('#cart > button').html('<span class="icon icon-shopping_basket"></span><span id="cart-total" class="badge badge--cart"> ' + str1 + '</span>');
+=======
+                    $('.btn-block7 > button').html('<span class="icon icon-shopping_basket"></span><span id="cart-total" class="badge badge--cart"> ' + str1 + '</span>');
+>>>>>>> newCart
                 }, 100);
 
                 if (getURLVar('route') == 'checkout/cart' || getURLVar('route') == 'checkout/checkout') {
@@ -568,6 +658,10 @@ var cart_theme = {
                 } else {
                     $j('#cart > ul').load('index.php?route=common/cart/info ul li');
                 }
+                // Need to set timeout otherwise it wont update the total
+                setTimeout(function () {
+                    $('.btn-block7 > button').html('<span class="icon icon-shopping_basket"></span><span id="cart-total" class="badge badge--cart"> ' + str1 + '</span>');
+                }, 100);
             },
             error: function(xhr, ajaxOptions, thrownError) {
                 alert(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText);
@@ -575,7 +669,24 @@ var cart_theme = {
         });
     }
 }
+function calcTotal() {
+    var total = 0;
+    $('div.subtotal').each(function () {
 
+        var num = parseFloat($(this).html());
+        total += num;
+
+    });
+    total = total.toFixed(2);
+    $('#total_sum').html(total + ' грн.');
+
+}
+
+$j('html').on("click",".minus-btn,.plus-btn",function () {
+    var $jinput = $(this).parent().find('input');
+    var count = parseInt($jinput.val());
+
+<<<<<<< HEAD
 function calcTotal() {
     var total = 0;
     $('div.subtotal').each(function () {
@@ -592,6 +703,11 @@ function calcTotal() {
 $('html').on("click",".minus-btn,.plus-btn",function () {
     var $jinput = $(this).parent().find('input');
     var count = parseInt($jinput.val());
+=======
+    if($(this).hasClass('minus-btn') && count == 1){
+       return count = 1;
+    }
+>>>>>>> newCart
 
     if($(this).hasClass('minus-btn')){
         count -= 1;
@@ -607,6 +723,7 @@ $('html').on("click",".minus-btn,.plus-btn",function () {
     var p = t.find('input');
     var price = parseFloat(p.val()).toFixed(2);
     var total = count * price;
+<<<<<<< HEAD
     total = total.toFixed(2);
     t.find('div.subtotal').html(total + 'грн.');
     calcTotal();
@@ -614,10 +731,65 @@ $('html').on("click",".minus-btn,.plus-btn",function () {
     var id_item = t.find('td.text-left a');
     var id = id_item[0].href;
     var preg = /.\d$/g;
+=======
+    //total = total.toFixed(2);
+    //console.log(total);
+    //t.find('div.subtotal').html(total + 'грн.');
+    calcTotal();
+
+    var id_item = t.find('td.text-left a');
+    var id = id_item[0].href;
+    var preg = /\d{1,30}$/;
+>>>>>>> newCart
     var ids = id.match(preg);
     cart_theme.update(ids,count);
 });
 
+$j("html").on("click",".icon-clear", function() {
+    var t = $(this).parents('tr');
+    var id_item = t.find('td.text-left a');
+    var id = id_item[0].href;
+    var preg = /.\d$/g;
+    var key = id.match(preg);
+    $.ajax({
+        url: 'index.php?route=checkout/cart/removeItem',
+        type: 'post',
+        data: 'key=' + key,
+        dataType: 'json',
+        beforeSend: function() {
+            //$j('#cart > button').button('loading');
+        },
+        complete: function() {
+            $j('#cart > button').button('reset');
+        },
+        success: function(json) {
+            var str=json['total'];
+            var myArray = str.split(' ');
+            var str1=myArray[1];
+
+            // Need to set timeout otherwise it wont update the total
+            setTimeout(function () {
+                $j('#cart > button').html('<span class="icon icon-shopping_basket"></span><span id="cart-total" class="badge badge--cart"> ' + str1 + '</span>');
+            }, 100);
+
+            if (getURLVar('route') == 'checkout/cart' || getURLVar('route') == 'checkout/checkout') {
+                location = 'index.php?route=checkout/cart';
+            } else {
+              // var ty = $j('#cart > ul').load('index.php?route=common/cart/info ul li');
+              // var uu = ty.outerHTML;
+               $('#cart > ul').load('index.php?route=common/cart/info ul li');
+            }
+        },
+        error: function(xhr, ajaxOptions, thrownError) {
+            alert(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText);
+        }
+    });
+});
+$j("html").on("click",".btn-checkout", function(event) {
+    $('.modal-window').remove();
+    $('.modal-backdrop').remove();
+    event.preventDefault();
+});
 var wishlist_theme = {
     'add': function(product_id) {
         $.ajax({

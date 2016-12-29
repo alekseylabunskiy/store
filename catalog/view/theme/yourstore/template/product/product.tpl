@@ -855,7 +855,7 @@ $('#button-cart').on('click', function() {
                 var str=json['total'];
                 var myArray = str.split(' ');
                 var str1=myArray[1];
-
+                var cart = 'Корзина';
 				//$('.breadcrumb').after('<div class="alert alert-success">' + json['success'] + '<button type="button" class="close" data-dismiss="alert">&times;</button></div>');
 
 				//$('#cart > button').html('<span class="icon icon-shopping_basket"></span> ' + str1);
@@ -865,21 +865,19 @@ $('#button-cart').on('click', function() {
                 $('#cart > button').html('<span class="icon icon-shopping_basket"></span><span id="cart-total" class="badge badge--cart"> ' + str1 + '</span>');
 
                 var outputVariable =
-                        '<div class="modal  modal--bg fade in" id="modalAddToCart" tabindex="-1" role="dialog" aria-label="myModalLabel" aria-hidden="true" style="display: block; padding-right: 17px;">' +
-                                '<div class="modal-dialog white-modal modal-sm">' +
-                                '<div class="modal-content ">' +
-                                '<div class="modal-header">' +
-                                '<button type="button" class="close"><span class="icon icon-clear"></span></button>' +
-                                '</div>' +
-                                '<div class="modal-body">' +
-                                '<div class="text-center">' + json['success'] + '</div>' +
-                                '</div>' +
-                                '<div class="modal-footer text-center">' +
-                                '<a href="index.php?route=checkout/cart" class="btn btn--ys btn--lg"><span class="icon icon-shopping_basket"></span></a>' +
-                                '</div>' +
-                                '</div>' +
-                                '</div>' +
-                                '</div>';
+                    '<div class="modal modal-window fade in" id="modalAddToCart" tabindex="-1" role="dialog" aria-label="myModalLabel" aria-hidden="true" style="display: block; padding-right: 17px;">' +
+                    '<div class="modal-dialog white-modal modal-lg">' +
+                    '<div class="modal-content ">' +
+                    '<div class="modal-header">' + cart + '<span id="summ_o">Сумма</span>' +
+                    '<button type="button" class="close"><span class="icon icon-clear"></span></button>' +
+                    '</div>' +
+                    '<div class="modal-body">' +
+                    '<div id="cart"><ul style="padding-left: 0px">' +
+                    '</ul></div>'+
+                    '</div>' +
+                    '</div>' +
+                    '</div>' +
+                    '</div>';
                 var bg = '<div class="modal-backdrop fade in"></div>';
 
                 $('body').after(bg);

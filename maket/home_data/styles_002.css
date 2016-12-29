@@ -1,0 +1,168 @@
+.ax_default {
+  font-family:'Ubuntu';
+  font-weight:400;
+  font-style:normal;
+  font-size:20px;
+  color:#333333;
+  text-align:center;
+  line-height:normal;
+}
+.box_1 {
+  font-size:14px;
+}
+.quick_wiew {
+  font-size:14px;
+  color:#F2F2F2;
+}
+.quick_wiew_whithout_cursor {
+  font-size:14px;
+  color:#1FC0A0;
+}
+.add_to_cart {
+  font-size:14px;
+  color:#F2F2F2;
+}
+.box_2 {
+}
+.box_3 {
+}
+.shape {
+}
+.image {
+}
+.heading_1 {
+  font-family:'Ubuntu';
+  font-weight:bold;
+  font-style:normal;
+  font-size:32px;
+  text-align:left;
+}
+.heading_2 {
+  font-family:'Ubuntu';
+  font-weight:bold;
+  font-style:normal;
+  font-size:24px;
+  text-align:left;
+}
+.heading_3 {
+  font-family:'Ubuntu';
+  font-weight:bold;
+  font-style:normal;
+  font-size:18px;
+  text-align:left;
+}
+.heading_4 {
+  font-family:'Ubuntu';
+  font-weight:bold;
+  font-style:normal;
+  font-size:14px;
+  text-align:left;
+}
+.heading_5 {
+  font-family:'Ubuntu';
+  font-weight:bold;
+  font-style:normal;
+  text-align:left;
+}
+.heading_6 {
+  font-family:'Ubuntu';
+  font-weight:bold;
+  font-style:normal;
+  font-size:10px;
+  text-align:left;
+}
+.label1 {
+  font-family:'Ubuntu';
+  font-weight:400;
+  font-style:normal;
+  font-size:20px;
+  text-align:left;
+}
+.label {
+  font-family:'Ubuntu';
+  font-weight:400;
+  font-style:normal;
+  font-size:18px;
+  color:#1FC0A0;
+  text-align:left;
+}
+.label_whith_the_cursor {
+  font-family:'Ubuntu';
+  font-weight:400;
+  font-style:normal;
+  font-size:18px;
+  color:#333333;
+  text-align:left;
+}
+.label2 {
+  font-family:'Ubuntu';
+  font-weight:400;
+  font-style:normal;
+  font-size:18px;
+  text-align:left;
+}
+.price {
+  font-family:'Ubuntu';
+  font-weight:400;
+  font-style:normal;
+  font-size:28px;
+  color:#333333;
+  text-align:left;
+}
+.paragraph {
+  text-align:left;
+  line-height:28px;
+}
+.line {
+}
+.list_box {
+  color:#000000;
+  text-align:left;
+}
+.checkbox {
+  font-family:'Arial Обычный', 'Arial';
+  font-weight:400;
+  font-style:normal;
+  font-size:16px;
+  text-align:left;
+  line-height:16px;
+}
+.flow_shape {
+}
+.checkbox1 {
+  text-align:left;
+}
+.menu_item {
+}
+.icon {
+}
+.icon_black {
+}
+.icon_green {
+}
+.iconcs_a_heat_ander_botton_add_to_cart {
+}
+.iconcs_a_green_heat_ander_botton_add_to_cart {
+}
+.icon_for_add_to_cart_whith_a_cursor {
+}
+.add_to_cart_whith_a_cursor {
+  font-size:14px;
+  color:#1FC0A0;
+}
+.label3 {
+  font-family:'Ubuntu';
+  font-weight:400;
+  font-style:normal;
+  font-size:20px;
+  text-align:left;
+}
+.label21 {
+  font-family:'Ubuntu';
+  font-weight:400;
+  font-style:normal;
+  font-size:20px;
+  text-align:left;
+}
+.new_style1 {
+}

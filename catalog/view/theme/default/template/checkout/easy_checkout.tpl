@@ -31,7 +31,7 @@
     <div class="row">
         <?php if (!isset($address)) : ?>
         <div class="col-sm-4 col-xs-12">
-            <a href="#" onclick="jQuery('.login-form').toggle();return false;" class="btn btn--ys"><span class="icon icon-vpn_key"></span><?php echo $text_i_am_returning_customer; ?></a>
+            <a id="o_client" href="#" onclick="jQuery('.login-form').toggle();return false;" class="btn btn--ys"><span class="icon icon-vpn_key"></span><?php echo $text_i_am_returning_customer; ?></a>
             <div class="login-form registerbox clearfix" style="display:none">
                 <div class="select-basket__inner">
                     <div class="message"></div>
@@ -609,7 +609,7 @@
         <?php } ?>
     </div>
     <?php } ?>
-		<div class="form-group col-lg-12" style="padding-left: 0px">
+		<div id="warehouse_np" class="form-group col-lg-12" style="padding-left: 0px">
 			<label class="control-label" for="input-payment-address-1"><?php echo $entry_address_1; ?></label>
 			<select   name="address_1"  id="input-payment-address-1" class="form-control" ></select>
 		</div>
@@ -995,6 +995,8 @@ jQuery(document).ready(function()
         $('#local_shipping').addClass('col-lg-5');
         $('#pay_method').removeClass('col-lg-4');
         $('#pay_method').addClass('col-lg-3');
+        $('#warehouse_np').removeClass('col-lg-12');
+        $('#warehouse_np').addClass('col-lg-10');
     }
     else
     {
@@ -1002,6 +1004,8 @@ jQuery(document).ready(function()
         $('#local_shipping').addClass('col-lg-4');
         $('#pay_method').removeClass('col-lg-3');
         $('#pay_method').addClass('col-lg-4');
+        $('#warehouse_np').removeClass('col-lg-10');
+        $('#warehouse_np').addClass('col-lg-12');
     }
 </script>
 <?php echo $footer; ?>
