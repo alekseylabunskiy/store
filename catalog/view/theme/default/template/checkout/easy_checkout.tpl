@@ -61,6 +61,9 @@
             </div>
         </div>
         <?php endif; ?>
+		<?php if (isset($address)) : ?>
+		<div class="col-sm-4 col-xs-12"></div>
+		<?php endif; ?>
         <!--cart-->
         <div id="cart_btn" class="col-sm-8  col-xs-12">
             <div class="visible-xs divider--sm"></div>
