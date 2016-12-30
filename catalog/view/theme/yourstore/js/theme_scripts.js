@@ -465,29 +465,7 @@ var cart_theme = {
 
                     //$j('.success_ev').fadeIn('');
                     //$j('body').addClass('darken');
-                    var w = window.innerWidth;
-                    //положение модального окна по ширине
-                    var left = w/2 - 450 + 'px';
-                    $(".modal-dialog").css('left',left);
 
-                    var offset = $(".modal-dialog").offset();
-                    var topPadding = 15;
-                    $(window).scroll(function() {
-
-                        if ($(window).scrollTop() > offset.top-100) {
-                            $(".modal-dialog").stop().animate({
-                                bottom: '5%',
-                                marginTop: '-' + $(window).scrollTop()
-                            });
-                        } else {
-                            $(".modal-dialog").css('bottom','');
-                            $(".modal-dialog").stop().animate({
-                                marginTop: '-' + $(window).scrollTop(),
-                            });
-                            var dif = $(window).scrollTop()
-                            console.log(offset.top - $(window).scrollTop());
-                        }
-                    });
                     // Need to set timeout otherwise it wont update the total
                     setTimeout(function () {
                         $('.btn-block7 > button').html('<span class="icon icon-shopping_basket"></span><span id="cart-total" class="badge badge--cart"> ' + str1 + '</span>');

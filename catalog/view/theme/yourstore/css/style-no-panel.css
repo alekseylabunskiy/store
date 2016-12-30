@@ -27800,7 +27800,7 @@ header .mainMenu .navbar-nav > li.custom_item > a,
 #confirm_order{width: 100%;}
 #ref_buttons{margin-top: 18px;padding-left: 34px;}
 .cart__bottom{margin-top: 16px;}
-
+#cart{max-height: 550px; overflow: scroll;}
 #cart_logo{width: 185px; padding-left: 45px; padding-bottom: 28px;}
 #continue_shop{margin-left: 11px;}
 #o_client{padding: 10px 37px 9px 15px; width: 240px; top: -3px;}
